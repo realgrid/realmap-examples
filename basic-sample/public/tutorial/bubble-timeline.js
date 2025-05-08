@@ -16,7 +16,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: '2000년 1월 ~ 2025년 2월 한반도, 일본 인근 지진(규모 6 이상) 현황',
             offsetX: 40,
@@ -95,7 +94,7 @@ const onChartLoaded = async (chart) => {
     /**
      * 상태
      */
-    const rawData = await fetch('/realmap/assets/data/earth-quake.json').then((res) =>
+    const rawData = await fetch('../data/earth-quake.json').then((res) =>
         res.json()
     );
 
@@ -226,21 +225,6 @@ const onChartLoaded = async (chart) => {
      */
     initComponents();
     play(0);
-};
-
-const tool = {
-    description: [
-        '- 리얼맵은 지역 위에 바 차트 등, 다양한 시리즈의 차트를 그릴 수 있습니다.',
-    ],
-    actions: [
-        {
-            type: 'timeline',
-            sliderId: 'timeline-component',
-        },
-    ],
-    events: {
-        onChartLoaded,
-    },
 };
 
 function setActions(container) {

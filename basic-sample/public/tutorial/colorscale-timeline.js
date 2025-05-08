@@ -1,9 +1,3 @@
-/**
- * @demo
- *
- * 연간 기온 이상현상
- * 데이터 출처: https://ourworldindata.org/grapher/annual-temperature-anomalies?tab=table
- */
 const config = {
     title: false,
     annotations: [
@@ -49,11 +43,6 @@ const config = {
     colorScale: {
         maxColor: '#b10303',
         stepCount: 9,
-        // nullStyle: {
-        //     fill: 'white',
-        // },
-        // showNull: false,
-        // -4.3122134 2.4297276
         steps: [
             { from: -4.5, to: -2, color: '#D0EFFF' },
             { from: -2, to: -1.5, color: '#B0DFF1' },
@@ -73,7 +62,6 @@ const config = {
             useMapData: true,
             color: 'white',
             hoverColor: '#808080',
-            //tooltipText: '<t style="font-size: 20px; font-weight: 700;">${name}</t><br /><t style="opacity: 0.7; font-weight: 700;">온도편차: ${value}°C</t>',
             tooltipText: '<b>${name}</b><br/><t>온도편차: ${value}°C</t>',
             style: {
                 stroke: '#6d6d6d',
@@ -85,7 +73,6 @@ const config = {
 
 
 
-const NEW_LINE = '\n'
 
 const onChartLoaded = async (chart) => {
     const sliderId = 'timeline-component';
@@ -93,11 +80,11 @@ const onChartLoaded = async (chart) => {
      * 상태
      */
     const anomalies = await fetch(
-        '/realmap/assets/data/temperature-anomaly-full.csv'
+        '../data/temperature-anomaly-full.csv'
     ).then((res) =>
         res.text().then((data) =>
             data
-                .split(NEW_LINE)
+                .split('\n')
                 .filter((v) => v)
                 .filter((_, i) => i > 0)
                 .map((line) => {
@@ -220,24 +207,6 @@ const onChartLoaded = async (chart) => {
      */
     initComponents();
     play(0);
-};
-
-const tool = {
-    description: [
-        '- 컬러스케일은 값의 범위마다 색상을 지정할 수 있습니다.',
-        '- 이를 통해, 지역의 값에 따라 지정한 배경색이 칠해지도록 구현할 수 있습니다.',
-        '- 또한, 맵 시리즈의 `pointByProp` API를 통해 지도 속성의 값으로 대상 지역의 객체를 찾을 수 있습니다.',
-        '- 맵 시리즈의 `updatePoint` API를 통해 지역의 값을 수정하면, 실시간으로 맵차트에 반영됩니다.',
-    ],
-    actions: [
-        {
-            type: 'timeline',
-            sliderId: 'timeline-component',
-        },
-    ],
-    events: {
-        onChartLoaded,
-    },
 };
 
 function setActions(container) {

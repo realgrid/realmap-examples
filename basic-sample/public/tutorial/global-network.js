@@ -1,5 +1,3 @@
-
-
 const $data = {
     '영국 처트시': [
         '영국',
@@ -66,8 +64,6 @@ const $data = {
 let $selected = '브라질 상파울루';
 const config = {
     title: false,
-    // title: 'S전자 글로벌 네트워크',
-    // subtitle: '지역 총괄',
     map: [
         {
             name: 'world',
@@ -77,9 +73,7 @@ const config = {
         },
     ],
     body: {
-        // projection: 'miller',
         zoomable: true,
-        // style: { fill: '#0088ff20' },
         style: { fill: '#fff' },
     },
     legend: false,
@@ -98,7 +92,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: 'S전자 글로벌 네트워크',
             offsetX: 40,
@@ -110,7 +103,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             align: 'right',
             text: '지역총괄',
@@ -137,7 +129,6 @@ const config = {
                 stroke: '#fff',
             },
             data: $data[$selected].map((country) => ({ id: country })),
-            // hoverColor: '#B4CBEF',
             hoverColor: '#83A8DC',
             hoverEffect: 'none',
         },
@@ -148,8 +139,6 @@ const config = {
                 $selected = e.name;
                 if ($data[e.name]) {
                     chart.series.updateOption('data', $data[e.name].map((country) => ({ id: country })));
-                    // config.series[0].data = $data[e.name].map((country) => ({ id: country })),
-                    // await chart.loadAsync(config);
                 }
             },
             style: {
@@ -231,46 +220,6 @@ const config = {
 
 let chart;
 
-function setActions(container) {
-    createCheckBox(
-        container,
-        'Debug',
-        function (e) {
-            RealMap.setDebugging(_getChecked(e));
-            chart.render();
-        },
-        false
-    );
-    createButton(container, 'Test', function (e) {});
-}
-
-
-
-const tool = {
-    description: [
-        '- ponint series click event로 map series의 데이터를 변경하는 예제입니다.'
-    ],
-    vars: {
-        $data,
-        $selected
-    }
-}
-
 async function init() {
-    const t1 = +new Date();
-
-    console.log('RealMap v' + RealMap.getVersion());
-    // RealMap.setDebugging(true);
-    RealMap.setLogging(true);
-
-    chart = await RealMap.createChartAsync(
-        document,
-        'realmap',
-        config,
-        true,
-        () => {
-            console.log('LOADED!');
-        }
-    );
-    setActions('actions');
+    chart = await RealMap.createChartAsync(document, 'realmap', config, true);
 }

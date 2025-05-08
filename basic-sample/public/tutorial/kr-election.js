@@ -27,7 +27,6 @@ const config = {
             padding: '3 0 0.8 2.5',
         },
     ],
-
     body: {
         projection: 'mercator',
         style: {
@@ -131,11 +130,6 @@ const config = {
                     '<t style="width: 30px;">심상정: </t><t style="opacity: 1;">803,358표</t>',
                     '<t style="width: 30px;">기타ㅤ: </t><t style="opacity: 1;">721,942표</t>',
                 ].join('<br />'),
-                style: {
-                    // textAlign: 'left',
-                    // position: 'right'
-                
-                }
             },
             data: [
                 {
@@ -144,17 +138,6 @@ const config = {
                 }
             ]
         }
-    ],
-};
-
-
-
-const tool = {
-    description: [
-        '- 리얼맵을 통해 표현한 20대 대통령 선거 통계입니다.',
-        '- 애너테이션을 통해 제목과 투표 상황을 시각화했습니다.',
-        '- 바 차트를 통해 지역별 통계, 파이 차트를 통해 전체 통계를 시각화했습니다',
-        '- 특히, 지역별 통계의 경우 콜아웃 기능을 활용해 공간을 최대한 활용했습니다'
     ],
 };
 
