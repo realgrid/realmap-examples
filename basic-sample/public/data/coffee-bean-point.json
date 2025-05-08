@@ -1,0 +1,46 @@
+[
+    {
+        "name": "Yemen",
+        "coord": [48.516388, 15.552727],
+        "arrival": 1414,
+        "labelPos": "right"
+    },
+    {
+        "name": "Java",
+        "coord": [110.004444, -7.491667],
+        "arrival": 1696
+    },
+    {
+        "name": "La Reunion",
+        "coord": [55.5325, -21.114444],
+        "arrival": 1708
+    },
+    {
+        "name": "Brazil",
+        "coord": [-43.2, -22.9],
+        "labelPos": "right",
+        "arrival": 1770
+    },
+    {
+        "name": "India",
+        "coord": [78, 21],
+        "arrival": 1670
+    },
+    {
+        "name": "Amsterdam",
+        "coord": [4.9, 52.366667],
+        "arrival": 1696
+    },
+    {
+        "name": "Antilles",
+        "coord": [-61.030556, 14.681944],
+        "arrival": 1714,
+        "labelPos": "right"
+    },
+    {
+        "name": "Guyane",
+        "coord": [-53, 4],
+        "arrival": 1714,
+        "labelPos": "right"
+    }
+]

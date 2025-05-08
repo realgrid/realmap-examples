@@ -1,0 +1,3460 @@
+[
+    {
+        "sido": "서울특별시",
+        "sigungu": "강남구",
+        "type": "복지관",
+        "corporation": "사복)사회복지법인 대한불교조계종 봉은",
+        "name": "강남장애인복지관",
+        "staffQuota": 30,
+        "actualStaffCount": 30,
+        "coord": [
+            127.0734721,
+            37.49198251
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "강남구",
+        "type": "복지관",
+        "corporation": "사복)밀알복지재단",
+        "name": "강남세움복지관",
+        "staffQuota": 47,
+        "actualStaffCount": 47,
+        "coord": [
+            127.1194316,
+            37.47058179
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "강남구",
+        "type": "복지관",
+        "corporation": "사복)자애종합복지원",
+        "name": "성모자애복지관",
+        "staffQuota": 37,
+        "actualStaffCount": 46,
+        "coord": [
+            127.0423671,
+            37.50937751
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "강남구",
+        "type": "복지관",
+        "corporation": "사복)한국청각장애인복지회",
+        "name": "청음복지관",
+        "staffQuota": 37,
+        "actualStaffCount": 34,
+        "coord": [
+            127.0370671,
+            37.50370289
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "강남구",
+        "type": "복지관",
+        "corporation": "충현복지재단",
+        "name": "충현복지관",
+        "staffQuota": 42,
+        "actualStaffCount": 57,
+        "coord": [
+            127.0751274,
+            37.49255412
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "강남구",
+        "type": "복지관",
+        "corporation": "사복)하상복지재단",
+        "name": "하상장애인복지관",
+        "staffQuota": 35,
+        "actualStaffCount": 35,
+        "coord": [
+            127.1485442,
+            37.5562064
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "강동구",
+        "type": "복지관",
+        "corporation": "푸르메",
+        "name": "서울장애인종합복지관",
+        "staffQuota": 91,
+        "actualStaffCount": 90,
+        "coord": [
+            127.3490545,
+            37.31603442
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "강동구",
+        "type": "복지관",
+        "corporation": "재단법인부산성베네딕도수녀회성분도복지관",
+        "name": "성분도복지관",
+        "staffQuota": 30,
+        "actualStaffCount": 32,
+        "coord": [
+            127.1732658,
+            37.56622133
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "강동구",
+        "type": "복지관",
+        "corporation": "한국시각장애인복지재단",
+        "name": "한국시각장애인복지관",
+        "staffQuota": 41,
+        "actualStaffCount": 40,
+        "coord": [
+            127.169245,
+            37.55110948
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "강동구",
+        "type": "복지관",
+        "corporation": "사)홀트아동복지회",
+        "name": "홀트강동장애인복지관",
+        "staffQuota": 31,
+        "actualStaffCount": 31,
+        "coord": [
+            127.0390723,
+            37.62875737
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "강북구",
+        "type": "복지관",
+        "corporation": "사복)대한불교조계종사회복지재단",
+        "name": "강북장애인복지관",
+        "staffQuota": 40,
+        "actualStaffCount": 40,
+        "coord": [
+            126.8125776,
+            37.57420432
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "강서구",
+        "type": "복지관",
+        "corporation": "사단법인)한국뇌성마비복지회",
+        "name": "강서뇌성마비복지관",
+        "staffQuota": 43,
+        "actualStaffCount": 42,
+        "coord": [
+            126.8486738,
+            37.56938957
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "강서구",
+        "type": "복지관",
+        "corporation": "사복)기쁜우리월드",
+        "name": "기쁜우리복지관",
+        "staffQuota": 36,
+        "actualStaffCount": 36,
+        "coord": [
+            126.8510978,
+            37.56854816
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "강서구",
+        "type": "복지관",
+        "corporation": "사복)성요한복지회",
+        "name": "늘푸른나무복지관",
+        "staffQuota": 32,
+        "actualStaffCount": 34,
+        "coord": [
+            126.9410996,
+            37.48294247
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "관악구",
+        "type": "복지관",
+        "corporation": "실로암시각장애인복지회",
+        "name": "실로암시각장애인복지관",
+        "staffQuota": 39,
+        "actualStaffCount": 39,
+        "coord": [
+            126.961856,
+            37.47744079
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "관악구",
+        "type": "복지관",
+        "corporation": "사회복지법인승가원",
+        "name": "관악구장애인복지관",
+        "staffQuota": 34,
+        "actualStaffCount": 34,
+        "coord": [
+            127.0979185,
+            37.55053287
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "광진구",
+        "type": "복지관",
+        "corporation": "사복)한국소아마비협회",
+        "name": "정립회관",
+        "staffQuota": 46,
+        "actualStaffCount": 48,
+        "coord": [
+            126.8412046,
+            37.50118025
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "구로구",
+        "type": "복지관",
+        "corporation": "재)성프란치스꼬수녀회",
+        "name": "성프란치스꼬장애인종합복지관",
+        "staffQuota": 30,
+        "actualStaffCount": 40,
+        "coord": [
+            126.8905633,
+            37.48180352
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "구로구",
+        "type": "복지관",
+        "corporation": "사복)에덴복지재단",
+        "name": "에덴장애인복지관",
+        "staffQuota": 29,
+        "actualStaffCount": 33,
+        "coord": [
+            126.8963316,
+            37.46397165
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "금천구",
+        "type": "복지관",
+        "corporation": "사복)상금복지회",
+        "name": "금천장애인복지관",
+        "staffQuota": 36,
+        "actualStaffCount": 36,
+        "coord": [
+            127.0564869,
+            37.64207087
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "노원구",
+        "type": "복지관",
+        "corporation": "사단법인 한국시각장애인연합회",
+        "name": "노원시각장애인복지관",
+        "staffQuota": 38,
+        "actualStaffCount": 38,
+        "coord": [
+            127.0565722,
+            37.64249504
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "노원구",
+        "type": "복지관",
+        "corporation": "한국뇌성마비복지회",
+        "name": "뇌성마비복지관",
+        "staffQuota": 42,
+        "actualStaffCount": 42,
+        "coord": [
+            127.0803063,
+            37.61893979
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "노원구",
+        "type": "복지관",
+        "corporation": "사복)다운회",
+        "name": "다운복지관",
+        "staffQuota": 29,
+        "actualStaffCount": 34,
+        "coord": [
+            127.0569683,
+            37.64253424
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "노원구",
+        "type": "복지관",
+        "corporation": "사단법인 한국지체장애인협회",
+        "name": "북부장애인복지관",
+        "staffQuota": 42,
+        "actualStaffCount": 52,
+        "coord": [
+            127.0576333,
+            37.64281887
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "노원구",
+        "type": "복지관",
+        "corporation": "대한민국상이군경회",
+        "name": "상이군경복지관",
+        "staffQuota": 27,
+        "actualStaffCount": 27,
+        "coord": [
+            127.0693375,
+            37.65562526
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "노원구",
+        "type": "복지관",
+        "corporation": "사회복지법인 성민",
+        "name": "성민장애인복지관",
+        "staffQuota": 36,
+        "actualStaffCount": 49,
+        "coord": [
+            127.0476511,
+            37.66942743
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "도봉구",
+        "type": "복지관",
+        "corporation": "사회복지법인 한국장로교복지재단",
+        "name": "도봉장애인복지관",
+        "staffQuota": 28,
+        "actualStaffCount": 34,
+        "coord": [
+            127.0340525,
+            37.57181572
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "동대문구",
+        "type": "복지관",
+        "corporation": "사복)동안복지재단",
+        "name": "동대문장애인복지관",
+        "staffQuota": 34,
+        "actualStaffCount": 36,
+        "coord": [
+            127.0731943,
+            37.58314885
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "동대문구",
+        "type": "복지관",
+        "corporation": "제칠일안식일예수재림교한국연합회유지재단",
+        "name": "동문장애인복지관",
+        "staffQuota": 29,
+        "actualStaffCount": 29,
+        "coord": [
+            126.9189173,
+            37.49538355
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "동작구",
+        "type": "복지관",
+        "corporation": "SRC",
+        "name": "남부장애인복지관",
+        "staffQuota": 56,
+        "actualStaffCount": 58,
+        "coord": [
+            126.9189173,
+            37.49538355
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "동작구",
+        "type": "복지관",
+        "corporation": "사)한국지적발달장애인복지협회",
+        "name": "발달장애인복지관",
+        "staffQuota": 43,
+        "actualStaffCount": 42,
+        "coord": [
+            126.9466722,
+            37.49919311
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "동작구",
+        "type": "복지관",
+        "corporation": "사회복지법인 서울삼성원",
+        "name": "삼성소리샘복지관",
+        "staffQuota": 39,
+        "actualStaffCount": 39,
+        "coord": [
+            126.908442,
+            37.56401883
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "마포구",
+        "type": "복지관",
+        "corporation": "재단법인 마포복지재단",
+        "name": "마포장애인복지관",
+        "staffQuota": 32,
+        "actualStaffCount": 40,
+        "coord": [
+            126.913801,
+            37.57069982
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "서대문구",
+        "type": "복지관",
+        "corporation": "한국농아인협회",
+        "name": "서대문농아인복지관",
+        "staffQuota": 26,
+        "actualStaffCount": 26,
+        "coord": [
+            126.9570419,
+            37.55947486
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "서대문구",
+        "type": "복지관",
+        "corporation": "사)한국지체장애인협회",
+        "name": "서대문장애인종합복지관",
+        "staffQuota": 31,
+        "actualStaffCount": 39,
+        "coord": [
+            127.0239976,
+            37.49983838
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "서초구",
+        "type": "복지관",
+        "corporation": "사랑의복지재단",
+        "name": "사랑의복지관",
+        "staffQuota": 32,
+        "actualStaffCount": 40,
+        "coord": [
+            127.0250089,
+            37.48205085
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "서초구",
+        "type": "복지관",
+        "corporation": "서울가톨릭사회복지회",
+        "name": "서초한우리정보문화센터",
+        "staffQuota": 38,
+        "actualStaffCount": 47,
+        "coord": [
+            127.0334391,
+            37.57022486
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "성동구",
+        "type": "복지관",
+        "corporation": "(재)성모성심수도회",
+        "name": "성동장애인복지관",
+        "staffQuota": 37,
+        "actualStaffCount": 38,
+        "coord": [
+            127.0192309,
+            37.59539109
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "성북구",
+        "type": "복지관",
+        "corporation": "사복)승가원",
+        "name": "성북장애인복지관",
+        "staffQuota": 34,
+        "actualStaffCount": 34,
+        "coord": [
+            127.0457249,
+            37.60460036
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "성북구",
+        "type": "복지관",
+        "corporation": "사회복지법인 대한맹인복지회",
+        "name": "성북시각장애인복지관",
+        "staffQuota": 30,
+        "actualStaffCount": 30,
+        "coord": [
+            127.1141865,
+            37.51464964
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "송파구",
+        "type": "복지관",
+        "corporation": "재단법인 기독교대한감리회유지재단",
+        "name": "송파구방이복지관",
+        "staffQuota": 26,
+        "actualStaffCount": 28,
+        "coord": [
+            127.0940639,
+            37.50611741
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "송파구",
+        "type": "복지관",
+        "corporation": "사복)선한목자재단",
+        "name": "서울시각장애인복지관",
+        "staffQuota": 27,
+        "actualStaffCount": 27,
+        "coord": [
+            127.1551768,
+            37.49389162
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "송파구",
+        "type": "복지관",
+        "corporation": "함께하는 복지",
+        "name": "송파인성장애인종합복지관",
+        "staffQuota": 27,
+        "actualStaffCount": 25,
+        "coord": [
+            126.8699093,
+            37.51989333
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "양천구",
+        "type": "복지관",
+        "corporation": "대한예수교장로회총회(합동측) 복지재단",
+        "name": "양천해누리복지관",
+        "staffQuota": 42,
+        "actualStaffCount": 47,
+        "coord": [
+            126.9129054,
+            37.52085507
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "영등포구",
+        "type": "복지관",
+        "corporation": "대한불교조계종사회복지재단",
+        "name": "영등포장애인복지관",
+        "staffQuota": 45,
+        "actualStaffCount": 45,
+        "coord": [
+            126.9615681,
+            37.54730558
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "용산구",
+        "type": "복지관",
+        "corporation": "영락사회복지재단",
+        "name": "용산장애인복지관",
+        "staffQuota": 31,
+        "actualStaffCount": 31,
+        "coord": [
+            126.9063398,
+            37.60564517
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "은평구",
+        "type": "복지관",
+        "corporation": "사복)엔젤스헤이븐",
+        "name": "서부장애인복지관",
+        "staffQuota": 40,
+        "actualStaffCount": 40,
+        "coord": [
+            126.9699696,
+            37.58402442
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "은평구",
+        "type": "복지관",
+        "corporation": "사복)굿피플우리복지재단",
+        "name": "은평구립우리장애인복지관",
+        "staffQuota": 37,
+        "actualStaffCount": 37,
+        "coord": [
+            127.0227859,
+            37.56509143
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "종로구",
+        "type": "복지관",
+        "corporation": "재단법인 푸르메",
+        "name": "종로장애인복지관",
+        "staffQuota": 36,
+        "actualStaffCount": 36,
+        "coord": [
+            127.0959208,
+            37.60447238
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "중구",
+        "type": "복지관",
+        "corporation": "사회복지법인 서울가톨릭사회복지회",
+        "name": "서울특별시중구장애인복지관",
+        "staffQuota": 26,
+        "actualStaffCount": 27,
+        "coord": [
+            129.0235995,
+            35.11067954
+        ]
+    },
+    {
+        "sido": "서울특별시",
+        "sigungu": "중랑구",
+        "type": "복지관",
+        "corporation": "사회복지법인 유린보은동산",
+        "name": "원광장애인복지관",
+        "staffQuota": 38,
+        "actualStaffCount": 43,
+        "coord": [
+            129.0404211,
+            35.13091679
+        ]
+    },
+    {
+        "sido": "부산광역시",
+        "sigungu": "금정구",
+        "type": "복지관",
+        "corporation": "부산광역시금정구장애인협회",
+        "name": "금정구장애인복지관",
+        "staffQuota": 29,
+        "actualStaffCount": 29,
+        "coord": [
+            129.0668621,
+            35.07526852
+        ]
+    },
+    {
+        "sido": "부산광역시",
+        "sigungu": "기장군",
+        "type": "복지관",
+        "corporation": "한성복지재단",
+        "name": "기장장애인 복지관",
+        "staffQuota": 21,
+        "actualStaffCount": 25,
+        "coord": [
+            129.0658484,
+            35.16404711
+        ]
+    },
+    {
+        "sido": "부산광역시",
+        "sigungu": "남구",
+        "type": "복지관",
+        "corporation": "부산광역시 남구장애인협회",
+        "name": "남구장애인복지관",
+        "staffQuota": 21,
+        "actualStaffCount": 31,
+        "coord": [
+            129.100376,
+            35.19703517
+        ]
+    },
+    {
+        "sido": "부산광역시",
+        "sigungu": "남구",
+        "type": "복지관",
+        "corporation": "사회복지법인 나사함복지재단",
+        "name": "나사함발달장애인복지관",
+        "staffQuota": 21,
+        "actualStaffCount": 35,
+        "coord": [
+            129.0992205,
+            35.12923425
+        ]
+    },
+    {
+        "sido": "부산광역시",
+        "sigungu": "동구",
+        "type": "복지관",
+        "corporation": "사회복지법인 행복한오늘",
+        "name": "동구장애인복지관",
+        "staffQuota": 21,
+        "actualStaffCount": 21,
+        "coord": [
+            129.0890682,
+            35.14133258
+        ]
+    },
+    {
+        "sido": "부산광역시",
+        "sigungu": "동래구",
+        "type": "복지관",
+        "corporation": "한결재단",
+        "name": "동래구장애인복지관",
+        "staffQuota": 21,
+        "actualStaffCount": 21,
+        "coord": [
+            129.017554,
+            35.26712211
+        ]
+    },
+    {
+        "sido": "부산광역시",
+        "sigungu": "부산진구",
+        "type": "복지관",
+        "corporation": "주는사랑복지재단",
+        "name": "부산진구장애인복지관",
+        "staffQuota": 36,
+        "actualStaffCount": 36,
+        "coord": [
+            129.0100624,
+            35.24445208
+        ]
+    },
+    {
+        "sido": "부산광역시",
+        "sigungu": "북구",
+        "type": "복지관",
+        "corporation": "한국뇌성마비복지회부산울산경남지회",
+        "name": "부산뇌병변복지관",
+        "staffQuota": 24,
+        "actualStaffCount": 24,
+        "coord": [
+            129.1219355,
+            35.21086256
+        ]
+    },
+    {
+        "sido": "부산광역시",
+        "sigungu": "북구",
+        "type": "복지관",
+        "corporation": "부산시각장애인복지연합회",
+        "name": "부산광역시시각장애인복지관",
+        "staffQuota": 30,
+        "actualStaffCount": 30,
+        "coord": [
+            128.992995,
+            35.08544264
+        ]
+    },
+    {
+        "sido": "부산광역시",
+        "sigungu": "북구",
+        "type": "복지관",
+        "corporation": "부산광역시 북구장애인협회",
+        "name": "북구장애인종합복지관",
+        "staffQuota": 21,
+        "actualStaffCount": 21,
+        "coord": [
+            129.0989667,
+            35.21955549
+        ]
+    },
+    {
+        "sido": "부산광역시",
+        "sigungu": "사상구",
+        "type": "복지관",
+        "corporation": "주는사랑복지재단",
+        "name": "사상구장애인복지관",
+        "staffQuota": 26,
+        "actualStaffCount": 25,
+        "coord": [
+            129.1049605,
+            35.15936053
+        ]
+    },
+    {
+        "sido": "부산광역시",
+        "sigungu": "사하구",
+        "type": "복지관",
+        "corporation": "부산광역시 사하구장애인협회",
+        "name": "사하구장애인종합복지관",
+        "staffQuota": 26,
+        "actualStaffCount": 26,
+        "coord": [
+            129.0009356,
+            35.18490105
+        ]
+    },
+    {
+        "sido": "부산광역시",
+        "sigungu": "서구",
+        "type": "복지관",
+        "corporation": "부산광역시 서구장애인협회",
+        "name": "서구장애인복지관",
+        "staffQuota": 22,
+        "actualStaffCount": 22,
+        "coord": [
+            129.1735108,
+            35.33642884
+        ]
+    },
+    {
+        "sido": "부산광역시",
+        "sigungu": "수영구",
+        "type": "복지관",
+        "corporation": "청전",
+        "name": "수영구장애인복지관",
+        "staffQuota": 21,
+        "actualStaffCount": 22,
+        "coord": [
+            129.0815454,
+            35.19056184
+        ]
+    },
+    {
+        "sido": "부산광역시",
+        "sigungu": "연제구",
+        "type": "복지관",
+        "corporation": "내원",
+        "name": "부산광역시장애인종합복지관",
+        "staffQuota": 45,
+        "actualStaffCount": 83,
+        "coord": [
+            129.0079126,
+            35.19507392
+        ]
+    },
+    {
+        "sido": "부산광역시",
+        "sigungu": "영도구",
+        "type": "복지관",
+        "corporation": "대한예수교장로회총회 고려학원",
+        "name": "영도구장애인복지관",
+        "staffQuota": 21,
+        "actualStaffCount": 21,
+        "coord": [
+            128.6067684,
+            35.82604776
+        ]
+    },
+    {
+        "sido": "부산광역시",
+        "sigungu": "해운대구",
+        "type": "복지관",
+        "corporation": "대한성공회유지재단",
+        "name": "해운대구장애인복지관",
+        "staffQuota": 21,
+        "actualStaffCount": 36,
+        "coord": [
+            128.5254597,
+            35.85354369
+        ]
+    },
+    {
+        "sido": "대구광역시",
+        "sigungu": "달서구",
+        "type": "복지관",
+        "corporation": "대구시지체장애인협회",
+        "name": "대구광역시달구벌종합복지관",
+        "staffQuota": 37,
+        "actualStaffCount": 55,
+        "coord": [
+            128.5254597,
+            35.85354369
+        ]
+    },
+    {
+        "sido": "대구광역시",
+        "sigungu": "달서구",
+        "type": "복지관",
+        "corporation": "대구광역시시각장애인연합회",
+        "name": "대구시각장애인복지관",
+        "staffQuota": 23,
+        "actualStaffCount": 21,
+        "coord": [
+            128.5254597,
+            35.85354369
+        ]
+    },
+    {
+        "sido": "대구광역시",
+        "sigungu": "달서구",
+        "type": "복지관",
+        "corporation": "한국농아인협회",
+        "name": "대구광역시청각언어장애인복지관",
+        "staffQuota": 22,
+        "actualStaffCount": 22,
+        "coord": [
+            128.60274,
+            35.90631284
+        ]
+    },
+    {
+        "sido": "대구광역시",
+        "sigungu": "달성군",
+        "type": "복지관",
+        "corporation": "한국지체장애인협회 대구달성군지회",
+        "name": "달성군장애인복지관",
+        "staffQuota": 29,
+        "actualStaffCount": 32,
+        "coord": [
+            128.4549298,
+            35.72301157
+        ]
+    },
+    {
+        "sido": "대구광역시",
+        "sigungu": "북구",
+        "type": "복지관",
+        "corporation": "상록뇌성마비복지회",
+        "name": "상록뇌성마비복지관",
+        "staffQuota": 20,
+        "actualStaffCount": 20,
+        "coord": [
+            126.6283301,
+            37.45269798
+        ]
+    },
+    {
+        "sido": "대구광역시",
+        "sigungu": "수성구",
+        "type": "복지관",
+        "corporation": "국제라이온스협회356-A(대구)지구",
+        "name": "대구장애인종합복지관",
+        "staffQuota": 35,
+        "actualStaffCount": 35,
+        "coord": [
+            126.6251883,
+            37.48172861
+        ]
+    },
+    {
+        "sido": "인천광역시",
+        "sigungu": "강화군",
+        "type": "복지관",
+        "corporation": "대한불교조계종사회복지재단",
+        "name": "강화군장애인복지관",
+        "staffQuota": 25,
+        "actualStaffCount": 28,
+        "coord": [
+            126.6903325,
+            37.44625549
+        ]
+    },
+    {
+        "sido": "인천광역시",
+        "sigungu": "계양구",
+        "type": "복지관",
+        "corporation": "노틀담수녀회",
+        "name": "노틀담복지관",
+        "staffQuota": 36,
+        "actualStaffCount": 36,
+        "coord": [
+            126.6560322,
+            37.4381129
+        ]
+    },
+    {
+        "sido": "인천광역시",
+        "sigungu": "남동구",
+        "type": "복지관",
+        "corporation": "사회복지법인 인천가톨릭사회복지회",
+        "name": "남동장애인종합복지관",
+        "staffQuota": 39,
+        "actualStaffCount": 47,
+        "coord": [
+            126.6590707,
+            37.41217953
+        ]
+    },
+    {
+        "sido": "인천광역시",
+        "sigungu": "동구",
+        "type": "복지관",
+        "corporation": "한원복지재단",
+        "name": "동구한마음종합복지관",
+        "staffQuota": 29,
+        "actualStaffCount": 27,
+        "coord": [
+            126.7370578,
+            37.44789883
+        ]
+    },
+    {
+        "sido": "인천광역시",
+        "sigungu": "미추홀구",
+        "type": "복지관",
+        "corporation": "사)인천광역시시각장애인복지연합회",
+        "name": "인천광역시시각장애인복지관",
+        "staffQuota": 29,
+        "actualStaffCount": 29,
+        "coord": [
+            126.7462699,
+            37.48304718
+        ]
+    },
+    {
+        "sido": "인천광역시",
+        "sigungu": "미추홀구",
+        "type": "복지관",
+        "corporation": "대한성공회유지재단",
+        "name": "미추홀장애인종합복지관",
+        "staffQuota": 28,
+        "actualStaffCount": 27,
+        "coord": [
+            126.7174602,
+            37.54525159
+        ]
+    },
+    {
+        "sido": "인천광역시",
+        "sigungu": "부평구",
+        "type": "복지관",
+        "corporation": "송암복지재단",
+        "name": "부평장애인종합복지관",
+        "staffQuota": 34,
+        "actualStaffCount": 34,
+        "coord": [
+            126.6710889,
+            37.58341094
+        ]
+    },
+    {
+        "sido": "인천광역시",
+        "sigungu": "서구",
+        "type": "복지관",
+        "corporation": "기독교대한감리회 사회복지재단",
+        "name": "인천광역시서구장애인종합복지관",
+        "staffQuota": 28,
+        "actualStaffCount": 28,
+        "coord": [
+            126.4824915,
+            37.73443235
+        ]
+    },
+    {
+        "sido": "인천광역시",
+        "sigungu": "연수구",
+        "type": "복지관",
+        "corporation": "한울정신건강복지재단",
+        "name": "인천장애인종합복지관",
+        "staffQuota": 52,
+        "actualStaffCount": 52,
+        "coord": [
+            126.9262459,
+            35.14579482
+        ]
+    },
+    {
+        "sido": "인천광역시",
+        "sigungu": "중구",
+        "type": "복지관",
+        "corporation": "사회복지법인 미선",
+        "name": "인천광역시중구 장애인종합복지관",
+        "staffQuota": 28,
+        "actualStaffCount": 28,
+        "coord": [
+            126.8991915,
+            35.15336743
+        ]
+    },
+    {
+        "sido": "인천광역시",
+        "sigungu": "중구",
+        "type": "복지관",
+        "corporation": "사회복지법인 미선",
+        "name": "인천광역시중구 장애인종합복지관 영종분관",
+        "staffQuota": 8,
+        "actualStaffCount": 8,
+        "coord": [
+            126.8999908,
+            35.14126
+        ]
+    },
+    {
+        "sido": "광주광역시",
+        "sigungu": "동구",
+        "type": "복지관",
+        "corporation": "은성복지회",
+        "name": "동구장애인복지관",
+        "staffQuota": 35,
+        "actualStaffCount": 35,
+        "coord": [
+            126.9125768,
+            35.14461846
+        ]
+    },
+    {
+        "sido": "광주광역시",
+        "sigungu": "서구",
+        "type": "복지관",
+        "corporation": "세석밀알",
+        "name": "광주광역시서구장애인복지관",
+        "staffQuota": 25,
+        "actualStaffCount": 24,
+        "coord": [
+            126.8679771,
+            35.18516043
+        ]
+    },
+    {
+        "sido": "광주광역시",
+        "sigungu": "남구",
+        "type": "복지관",
+        "corporation": "다솜복지회",
+        "name": "광주광역시남구장애인복지관",
+        "staffQuota": 34,
+        "actualStaffCount": 25,
+        "coord": [
+            126.8846743,
+            35.17568837
+        ]
+    },
+    {
+        "sido": "광주광역시",
+        "sigungu": "남구",
+        "type": "복지관",
+        "corporation": "광주광역시시각장애인연합회",
+        "name": "광주광역시시각장애인복지관",
+        "staffQuota": 25,
+        "actualStaffCount": 25,
+        "coord": [
+            126.8106115,
+            35.1608961
+        ]
+    },
+    {
+        "sido": "광주광역시",
+        "sigungu": "북구",
+        "type": "복지관",
+        "corporation": "광주광역시장애인종합지원센터",
+        "name": "광주광역시장애인종합복지관",
+        "staffQuota": 41,
+        "actualStaffCount": 79,
+        "coord": [
+            127.4243365,
+            36.33549876
+        ]
+    },
+    {
+        "sido": "광주광역시",
+        "sigungu": "북구",
+        "type": "복지관",
+        "corporation": "무지개공동회",
+        "name": "엠마우스복지관",
+        "staffQuota": 39,
+        "actualStaffCount": 39,
+        "coord": [
+            127.4723318,
+            36.26806207
+        ]
+    },
+    {
+        "sido": "광주광역시",
+        "sigungu": "광산구",
+        "type": "복지관",
+        "corporation": "광산구청",
+        "name": "광산구장애인복지관",
+        "staffQuota": 25,
+        "actualStaffCount": 25,
+        "coord": [
+            127.4331199,
+            36.32700576
+        ]
+    },
+    {
+        "sido": "대전광역시",
+        "sigungu": "동구",
+        "type": "복지관",
+        "corporation": "사회복지법인 밀알",
+        "name": "밀알복지관",
+        "staffQuota": 39,
+        "actualStaffCount": 39,
+        "coord": [
+            127.382647,
+            36.30380138
+        ]
+    },
+    {
+        "sido": "대전광역시",
+        "sigungu": "동구",
+        "type": "복지관",
+        "corporation": "한국지체장애인협회",
+        "name": "동구아름다운복지관",
+        "staffQuota": 31,
+        "actualStaffCount": 33,
+        "coord": [
+            127.3451886,
+            36.30531492
+        ]
+    },
+    {
+        "sido": "대전광역시",
+        "sigungu": "동구",
+        "type": "복지관",
+        "corporation": "한국농아인협회",
+        "name": "대전광역시립손소리복지관",
+        "staffQuota": 23,
+        "actualStaffCount": 23,
+        "coord": [
+            127.3233647,
+            36.38141214
+        ]
+    },
+    {
+        "sido": "대전광역시",
+        "sigungu": "중구",
+        "type": "복지관",
+        "corporation": "대전광역시시각장애인연합회",
+        "name": "대전광역시립산성종합복지관",
+        "staffQuota": 39,
+        "actualStaffCount": 39,
+        "coord": [
+            127.3209554,
+            36.32120428
+        ]
+    },
+    {
+        "sido": "대전광역시",
+        "sigungu": "서구",
+        "type": "복지관",
+        "corporation": "사회복지법인 기독교연합봉사회",
+        "name": "행복한우리복지관",
+        "staffQuota": 51,
+        "actualStaffCount": 51,
+        "coord": [
+            127.4220259,
+            36.38751678
+        ]
+    },
+    {
+        "sido": "대전광역시",
+        "sigungu": "유성구",
+        "type": "복지관",
+        "corporation": "한국지체장애인협회",
+        "name": "유성구장애인종합복지관",
+        "staffQuota": 46,
+        "actualStaffCount": 59,
+        "coord": [
+            129.3219815,
+            35.57702556
+        ]
+    },
+    {
+        "sido": "대전광역시",
+        "sigungu": "유성구",
+        "type": "복지관",
+        "corporation": "사회복지법인성재원",
+        "name": "대전광역시립장애인종합복지관",
+        "staffQuota": 32,
+        "actualStaffCount": 32,
+        "coord": [
+            129.3183478,
+            35.53910234
+        ]
+    },
+    {
+        "sido": "대전광역시",
+        "sigungu": "대덕구",
+        "type": "복지관",
+        "corporation": "대전가톨릭사회복지회",
+        "name": "대덕구장애인종합복지관",
+        "staffQuota": 26,
+        "actualStaffCount": 26,
+        "coord": [
+            129.4142012,
+            35.53187731
+        ]
+    },
+    {
+        "sido": "울산광역시",
+        "sigungu": "중구",
+        "type": "복지관",
+        "corporation": "로사리오카리타스",
+        "name": "울산광역시장애인종합복지관",
+        "staffQuota": 48,
+        "actualStaffCount": 66,
+        "coord": [
+            129.12526,
+            35.56125079
+        ]
+    },
+    {
+        "sido": "울산광역시",
+        "sigungu": "남구",
+        "type": "복지관",
+        "corporation": "울산광역시시각장애인복지연합회",
+        "name": "울산광역시시각장애인복지관",
+        "staffQuota": 24,
+        "actualStaffCount": 30,
+        "coord": [
+            127.2621125,
+            36.50254489
+        ]
+    },
+    {
+        "sido": "울산광역시",
+        "sigungu": "동구",
+        "type": "복지관",
+        "corporation": "사회복지법인 로사리오카리타스",
+        "name": "울산광역시동구장애인복지관",
+        "staffQuota": 22,
+        "actualStaffCount": 22,
+        "coord": [
+            126.9568075,
+            37.26315813
+        ]
+    },
+    {
+        "sido": "울산광역시",
+        "sigungu": "북구",
+        "type": "복지관",
+        "corporation": "어울림복지재단",
+        "name": "울산광역시 북구 장애인복지관",
+        "staffQuota": 22,
+        "actualStaffCount": 22,
+        "coord": [
+            127.0360345,
+            37.29557415
+        ]
+    },
+    {
+        "sido": "울산광역시",
+        "sigungu": "울주군",
+        "type": "복지관",
+        "corporation": "울주군시설관리공단",
+        "name": "울주군장애인복지관",
+        "staffQuota": 27,
+        "actualStaffCount": 27,
+        "coord": [
+            127.1441532,
+            37.40822875
+        ]
+    },
+    {
+        "sido": "세종특별자치시",
+        "sigungu": "세종시",
+        "type": "복지관",
+        "corporation": "세종충남가톨릭사회복지회",
+        "name": "세종시장애인복지관",
+        "staffQuota": 33,
+        "actualStaffCount": 33,
+        "coord": [
+            127.1788771,
+            37.44342735
+        ]
+    },
+    {
+        "sido": "세종특별자치시",
+        "sigungu": "세종시",
+        "type": "복지관",
+        "corporation": "세종충남가톨릭사회복지회",
+        "name": "세종시장애인복지관",
+        "staffQuota": "",
+        "actualStaffCount": "",
+        "coord": [
+            126.920739,
+            37.41262034
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "수원시",
+        "type": "복지관",
+        "corporation": "수원중앙복지재단",
+        "name": "수원시장애인종합복지관",
+        "staffQuota": 50,
+        "actualStaffCount": 48,
+        "coord": [
+            126.9270073,
+            37.38494261
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "수원시",
+        "type": "복지관",
+        "corporation": "천주교수원교구사회복지회",
+        "name": "호매실장애인종합복지관",
+        "staffQuota": 53,
+        "actualStaffCount": 53,
+        "coord": [
+            127.0923024,
+            37.74379849
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "용인시",
+        "type": "복지관",
+        "corporation": "한국지체장애인협회",
+        "name": "용인시처인장애인복지관",
+        "staffQuota": 48,
+        "actualStaffCount": 48,
+        "coord": [
+            126.8138148,
+            37.51751481
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "용인시",
+        "type": "복지관",
+        "corporation": "사회복지법인 양지바른",
+        "name": "용인시기흥장애애인복지관",
+        "staffQuota": 49,
+        "actualStaffCount": 49,
+        "coord": [
+            126.8466245,
+            37.47892341
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "용인시",
+        "type": "복지관",
+        "corporation": "사회복지법인 지구촌사회복지재단",
+        "name": "용인시수지장애인복지관",
+        "staffQuota": 40,
+        "actualStaffCount": 40,
+        "coord": [
+            127.0785788,
+            36.95153341
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "고양시",
+        "type": "복지관",
+        "corporation": "홀트아동복지회",
+        "name": "고양시장애인종합복지관",
+        "staffQuota": 38,
+        "actualStaffCount": 41,
+        "coord": [
+            127.0664974,
+            37.06564857
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "성남시",
+        "type": "복지관",
+        "corporation": "한국지체장애인협회",
+        "name": "성남시장애인종합복지관",
+        "staffQuota": 44,
+        "actualStaffCount": 42,
+        "coord": [
+            127.0477688,
+            37.90742207
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "성남시",
+        "type": "복지관",
+        "corporation": "밀알복지재단",
+        "name": "한마음복지관",
+        "staffQuota": 89,
+        "actualStaffCount": 88,
+        "coord": [
+            126.8457554,
+            37.29889261
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "화성시",
+        "type": "복지관",
+        "corporation": "사회복지법인 대한불교조계종",
+        "name": "화성시아르딤복지관",
+        "staffQuota": 40,
+        "actualStaffCount": 51,
+        "coord": [
+            126.8065957,
+            37.32594211
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "화성시",
+        "type": "복지관",
+        "corporation": "지구촌사회복지재단",
+        "name": "화성시동탄아르딤복지관",
+        "staffQuota": 43,
+        "actualStaffCount": 46,
+        "coord": [
+            126.7645743,
+            37.703224
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "부천시",
+        "type": "복지관",
+        "corporation": "사회복지법인 인천가톨릭사회복지회",
+        "name": "부천시장애인종합복지관",
+        "staffQuota": 19,
+        "actualStaffCount": 59,
+        "coord": [
+            127.0021182,
+            37.42880558
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "남양주시",
+        "type": "복지관",
+        "corporation": "재단법인 대한성공회 유지재단",
+        "name": "남양주시장애인복지관",
+        "staffQuota": 37,
+        "actualStaffCount": 36,
+        "coord": [
+            127.1410311,
+            37.59155439
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "남양주시",
+        "type": "복지관",
+        "corporation": "사회복지법인 대한불교조계종사회복지재단",
+        "name": "남양주시북부장애인복지관",
+        "staffQuota": 40,
+        "actualStaffCount": 40,
+        "coord": [
+            127.200168,
+            37.62707415
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "안산시",
+        "type": "복지관",
+        "corporation": "사회복지법인 밀알복지재단",
+        "name": "안산시장애인복지관",
+        "staffQuota": 49,
+        "actualStaffCount": 49,
+        "coord": [
+            127.0448401,
+            37.17775508
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "안산시",
+        "type": "복지관",
+        "corporation": "동산복지재단",
+        "name": "안산시상록장애인복지관",
+        "staffQuota": 44,
+        "actualStaffCount": 44,
+        "coord": [
+            126.7410055,
+            37.34766336
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "평택시",
+        "type": "복지관",
+        "corporation": "에바다복지회",
+        "name": "에바다장애인종합복지관",
+        "staffQuota": 27,
+        "actualStaffCount": 23,
+        "coord": [
+            126.9332294,
+            37.36258028
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "평택시",
+        "type": "복지관",
+        "corporation": "평택복지재단",
+        "name": "평택북부장애인복지관",
+        "staffQuota": 30,
+        "actualStaffCount": 30,
+        "coord": [
+            126.9811462,
+            37.34869314
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "안양시",
+        "type": "복지관",
+        "corporation": "사단법인 성민원",
+        "name": "안양시관악장애인종합복지관",
+        "staffQuota": 52,
+        "actualStaffCount": 52,
+        "coord": [
+            127.1881083,
+            37.55973744
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "안양시",
+        "type": "복지관",
+        "corporation": "사회복지법인 돕는사람들",
+        "name": "안양시수리장애인종합복지관",
+        "staffQuota": 65,
+        "actualStaffCount": 65,
+        "coord": [
+            127.2193294,
+            37.25945517
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "시흥시",
+        "type": "복지관",
+        "corporation": "사회복지법인 룸비니",
+        "name": "시흥장애인종합복지관",
+        "staffQuota": 27,
+        "actualStaffCount": 37,
+        "coord": [
+            127.1058308,
+            37.31542256
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "김포시",
+        "type": "복지관",
+        "corporation": "사회복지법인 인천가톨릭사회복지회",
+        "name": "김포시장애인복지관",
+        "staffQuota": 32,
+        "actualStaffCount": 31,
+        "coord": [
+            127.0977953,
+            37.322273
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "파주시",
+        "type": "복지관",
+        "corporation": "주내자육원",
+        "name": "파주시장애인종합복지관",
+        "staffQuota": 32,
+        "actualStaffCount": 32,
+        "coord": [
+            126.8754659,
+            37.88424423
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "의정부시",
+        "type": "복지관",
+        "corporation": "한국지체장애인협회",
+        "name": "의정부시장애인종합복지관",
+        "staffQuota": 37,
+        "actualStaffCount": 37,
+        "coord": [
+            127.4410579,
+            37.2782606
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "광명시",
+        "type": "복지관",
+        "corporation": "(재)성모성심수도회",
+        "name": "광명장애인종합복지관",
+        "staffQuota": 36,
+        "actualStaffCount": 42,
+        "coord": [
+            127.2812614,
+            37.00130439
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "하남시",
+        "type": "복지관",
+        "corporation": "한국장로교복지재단",
+        "name": "하남시장애인복지관",
+        "staffQuota": 49,
+        "actualStaffCount": 49,
+        "coord": [
+            126.6587207,
+            37.64174662
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "군포시",
+        "type": "복지관",
+        "corporation": "사랑의손길",
+        "name": "군포시장애인종합복지관",
+        "staffQuota": 38,
+        "actualStaffCount": 46,
+        "coord": [
+            126.9207471,
+            37.13684465
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "오산시",
+        "type": "복지관",
+        "corporation": "세교복지재단",
+        "name": "오산장애인종합복지관",
+        "staffQuota": 23,
+        "actualStaffCount": 23,
+        "coord": [
+            127.1078034,
+            37.1767223
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "오산시",
+        "type": "복지관",
+        "corporation": "오산대학교 산학협력단",
+        "name": "오산시하나울복지센터",
+        "staffQuota": 20,
+        "actualStaffCount": 18,
+        "coord": [
+            127.0907194,
+            37.80182091
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "양주시",
+        "type": "복지관",
+        "corporation": "경기도시각장애인연합회",
+        "name": "경기도시각장애인복지관",
+        "staffQuota": 26,
+        "actualStaffCount": 26,
+        "coord": [
+            127.6322743,
+            37.2995342
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "양주시",
+        "type": "복지관",
+        "corporation": "휴먼복지회",
+        "name": "양주시장애인종합복지관",
+        "staffQuota": 27,
+        "actualStaffCount": 39,
+        "coord": [
+            127.5016428,
+            37.83113084
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "이천시",
+        "type": "복지관",
+        "corporation": "사회복지법인 승가원",
+        "name": "이천시장애인종합복지관",
+        "staffQuota": 46,
+        "actualStaffCount": 41,
+        "coord": [
+            127.5037881,
+            37.49673119
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "구리시",
+        "type": "복지관",
+        "corporation": "사회복지법인 휴먼복지회",
+        "name": "구리시장애인종합사회복지관",
+        "staffQuota": 36,
+        "actualStaffCount": 35,
+        "coord": [
+            127.7275772,
+            37.90845502
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "안성시",
+        "type": "복지관",
+        "corporation": "한길복지재단",
+        "name": "안성시장애인복지관",
+        "staffQuota": 23,
+        "actualStaffCount": 21,
+        "coord": [
+            127.7559861,
+            37.84575132
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "의왕시",
+        "type": "복지관",
+        "corporation": "대한불교조계종사회복지재단",
+        "name": "희망나래장애인복지관",
+        "staffQuota": 41,
+        "actualStaffCount": 41,
+        "coord": [
+            127.9688589,
+            37.31901189
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "양평군",
+        "type": "복지관",
+        "corporation": "대한불교조계종사회복지재단",
+        "name": "양평군장애인복지관",
+        "staffQuota": 35,
+        "actualStaffCount": 35,
+        "coord": [
+            128.8563723,
+            37.81975782
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "여주시",
+        "type": "복지관",
+        "corporation": "대한불교조계종 사회복지재단",
+        "name": "여주시장애인복지관",
+        "staffQuota": 35,
+        "actualStaffCount": 30,
+        "coord": [
+            128.9941715,
+            37.092482
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "동두천시",
+        "type": "복지관",
+        "corporation": "한국장로교복지재단",
+        "name": "동두천시장애인종합복지관",
+        "staffQuota": 35,
+        "actualStaffCount": 35,
+        "coord": [
+            128.5803655,
+            38.19762061
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "과천시",
+        "type": "복지관",
+        "corporation": "푸르메재단",
+        "name": "과천시장애인복지관",
+        "staffQuota": 43,
+        "actualStaffCount": 43,
+        "coord": [
+            127.907477,
+            37.71237692
+        ]
+    },
+    {
+        "sido": "경기도",
+        "sigungu": "가평군",
+        "type": "복지관",
+        "corporation": "가평군복지재단",
+        "name": "가평군장애인복지관",
+        "staffQuota": 20,
+        "actualStaffCount": 26,
+        "coord": [
+            127.9826658,
+            37.49427021
+        ]
+    },
+    {
+        "sido": "강원특별자치도",
+        "sigungu": "춘천시",
+        "type": "복지관",
+        "corporation": "사회복지법인 기독교대한감리회 사회복지재단",
+        "name": "강원특별자치도장애인종합복지관",
+        "staffQuota": 50,
+        "actualStaffCount": 50,
+        "coord": [
+            128.3948884,
+            37.36876916
+        ]
+    },
+    {
+        "sido": "강원특별자치도",
+        "sigungu": "춘천시",
+        "type": "복지관",
+        "corporation": "천주교춘천교구사회복지회",
+        "name": "춘천시장애인종합복지관",
+        "staffQuota": 38,
+        "actualStaffCount": 37,
+        "coord": [
+            127.4366333,
+            38.23598966
+        ]
+    },
+    {
+        "sido": "강원특별자치도",
+        "sigungu": "원주시",
+        "type": "복지관",
+        "corporation": "마가렛사회복지회",
+        "name": "원주시장애인종합복지관",
+        "staffQuota": 27,
+        "actualStaffCount": 27,
+        "coord": [
+            127.9211151,
+            36.94978205
+        ]
+    },
+    {
+        "sido": "강원특별자치도",
+        "sigungu": "원주시",
+        "type": "복지관",
+        "corporation": "사회복지법인 원주가톨릭사회복지회",
+        "name": "양업토마스장애인종합복지관",
+        "staffQuota": 27,
+        "actualStaffCount": 27,
+        "coord": [
+            127.4655305,
+            36.66266513
+        ]
+    },
+    {
+        "sido": "강원특별자치도",
+        "sigungu": "강릉시",
+        "type": "복지관",
+        "corporation": "(사)한국교통장애인협회",
+        "name": "강릉시장애인종합복지관",
+        "staffQuota": 27,
+        "actualStaffCount": 30,
+        "coord": [
+            127.4630498,
+            36.60412039
+        ]
+    },
+    {
+        "sido": "강원특별자치도",
+        "sigungu": "태백시",
+        "type": "복지관",
+        "corporation": "홍이회",
+        "name": "태백장애인종합복지관",
+        "staffQuota": 25,
+        "actualStaffCount": 20,
+        "coord": [
+            127.4630498,
+            36.60412039
+        ]
+    },
+    {
+        "sido": "강원특별자치도",
+        "sigungu": "속초시",
+        "type": "복지관",
+        "corporation": "사회복지법인 기독교대한감리회 사회복지재단",
+        "name": "강원특별자치도장애인종합복지관 속초분관",
+        "staffQuota": 7,
+        "actualStaffCount": 7,
+        "coord": [
+            128.2160855,
+            37.1493406
+        ]
+    },
+    {
+        "sido": "강원특별자치도",
+        "sigungu": "홍천군",
+        "type": "복지관",
+        "corporation": "대한불교조계종 사회복지재단",
+        "name": "홍천군장애인복지관",
+        "staffQuota": 24,
+        "actualStaffCount": 25,
+        "coord": [
+            127.7239238,
+            36.48836064
+        ]
+    },
+    {
+        "sido": "강원특별자치도",
+        "sigungu": "횡성군",
+        "type": "복지관",
+        "corporation": "횡성군사회복지협의회",
+        "name": "횡성군장애인종합복지관",
+        "staffQuota": 20,
+        "actualStaffCount": 22,
+        "coord": [
+            127.5698949,
+            36.30460136
+        ]
+    },
+    {
+        "sido": "강원특별자치도",
+        "sigungu": "평창군",
+        "type": "복지관",
+        "corporation": "사회복지법인 기독교대한감리회 사회복지재단",
+        "name": "강원특별자치도장애인종합복지관 평창분관",
+        "staffQuota": 8,
+        "actualStaffCount": 8,
+        "coord": [
+            127.7748654,
+            36.16812993
+        ]
+    },
+    {
+        "sido": "강원특별자치도",
+        "sigungu": "철원군",
+        "type": "복지관",
+        "corporation": "사회복지법인 기독교대한감리회 사회복지재단",
+        "name": "강원특별자치도장애인종합복지관 철원분관",
+        "staffQuota": 5,
+        "actualStaffCount": 5,
+        "coord": [
+            127.5852469,
+            36.77517819
+        ]
+    },
+    {
+        "sido": "충청북도",
+        "sigungu": "충주시",
+        "type": "복지관",
+        "corporation": "숭덕원",
+        "name": "충청북도장애인종합복지관",
+        "staffQuota": 38,
+        "actualStaffCount": 38,
+        "coord": [
+            127.4361928,
+            36.86313505
+        ]
+    },
+    {
+        "sido": "충청북도",
+        "sigungu": "청주시",
+        "type": "복지관",
+        "corporation": "천주교청주교구사회복지회",
+        "name": "청주시장애인종합복지관",
+        "staffQuota": 32,
+        "actualStaffCount": 32,
+        "coord": [
+            127.7978756,
+            36.80810692
+        ]
+    },
+    {
+        "sido": "충청북도",
+        "sigungu": "청주시",
+        "type": "복지관",
+        "corporation": "천주교청주교구사회복지회",
+        "name": "혜원장애인종합복지관",
+        "staffQuota": 35,
+        "actualStaffCount": 35,
+        "coord": [
+            127.5960642,
+            36.99825658
+        ]
+    },
+    {
+        "sido": "충청북도",
+        "sigungu": "제천시",
+        "type": "복지관",
+        "corporation": "대한불교조계종사회복지재단",
+        "name": "제천장애인종합복지관",
+        "staffQuota": 23,
+        "actualStaffCount": 23,
+        "coord": [
+            128.3686492,
+            36.98529553
+        ]
+    },
+    {
+        "sido": "충청북도",
+        "sigungu": "보은군",
+        "type": "복지관",
+        "corporation": "재단법인청주교구천주교회유지재단",
+        "name": "보은군노인장애인복지관",
+        "staffQuota": 20,
+        "actualStaffCount": 20,
+        "coord": [
+            127.1793452,
+            36.77763545
+        ]
+    },
+    {
+        "sido": "충청북도",
+        "sigungu": "옥천군",
+        "type": "복지관",
+        "corporation": "사회복지법인 전석복지재단",
+        "name": "옥천군장애인복지관",
+        "staffQuota": 25,
+        "actualStaffCount": 25,
+        "coord": [
+            127.1312024,
+            36.83869059
+        ]
+    },
+    {
+        "sido": "충청북도",
+        "sigungu": "영동군",
+        "type": "복지관",
+        "corporation": "사)한국지체장애인협회",
+        "name": "영동군장애인복지관",
+        "staffQuota": 20,
+        "actualStaffCount": 23,
+        "coord": [
+            127.1641118,
+            36.78053047
+        ]
+    },
+    {
+        "sido": "충청북도",
+        "sigungu": "증평군",
+        "type": "복지관",
+        "corporation": "증평복지재단",
+        "name": "증평군장애인복지관",
+        "staffQuota": 20,
+        "actualStaffCount": 20,
+        "coord": [
+            127.1439061,
+            36.38274137
+        ]
+    },
+    {
+        "sido": "충청북도",
+        "sigungu": "진천군",
+        "type": "복지관",
+        "corporation": "한국지체장애인협회",
+        "name": "진천군 장애인복지관",
+        "staffQuota": 22,
+        "actualStaffCount": 24,
+        "coord": [
+            127.1292677,
+            36.47413682
+        ]
+    },
+    {
+        "sido": "충청북도",
+        "sigungu": "괴산군",
+        "type": "복지관",
+        "corporation": "한국지체장애인협회",
+        "name": "괴산군장애인복지관",
+        "staffQuota": 21,
+        "actualStaffCount": 21,
+        "coord": [
+            126.5869479,
+            36.37840411
+        ]
+    },
+    {
+        "sido": "충청북도",
+        "sigungu": "음성군",
+        "type": "복지관",
+        "corporation": "대한성공회유지재단",
+        "name": "음성군장애인복지관",
+        "staffQuota": 29,
+        "actualStaffCount": 29,
+        "coord": [
+            126.9838857,
+            36.78845667
+        ]
+    },
+    {
+        "sido": "충청북도",
+        "sigungu": "단양군",
+        "type": "복지관",
+        "corporation": "대한불교 천태종복지재단",
+        "name": "단양장애인복지관",
+        "staffQuota": 19,
+        "actualStaffCount": 19,
+        "coord": [
+            126.4448608,
+            36.77299495
+        ]
+    },
+    {
+        "sido": "충청남도",
+        "sigungu": "공주시",
+        "type": "복지관",
+        "corporation": "(사)한국지체장애인협회 충남협회",
+        "name": "남부장애인종합복지관",
+        "staffQuota": 34,
+        "actualStaffCount": 26,
+        "coord": [
+            127.1486368,
+            36.2088442
+        ]
+    },
+    {
+        "sido": "충청남도",
+        "sigungu": "공주시",
+        "type": "복지관",
+        "corporation": "세종충남가톨릭사회복지회",
+        "name": "공주시 장애인종합복지관",
+        "staffQuota": 28,
+        "actualStaffCount": 28,
+        "coord": [
+            127.2547009,
+            36.27431486
+        ]
+    },
+    {
+        "sido": "충청남도",
+        "sigungu": "금산군",
+        "type": "복지관",
+        "corporation": "지자체",
+        "name": "금산군 장애인복지관",
+        "staffQuota": 20,
+        "actualStaffCount": 0,
+        "coord": [
+            126.6431639,
+            36.891412
+        ]
+    },
+    {
+        "sido": "충청남도",
+        "sigungu": "논산시",
+        "type": "복지관",
+        "corporation": "대전가톨릭사회복지회",
+        "name": "논산시사람꽃복지관",
+        "staffQuota": 30,
+        "actualStaffCount": 30,
+        "coord": [
+            126.8712133,
+            36.27331545
+        ]
+    },
+    {
+        "sido": "충청남도",
+        "sigungu": "당진시",
+        "type": "복지관",
+        "corporation": "당진시복지재단",
+        "name": "당진시 장애인종합복지관",
+        "staffQuota": 29,
+        "actualStaffCount": 29,
+        "coord": [
+            126.6561758,
+            36.10853405
+        ]
+    },
+    {
+        "sido": "충청남도",
+        "sigungu": "보령시",
+        "type": "복지관",
+        "corporation": "사회복지법인 보령학사",
+        "name": "서부장애인종합복지관",
+        "staffQuota": 34,
+        "actualStaffCount": 38,
+        "coord": [
+            126.8111257,
+            36.44991083
+        ]
+    },
+    {
+        "sido": "충청남도",
+        "sigungu": "부여군",
+        "type": "복지관",
+        "corporation": "사회복지법인 부여성심원",
+        "name": "부여군 장애인종합복지관",
+        "staffQuota": 24,
+        "actualStaffCount": 30,
+        "coord": [
+            126.6557301,
+            36.59766797
+        ]
+    },
+    {
+        "sido": "충청남도",
+        "sigungu": "서산시",
+        "type": "복지관",
+        "corporation": "(사)한국지체장애인협회 충남협회 서산시지회",
+        "name": "서산시 장애인종합복지관",
+        "staffQuota": 21,
+        "actualStaffCount": 27,
+        "coord": [
+            126.809811,
+            36.76225204
+        ]
+    },
+    {
+        "sido": "충청남도",
+        "sigungu": "서천군",
+        "type": "복지관",
+        "corporation": "대전교구천주교회유지재단",
+        "name": "서천군 장애인종합복지관",
+        "staffQuota": 20,
+        "actualStaffCount": 24,
+        "coord": [
+            126.3024503,
+            36.74608029
+        ]
+    },
+    {
+        "sido": "충청남도",
+        "sigungu": "아산시",
+        "type": "복지관",
+        "corporation": "한국지체장애인협회",
+        "name": "아산시 장애인복지관",
+        "staffQuota": 40,
+        "actualStaffCount": 40,
+        "coord": [
+            127.0926158,
+            35.81176128
+        ]
+    },
+    {
+        "sido": "충청남도",
+        "sigungu": "예산군",
+        "type": "복지관",
+        "corporation": "예산군장애인연합회",
+        "name": "예산군 장애인종합복지관",
+        "staffQuota": 27,
+        "actualStaffCount": 27,
+        "coord": [
+            127.1323509,
+            35.79753398
+        ]
+    },
+    {
+        "sido": "충청남도",
+        "sigungu": "천안시",
+        "type": "복지관",
+        "corporation": "충청남도시각장애인연합회",
+        "name": "시각장애인복지관",
+        "staffQuota": 32,
+        "actualStaffCount": 32,
+        "coord": [
+            126.6774209,
+            35.95979554
+        ]
+    },
+    {
+        "sido": "충청남도",
+        "sigungu": "천안시",
+        "type": "복지관",
+        "corporation": "대한성공회유지재단",
+        "name": "천안시 장애인종합복지관",
+        "staffQuota": 31,
+        "actualStaffCount": 31,
+        "coord": [
+            126.9495592,
+            35.93145201
+        ]
+    },
+    {
+        "sido": "충청남도",
+        "sigungu": "천안시",
+        "type": "복지관",
+        "corporation": "대한성공회유지재단",
+        "name": "천안시 누리별장애인종합복지관",
+        "staffQuota": 39,
+        "actualStaffCount": 39,
+        "coord": [
+            126.8533991,
+            35.57749892
+        ]
+    },
+    {
+        "sido": "충청남도",
+        "sigungu": "청양군",
+        "type": "복지관",
+        "corporation": "사회복지법인 보령학사",
+        "name": "서부장애인종합복지관 청양분관",
+        "staffQuota": 6,
+        "actualStaffCount": 5,
+        "coord": [
+            127.4418891,
+            35.45294554
+        ]
+    },
+    {
+        "sido": "충청남도",
+        "sigungu": "태안군",
+        "type": "복지관",
+        "corporation": "한국지체장애인협회",
+        "name": "태안군 장애인복지관",
+        "staffQuota": 21,
+        "actualStaffCount": 21,
+        "coord": [
+            126.8717616,
+            35.80500901
+        ]
+    },
+    {
+        "sido": "충청남도",
+        "sigungu": "홍성군",
+        "type": "복지관",
+        "corporation": "(사)한국지체장애인협회 충남협회 홍성군지회",
+        "name": "홍성군 장애인종합복지관",
+        "staffQuota": 28,
+        "actualStaffCount": 28,
+        "coord": [
+            127.1654033,
+            35.93447798
+        ]
+    },
+    {
+        "sido": "전북특별자치도",
+        "sigungu": "전주시",
+        "type": "복지관",
+        "corporation": "사회복지법인 동암",
+        "name": "전북특별자치도장애인복지관",
+        "staffQuota": 36,
+        "actualStaffCount": 36,
+        "coord": [
+            127.6723963,
+            36.00555239
+        ]
+    },
+    {
+        "sido": "전북특별자치도",
+        "sigungu": "고창군",
+        "type": "복지관",
+        "corporation": "(사)한두레장애인자립생활협회",
+        "name": "고창군장애인복지관",
+        "staffQuota": 19,
+        "actualStaffCount": 19,
+        "coord": [
+            127.517299,
+            35.6535102
+        ]
+    },
+    {
+        "sido": "전북특별자치도",
+        "sigungu": "군산시",
+        "type": "복지관",
+        "corporation": "전주가톨릭사회복지회",
+        "name": "군산장애인종합복지관",
+        "staffQuota": 29,
+        "actualStaffCount": 34,
+        "coord": [
+            126.682363,
+            35.44430503
+        ]
+    },
+    {
+        "sido": "전북특별자치도",
+        "sigungu": "김제시",
+        "type": "복지관",
+        "corporation": "김제제일복지재단",
+        "name": "김제시장애인종합복지관",
+        "staffQuota": 40,
+        "actualStaffCount": 40,
+        "coord": [
+            126.7462323,
+            35.71660358
+        ]
+    },
+    {
+        "sido": "전북특별자치도",
+        "sigungu": "남원시",
+        "type": "복지관",
+        "corporation": "한기장복지재단법인",
+        "name": "남원시장애인종합복지관",
+        "staffQuota": 27,
+        "actualStaffCount": 27,
+        "coord": [
+            126.7462323,
+            35.71660358
+        ]
+    },
+    {
+        "sido": "전북특별자치도",
+        "sigungu": "무주군",
+        "type": "복지관",
+        "corporation": "삼동회",
+        "name": "무주장애인종합복지관",
+        "staffQuota": 20,
+        "actualStaffCount": 20,
+        "coord": [
+            126.3879677,
+            34.80414599
+        ]
+    },
+    {
+        "sido": "전북특별자치도",
+        "sigungu": "부안군",
+        "type": "복지관",
+        "corporation": "한기장복지재단",
+        "name": "부안장애인종합복지관",
+        "staffQuota": 20,
+        "actualStaffCount": 23,
+        "coord": [
+            126.4187903,
+            34.80898484
+        ]
+    },
+    {
+        "sido": "전북특별자치도",
+        "sigungu": "순창군",
+        "type": "복지관",
+        "corporation": "사단법인 한국지체장애인협회",
+        "name": "순창군장애인복지관",
+        "staffQuota": 10,
+        "actualStaffCount": 10,
+        "coord": [
+            127.7147608,
+            34.77321201
+        ]
+    },
+    {
+        "sido": "전북특별자치도",
+        "sigungu": "완주군",
+        "type": "복지관",
+        "corporation": "나누는사람들",
+        "name": "완주군장애인복지관",
+        "staffQuota": 19,
+        "actualStaffCount": 19,
+        "coord": [
+            127.4795843,
+            35.00645899
+        ]
+    },
+    {
+        "sido": "전북특별자치도",
+        "sigungu": "익산시",
+        "type": "복지관",
+        "corporation": "사회복지법인중도원",
+        "name": "익산시장애인종합복지관",
+        "staffQuota": 33,
+        "actualStaffCount": 33,
+        "coord": [
+            126.6947895,
+            35.00812059
+        ]
+    },
+    {
+        "sido": "전북특별자치도",
+        "sigungu": "장수군",
+        "type": "복지관",
+        "corporation": "사단법인 나누는사람들",
+        "name": "장수군장애인복지관",
+        "staffQuota": 19,
+        "actualStaffCount": 16,
+        "coord": [
+            127.5743154,
+            34.96518846
+        ]
+    },
+    {
+        "sido": "전북특별자치도",
+        "sigungu": "전주시",
+        "type": "복지관",
+        "corporation": "중도원",
+        "name": "전주장애인종합복지관",
+        "staffQuota": 23,
+        "actualStaffCount": 23,
+        "coord": [
+            127.0579417,
+            35.3717852
+        ]
+    },
+    {
+        "sido": "전북특별자치도",
+        "sigungu": "정읍시",
+        "type": "복지관",
+        "corporation": "지자체",
+        "name": "정읍시장애인복지관",
+        "staffQuota": 25,
+        "actualStaffCount": 22,
+        "coord": [
+            127.4617775,
+            35.21607419
+        ]
+    },
+    {
+        "sido": "전북특별자치도",
+        "sigungu": "진안군",
+        "type": "복지관",
+        "corporation": "반월복지재단",
+        "name": "진안군장애인종합복지관",
+        "staffQuota": 19,
+        "actualStaffCount": 19,
+        "coord": [
+            127.2887987,
+            34.61355111
+        ]
+    },
+    {
+        "sido": "전라남도",
+        "sigungu": "강진군",
+        "type": "복지관",
+        "corporation": "한국지체장애인협회",
+        "name": "강진군장애인종합복지관",
+        "staffQuota": 22,
+        "actualStaffCount": 20,
+        "coord": [
+            127.0865912,
+            34.77417506
+        ]
+    },
+    {
+        "sido": "전라남도",
+        "sigungu": "고흥군",
+        "type": "복지관",
+        "corporation": "전라남도장애인단체총연합회",
+        "name": "고흥군장애인종합복지관",
+        "staffQuota": 19,
+        "actualStaffCount": 19,
+        "coord": [
+            126.7614097,
+            34.63823468
+        ]
+    },
+    {
+        "sido": "전라남도",
+        "sigungu": "광양시",
+        "type": "복지관",
+        "corporation": "삼동회",
+        "name": "광양시 광양장애인복지관",
+        "staffQuota": 31,
+        "actualStaffCount": 31,
+        "coord": [
+            126.6075924,
+            34.56318263
+        ]
+    },
+    {
+        "sido": "전라남도",
+        "sigungu": "광양시",
+        "type": "복지관",
+        "corporation": "삼동회",
+        "name": "광양시 중마장애인복지관",
+        "staffQuota": 40,
+        "actualStaffCount": 40,
+        "coord": [
+            126.7038294,
+            34.794693
+        ]
+    },
+    {
+        "sido": "전라남도",
+        "sigungu": "구례군",
+        "type": "복지관",
+        "corporation": "재단법인 대한예수교장로회순천노회유지재단",
+        "name": "구례군장애인복지관",
+        "staffQuota": 20,
+        "actualStaffCount": 20,
+        "coord": [
+            126.4660474,
+            34.99732669
+        ]
+    },
+    {
+        "sido": "전라남도",
+        "sigungu": "나주시",
+        "type": "복지관",
+        "corporation": "사단법인 선인사회복지회",
+        "name": "전라남도장애인종합복지관",
+        "staffQuota": 29,
+        "actualStaffCount": 26,
+        "coord": [
+            126.7765862,
+            35.3022522
+        ]
+    },
+    {
+        "sido": "전라남도",
+        "sigungu": "담양군",
+        "type": "복지관",
+        "corporation": "개인",
+        "name": "혜림종합복지관",
+        "staffQuota": 36,
+        "actualStaffCount": 36,
+        "coord": [
+            126.7439812,
+            34.31385256
+        ]
+    },
+    {
+        "sido": "전라남도",
+        "sigungu": "목포시",
+        "type": "복지관",
+        "corporation": "한국지체장애인협회",
+        "name": "목포시장애인종합복지관",
+        "staffQuota": 26,
+        "actualStaffCount": 26,
+        "coord": [
+            126.2586593,
+            34.47157939
+        ]
+    },
+    {
+        "sido": "전라남도",
+        "sigungu": "목포시",
+        "type": "복지관",
+        "corporation": "성골롬반복지재단",
+        "name": "명도복지관",
+        "staffQuota": 25,
+        "actualStaffCount": 25,
+        "coord": [
+            129.3675115,
+            36.00971147
+        ]
+    },
+    {
+        "sido": "전라남도",
+        "sigungu": "무안군",
+        "type": "복지관",
+        "corporation": "대송의료재단",
+        "name": "무안군장애인종합복지관",
+        "staffQuota": 20,
+        "actualStaffCount": 20,
+        "coord": [
+            129.4096634,
+            36.07878865
+        ]
+    },
+    {
+        "sido": "전라남도",
+        "sigungu": "보성군",
+        "type": "복지관",
+        "corporation": "전남밀알복지재단",
+        "name": "보성군장애인복지관",
+        "staffQuota": 20,
+        "actualStaffCount": 18,
+        "coord": [
+            129.3582078,
+            36.00599605
+        ]
+    },
+    {
+        "sido": "전라남도",
+        "sigungu": "순천시",
+        "type": "복지관",
+        "corporation": "(사)한국YWCA연합회후원회순천YWCA",
+        "name": "순천시장애인종합복지관",
+        "staffQuota": 30,
+        "actualStaffCount": 30,
+        "coord": [
+            129.4084979,
+            35.97170921
+        ]
+    },
+    {
+        "sido": "전라남도",
+        "sigungu": "여수시",
+        "type": "복지관",
+        "corporation": "은현",
+        "name": "여수시장애인종합복지관",
+        "staffQuota": 32,
+        "actualStaffCount": 25,
+        "coord": [
+            129.2184253,
+            35.88040307
+        ]
+    },
+    {
+        "sido": "전라남도",
+        "sigungu": "영암군",
+        "type": "복지관",
+        "corporation": "영암군",
+        "name": "영암군장애인종합복지관",
+        "staffQuota": 15,
+        "actualStaffCount": 15,
+        "coord": [
+            128.1414386,
+            36.13273369
+        ]
+    },
+    {
+        "sido": "전라남도",
+        "sigungu": "완도군",
+        "type": "복지관",
+        "corporation": "(사)전라남도장애인단체총연합회",
+        "name": "완도군장애인복지관",
+        "staffQuota": 14,
+        "actualStaffCount": 14,
+        "coord": [
+            128.6863563,
+            36.65682569
+        ]
+    },
+    {
+        "sido": "전라남도",
+        "sigungu": "장성군",
+        "type": "복지관",
+        "corporation": "사)한국지체장애인협회",
+        "name": "장성군장애인종합복지관",
+        "staffQuota": 22,
+        "actualStaffCount": 21,
+        "coord": [
+            128.6997687,
+            36.55941721
+        ]
+    },
+    {
+        "sido": "전라남도",
+        "sigungu": "진도군",
+        "type": "복지관",
+        "corporation": "임마누엘복지재단",
+        "name": "진도군장애인종합복지관",
+        "staffQuota": 24,
+        "actualStaffCount": 23,
+        "coord": [
+            128.3305285,
+            36.10601408
+        ]
+    },
+    {
+        "sido": "전라남도",
+        "sigungu": "해남군",
+        "type": "복지관",
+        "corporation": "대한불교조계종사회복지재단",
+        "name": "해남군장애인종합복지관",
+        "staffQuota": 23,
+        "actualStaffCount": 22,
+        "coord": [
+            128.6233634,
+            36.81879231
+        ]
+    },
+    {
+        "sido": "경상북도",
+        "sigungu": "경산시",
+        "type": "복지관",
+        "corporation": "사회복지법인 기아대책",
+        "name": "경산시장애인종합복지관",
+        "staffQuota": 26,
+        "actualStaffCount": 26,
+        "coord": [
+            128.941273,
+            35.97114342
+        ]
+    },
+    {
+        "sido": "경상북도",
+        "sigungu": "경주시",
+        "type": "복지관",
+        "corporation": "사회복지법인대한불교조계종불국사복지재단",
+        "name": "경주시장애인종합복지관",
+        "staffQuota": 27,
+        "actualStaffCount": 23,
+        "coord": [
+            128.941273,
+            35.97114342
+        ]
+    },
+    {
+        "sido": "경상북도",
+        "sigungu": "구미시",
+        "type": "복지관",
+        "corporation": "한국교통장애인협회",
+        "name": "구미시장애인종합복지관",
+        "staffQuota": 42,
+        "actualStaffCount": 42,
+        "coord": [
+            128.1549547,
+            36.44243049
+        ]
+    },
+    {
+        "sido": "경상북도",
+        "sigungu": "문경시",
+        "type": "복지관",
+        "corporation": "한국지체장애인협회",
+        "name": "문경시장애인종합복지관",
+        "staffQuota": 29,
+        "actualStaffCount": 29,
+        "coord": [
+            128.1870182,
+            36.58735745
+        ]
+    },
+    {
+        "sido": "경상북도",
+        "sigungu": "봉화군",
+        "type": "복지관",
+        "corporation": "애명",
+        "name": "경상북도장애인종합복지관봉화분관",
+        "staffQuota": 4,
+        "actualStaffCount": 4,
+        "coord": [
+            128.7478058,
+            35.80178997
+        ]
+    },
+    {
+        "sido": "경상북도",
+        "sigungu": "상주시",
+        "type": "복지관",
+        "corporation": "천주교안동교구사회복지회",
+        "name": "상주시장애인종합복지관",
+        "staffQuota": 32,
+        "actualStaffCount": 32,
+        "coord": [
+            128.6801543,
+            36.35949398
+        ]
+    },
+    {
+        "sido": "경상북도",
+        "sigungu": "안동시",
+        "type": "복지관",
+        "corporation": "애명",
+        "name": "경상북도장애인종합복지관",
+        "staffQuota": 31,
+        "actualStaffCount": 28,
+        "coord": [
+            129.1186877,
+            36.66192568
+        ]
+    },
+    {
+        "sido": "경상북도",
+        "sigungu": "안동시",
+        "type": "복지관",
+        "corporation": "대한불교조계종",
+        "name": "안동시장애인종합복지관",
+        "staffQuota": 23,
+        "actualStaffCount": 23,
+        "coord": [
+            128.7563776,
+            35.63339376
+        ]
+    },
+    {
+        "sido": "경상북도",
+        "sigungu": "영덕군",
+        "type": "복지관",
+        "corporation": "애명",
+        "name": "경상북도장애인종합복지관영덕분관",
+        "staffQuota": 4,
+        "actualStaffCount": 4,
+        "coord": [
+            128.4191918,
+            35.99084649
+        ]
+    },
+    {
+        "sido": "경상북도",
+        "sigungu": "영양군",
+        "type": "복지관",
+        "corporation": "사회복지법인 애명",
+        "name": "경상북도장애인종합복지관영양분관",
+        "staffQuota": 4,
+        "actualStaffCount": 4,
+        "coord": [
+            128.7373256,
+            36.89365678
+        ]
+    },
+    {
+        "sido": "경상북도",
+        "sigungu": "영주시",
+        "type": "복지관",
+        "corporation": "대한불교조계종사회복지재단",
+        "name": "영주시장애인종합복지관",
+        "staffQuota": 26,
+        "actualStaffCount": 26,
+        "coord": [
+            129.3955595,
+            36.99233207
+        ]
+    },
+    {
+        "sido": "경상북도",
+        "sigungu": "영천시",
+        "type": "복지관",
+        "corporation": "한국지체장애인협회",
+        "name": "영천시장애인종합복지관",
+        "staffQuota": 22,
+        "actualStaffCount": 22,
+        "coord": [
+            130.9088781,
+            37.49581921
+        ]
+    },
+    {
+        "sido": "경상북도",
+        "sigungu": "울진군",
+        "type": "복지관",
+        "corporation": "고우이복지재단",
+        "name": "울진군장애인종합복지관",
+        "staffQuota": 20,
+        "actualStaffCount": 21,
+        "coord": [
+            128.558692,
+            35.19439726
+        ]
+    },
+    {
+        "sido": "경상북도",
+        "sigungu": "의성군",
+        "type": "복지관",
+        "corporation": "사회복지법인 애명",
+        "name": "경북장애인종합복지관 의성분관",
+        "staffQuota": 4,
+        "actualStaffCount": 4,
+        "coord": [
+            128.6789422,
+            35.25043527
+        ]
+    },
+    {
+        "sido": "경상북도",
+        "sigungu": "청도군",
+        "type": "복지관",
+        "corporation": "휴먼복지회",
+        "name": "청도군장애인복지관",
+        "staffQuota": 25,
+        "actualStaffCount": 25,
+        "coord": [
+            128.6789422,
+            35.25043527
+        ]
+    },
+    {
+        "sido": "경상북도",
+        "sigungu": "칠곡군",
+        "type": "복지관",
+        "corporation": "사)한국지체장애인협회",
+        "name": "칠곡군장애인종합복지관",
+        "staffQuota": 23,
+        "actualStaffCount": 23,
+        "coord": [
+            128.6789422,
+            35.25043527
+        ]
+    },
+    {
+        "sido": "경상북도",
+        "sigungu": "포항시",
+        "type": "복지관",
+        "corporation": "대구가톨릭사회복지회",
+        "name": "포항시장애인 종합복지관",
+        "staffQuota": 22,
+        "actualStaffCount": 21,
+        "coord": [
+            128.7101666,
+            35.13143093
+        ]
+    },
+    {
+        "sido": "경상북도",
+        "sigungu": "포항시",
+        "type": "복지관",
+        "corporation": "사회복지법인 열린가람",
+        "name": "포항시북부장애인 종합복지관",
+        "staffQuota": 28,
+        "actualStaffCount": 25,
+        "coord": [
+            128.1210115,
+            35.18100032
+        ]
+    },
+    {
+        "sido": "경상북도",
+        "sigungu": "포항시",
+        "type": "복지관",
+        "corporation": "사단법인 경북시각장애인연합회",
+        "name": "경상북도 시각장애인복지관",
+        "staffQuota": 22,
+        "actualStaffCount": 22,
+        "coord": [
+            128.4199928,
+            34.8729955
+        ]
+    },
+    {
+        "sido": "경상북도",
+        "sigungu": "포항시",
+        "type": "복지관",
+        "corporation": "경북행복재단",
+        "name": "경상북도여성 장애인복지관",
+        "staffQuota": 20,
+        "actualStaffCount": 20,
+        "coord": [
+            128.0604844,
+            34.99686104
+        ]
+    },
+    {
+        "sido": "경상남도",
+        "sigungu": "거제시",
+        "type": "복지관",
+        "corporation": "(재)거제시희망복지재단",
+        "name": "거제시장애인복지관",
+        "staffQuota": 22,
+        "actualStaffCount": 20,
+        "coord": [
+            128.8761079,
+            35.26342626
+        ]
+    },
+    {
+        "sido": "경상남도",
+        "sigungu": "거창군",
+        "type": "복지관",
+        "corporation": "대한불교조계종 사회복지재단",
+        "name": "거창군삶의쉼터장애인복지관",
+        "staffQuota": 19,
+        "actualStaffCount": 22,
+        "coord": [
+            128.7637299,
+            35.48008918
+        ]
+    },
+    {
+        "sido": "경상남도",
+        "sigungu": "고성군",
+        "type": "복지관",
+        "corporation": "천주교마산교구사회복지회",
+        "name": "고성군장애인복지센터",
+        "staffQuota": 8,
+        "actualStaffCount": 8,
+        "coord": [
+            128.6462904,
+            34.86953057
+        ]
+    },
+    {
+        "sido": "경상남도",
+        "sigungu": "김해시",
+        "type": "복지관",
+        "corporation": "재단법인 김해시복지재단",
+        "name": "김해시장애인종합복지관",
+        "staffQuota": 24,
+        "actualStaffCount": 22,
+        "coord": [
+            129.0403128,
+            35.34582549
+        ]
+    },
+    {
+        "sido": "경상남도",
+        "sigungu": "김해시",
+        "type": "복지관",
+        "corporation": "재단법인 김해시복지재단",
+        "name": "김해시서부장애인종합복지관",
+        "staffQuota": 20,
+        "actualStaffCount": 19,
+        "coord": [
+            128.4950455,
+            35.53243968
+        ]
+    },
+    {
+        "sido": "경상남도",
+        "sigungu": "남해군",
+        "type": "복지관",
+        "corporation": "전영",
+        "name": "남해장애인종합복지관",
+        "staffQuota": 22,
+        "actualStaffCount": 22,
+        "coord": [
+            128.3278393,
+            34.97501144
+        ]
+    },
+    {
+        "sido": "경상남도",
+        "sigungu": "밀양시",
+        "type": "복지관",
+        "corporation": "사회복지법인 인애복지재단",
+        "name": "밀양시장애인복지관",
+        "staffQuota": 25,
+        "actualStaffCount": 26,
+        "coord": [
+            127.9334291,
+            34.8165268
+        ]
+    },
+    {
+        "sido": "경상남도",
+        "sigungu": "사천시",
+        "type": "복지관",
+        "corporation": "(사)경상남도장애인부모연대",
+        "name": "사천시장애인종합복지관",
+        "staffQuota": 30,
+        "actualStaffCount": 31,
+        "coord": [
+            127.8819255,
+            35.41476323
+        ]
+    },
+    {
+        "sido": "경상남도",
+        "sigungu": "산청군",
+        "type": "복지관",
+        "corporation": "사회복지법인 두류복지재단",
+        "name": "산엔청복지관",
+        "staffQuota": 33,
+        "actualStaffCount": 33,
+        "coord": [
+            127.7297797,
+            35.50877049
+        ]
+    },
+    {
+        "sido": "경상남도",
+        "sigungu": "양산시",
+        "type": "복지관",
+        "corporation": "(재)양산시복지재단",
+        "name": "양산시장애인복지관",
+        "staffQuota": 23,
+        "actualStaffCount": 28,
+        "coord": [
+            127.888582,
+            35.68514912
+        ]
+    },
+    {
+        "sido": "경상남도",
+        "sigungu": "양산시",
+        "type": "복지관",
+        "corporation": "(재)양산시복지재단",
+        "name": "시나브로복지관",
+        "staffQuota": 22,
+        "actualStaffCount": 31,
+        "coord": [
+            128.1569121,
+            35.56841242
+        ]
+    },
+    {
+        "sido": "경상남도",
+        "sigungu": "진주시",
+        "type": "복지관",
+        "corporation": "전영",
+        "name": "진주시장애인종합복지관",
+        "staffQuota": 24,
+        "actualStaffCount": 24,
+        "coord": [
+            126.5530069,
+            33.45254919
+        ]
+    },
+    {
+        "sido": "경상남도",
+        "sigungu": "창녕군",
+        "type": "복지관",
+        "corporation": "경상남도지체장애인협회창녕군지회",
+        "name": "창녕군장애인종합복지관",
+        "staffQuota": 27,
+        "actualStaffCount": 30,
+        "coord": [
+            126.5251193,
+            33.50141092
+        ]
+    },
+    {
+        "sido": "경상남도",
+        "sigungu": "창원시",
+        "type": "복지관",
+        "corporation": "사회복지법인범숙",
+        "name": "창원시장애인종합복지관",
+        "staffQuota": 21,
+        "actualStaffCount": 21,
+        "coord": [
+            126.5845893,
+            33.2869107
+        ]
+    },
+    {
+        "sido": "경상남도",
+        "sigungu": "창원시",
+        "type": "복지관",
+        "corporation": "경상남도사회서비스원",
+        "name": "경상남도장애인종합복지관",
+        "staffQuota": 29,
+        "actualStaffCount": 29,
+        "coord": [
+            126.5812624,
+            33.47100632
+        ]
+    },
+    {
+        "sido": "경상남도",
+        "sigungu": "창원시",
+        "type": "복지관",
+        "corporation": "천주교마산교구사회복지회",
+        "name": "마산장애인복지관",
+        "staffQuota": 20,
+        "actualStaffCount": 21,
+        "coord": [
+            126.4256496,
+            33.48488857
+        ]
+    },
+    {
+        "sido": "경상남도",
+        "sigungu": "창원시",
+        "type": "",
+        "corporation": "마산교구천주교회유지재단",
+        "name": "진해장애인복지관",
+        "staffQuota": 20,
+        "actualStaffCount": 20,
+        "coord": [
+            "",
+            ""
+        ]
+    },
+    {
+        "sido": "경상남도",
+        "sigungu": "통영시",
+        "type": "",
+        "corporation": "통영시사회복지협의회",
+        "name": "통영시장애인종합복지관",
+        "staffQuota": 26,
+        "actualStaffCount": 26,
+        "coord": [
+            "",
+            ""
+        ]
+    },
+    {
+        "sido": "경상남도",
+        "sigungu": "하동군",
+        "type": "",
+        "corporation": "지자체",
+        "name": "하동군노인장애인종합복지관",
+        "staffQuota": 19,
+        "actualStaffCount": 19,
+        "coord": [
+            "",
+            ""
+        ]
+    },
+    {
+        "sido": "경상남도",
+        "sigungu": "함안군",
+        "type": "",
+        "corporation": "사)경상남도지체장애인연합회 함안군지회",
+        "name": "함안군장애인재활센터",
+        "staffQuota": 3,
+        "actualStaffCount": 3,
+        "coord": [
+            "",
+            ""
+        ]
+    },
+    {
+        "sido": "경상남도",
+        "sigungu": "함양군",
+        "type": "",
+        "corporation": "사회복지법인함양군복지회",
+        "name": "함양군장애인복지센터",
+        "staffQuota": 5,
+        "actualStaffCount": 5,
+        "coord": [
+            "",
+            ""
+        ]
+    },
+    {
+        "sido": "경상남도",
+        "sigungu": "합천군",
+        "type": "",
+        "corporation": "천주교마산교구사회복지회",
+        "name": "합천군장애인복지센터",
+        "staffQuota": 4,
+        "actualStaffCount": 4,
+        "coord": [
+            "",
+            ""
+        ]
+    },
+    {
+        "sido": "제주특별자치도",
+        "sigungu": "서귀포시",
+        "type": "",
+        "corporation": "춘강",
+        "name": "서귀포시장애인종합복지관",
+        "staffQuota": 38,
+        "actualStaffCount": 46,
+        "coord": [
+            "",
+            ""
+        ]
+    },
+    {
+        "sido": "제주특별자치도",
+        "sigungu": "제주시",
+        "type": "",
+        "corporation": "사회복지법인 농애원",
+        "name": "제주도농아복지관",
+        "staffQuota": 28,
+        "actualStaffCount": 33,
+        "coord": [
+            "",
+            ""
+        ]
+    },
+    {
+        "sido": "제주특별자치도",
+        "sigungu": "제주시",
+        "type": "",
+        "corporation": "제주특별자치도사회서비스원",
+        "name": "우리복지관",
+        "staffQuota": 26,
+        "actualStaffCount": 29,
+        "coord": [
+            "",
+            ""
+        ]
+    },
+    {
+        "sido": "제주특별자치도",
+        "sigungu": "제주시",
+        "type": "",
+        "corporation": "한국지체장애인협회",
+        "name": "탐라장애인종합복지관",
+        "staffQuota": 64,
+        "actualStaffCount": 64,
+        "coord": [
+            "",
+            ""
+        ]
+    },
+    {
+        "sido": "제주특별자치도",
+        "sigungu": "제주시",
+        "type": "",
+        "corporation": "춘강",
+        "name": "제주특별자치도장애인종합복지관",
+        "staffQuota": 42,
+        "actualStaffCount": 52,
+        "coord": [
+            "",
+            ""
+        ]
+    },
+    {
+        "sido": "제주특별자치도",
+        "sigungu": "제주시",
+        "type": "",
+        "corporation": "사회복지법인 삼다",
+        "name": "제주시각장애인복지관",
+        "staffQuota": 29,
+        "actualStaffCount": 31,
+        "coord": [
+            "",
+            ""
+        ]
+    }
+]

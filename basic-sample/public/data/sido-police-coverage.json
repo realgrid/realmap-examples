@@ -1,0 +1,104 @@
+[
+    {
+        "sido": "서울특별시",
+        "officers": "28717",
+        "population": "9729107",
+        "perOfficer": "339"
+    },
+    {
+        "sido": "부산광역시",
+        "officers": "9058",
+        "population": "3413841",
+        "perOfficer": "377"
+    },
+    {
+        "sido": "대구광역시",
+        "officers": "5752",
+        "population": "2438031",
+        "perOfficer": "424"
+    },
+    {
+        "sido": "인천광역시",
+        "officers": "6446",
+        "population": "2957026",
+        "perOfficer": "459"
+    },
+    {
+        "sido": "광주광역시",
+        "officers": "3437",
+        "population": "1456468",
+        "perOfficer": "424"
+    },
+    {
+        "sido": "대전광역시",
+        "officers": "3222",
+        "population": "1474870",
+        "perOfficer": "458"
+    },
+    {
+        "sido": "울산광역시",
+        "officers": "2474",
+        "population": "1148019",
+        "perOfficer": "464"
+    },
+    {
+        "sido": "세종특별자치시",
+        "officers": "546",
+        "population": "340575",
+        "perOfficer": "624"
+    },
+    {
+        "sido": "경기도",
+        "officers": "23462",
+        "population": "13239666",
+        "perOfficer": "565"
+    },
+    {
+        "sido": "강원특별자치도",
+        "officers": "4258",
+        "population": "1541502",
+        "perOfficer": "362"
+    },
+    {
+        "sido": "충청북도",
+        "officers": "3574",
+        "population": "1600007",
+        "perOfficer": "448"
+    },
+    {
+        "sido": "충청남도",
+        "officers": "4627",
+        "population": "2123709",
+        "perOfficer": "459"
+    },
+    {
+        "sido": "전북특별자치도",
+        "officers": "4954",
+        "population": "1818917",
+        "perOfficer": "367"
+    },
+    {
+        "sido": "전라남도",
+        "officers": "5464",
+        "population": "1868745",
+        "perOfficer": "342"
+    },
+    {
+        "sido": "경상북도",
+        "officers": "6528",
+        "population": "2665836",
+        "perOfficer": "408"
+    },
+    {
+        "sido": "경상남도",
+        "officers": "6961",
+        "population": "3362553",
+        "perOfficer": "483"
+    },
+    {
+        "sido": "제주특별자치도",
+        "officers": "1769",
+        "population": "670989",
+        "perOfficer": "379"
+    }
+]

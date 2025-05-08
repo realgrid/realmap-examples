@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RealMap - 세계 시계</title>
+<style>
+html {
+	margin: 0px;
+}
+body {
+	margin: 20px 30px;
+}
+#realmap {
+	width: 950px;
+	height: 650px;
+    border: 1px solid lightgray;
+    margin-bottom: 20px;
+}
+</style>
+<link href="../css/realmap-style.css" rel="stylesheet">
+
+<style>
+.green-layout {
+    background-color: #00880020;
+}
+.red-button {
+    color: red;
+}
+.glass-effect {
+	filter: url(#glassFilter);
+}
+</style>
+
+<script type="text/javascript" src="../js/realmap-lic.js"></script>
+<script type="text/javascript" src="../js/realmap.1.0.0.min.js"></script>
+<script type="text/javascript" src="../js/domutils.js"></script>
+
+<script type="text/javascript" src="./clock-gauge.js"></script>
+<script type="text/javascript">
+	window.addEventListener('DOMContentLoaded', function () {
+		try {
+			init();
+		} catch (err) {
+			alert(err);
+			console.error(err);
+		}
+	});	
+</script>
+</head>
+<body>
+	<svg width="0" height="0" style="position: absolute;">
+    <defs>
+			<radialGradient id="gradientFill" cx="25%" cy="25%" r="100%" fx="25%" fy="25%">
+				<stop offset="0%" stop-color="#223344" />
+				<stop offset="80%" stop-color="#001122" />
+				<stop offset="100%" stop-color="#000011" />
+			</radialGradient>
+			<filter id="dropShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <!-- 쉐도우 효과 -->
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="blur"/>
+      <feOffset dx="5" dy="8" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.4" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadowBlur"/>
+      
+      <!-- 유리 효과 -->
+      <feSpecularLighting in="SourceAlpha" surfaceScale="5" specularConstant="0.3" specularExponent="20" lighting-color="#FFFFFF" result="specOut">
+        <fePointLight x="150" y="60" z="200"/>
+      </feSpecularLighting>
+      <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut"/>
+      <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic" k1="0" k2="1" k3="0.1" k4="0" result="litPaint"/>
+      
+      <!-- 합치기 -->
+      <feMerge>
+        <feMergeNode in="shadowBlur"/>
+        <feMergeNode in="litPaint"/>
+      </feMerge>
+	  </filter>	
+		</defs>
+  </svg>
+	<div id="realmap"></div>
+	<div id="actions"></div>
+	
+</body>
+</html>		

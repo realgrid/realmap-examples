@@ -1,0 +1,65 @@
+[
+    {
+        "label": "Yemen to Java",
+        "coord": [
+            [48.516388, 15.552727],
+            [110.004444, -7.491667]
+        ],
+        "className": "animated-line",
+        "color": "#666"
+    },
+    {
+        "label": "Yemen to La reunion",
+        "coord": [
+            [48.516388, 15.552727],
+            [55.5325, -21.114444]
+        ],
+        "className": "animated-line",
+        "color": "#666"
+    },
+    {
+        "label": "La reunion to Brazil",
+        "coord": [
+            [55.5325, -21.114444],
+            [-43.2, -22.9]
+        ],
+        "className": "animated-line",
+        "color": "#666"
+    },
+    {
+        "label": "Yemen to India",
+        "coord": [
+            [48.516388, 15.552727],
+            [78, 21]
+        ],
+        "className": "animated-line",
+        "color": "#666"
+    },
+    {
+        "label": "Java to Amsterdam",
+        "coord": [
+            [110.004444, -7.491667],
+            [4.9, 52.366667]
+        ],
+        "className": "animated-line",
+        "color": "#666"
+    },
+    {
+        "label": "UK to Antilles",
+        "coord": [
+            [-3, 55],
+            [-61.030556, 14.681944]
+        ],
+        "className": "animated-line",
+        "color": "#666"
+    },
+    {
+        "label": "Paris to Guyane",
+        "coord": [
+            [2.352222, 48.856613],
+            [-53, 4]
+        ],
+        "className": "animated-line",
+        "color": "#666"
+    }
+]

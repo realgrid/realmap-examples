@@ -1,0 +1,159 @@
+[
+    {
+        "b-code": "3611000000",
+        "name": "세종시",
+        "sido": "세종특별자치시",
+        "laborForce": "213",
+        "employmentRate": "66.1",
+        "coord": [
+            127.1867,
+            36.7068
+        ]
+    },
+    {
+        "laborForce": 5204,
+        "employmentRate": 1478.1000000000001,
+        "name": "서울특별시",
+        "coord": [
+            126.9877,
+            37.8582
+        ],
+        "offset": [-0.2, 0.1]
+    },
+    {
+        "laborForce": 1697,
+        "employmentRate": 907.1999999999999,
+        "name": "부산광역시",
+        "coord": [
+            129.0097,
+            35.1486
+        ]
+    },
+    {
+        "laborForce": 1209,
+        "employmentRate": 523,
+        "name": "대구광역시",
+        "coord": [
+            128.5955,
+            35.9939
+        ]
+    },
+    {
+        "laborForce": 1741,
+        "employmentRate": 635.8,
+        "name": "인천광역시",
+        "coord": [
+            126.1944,
+            37.4961
+        ],
+        "offset": [-1, 0]
+    },
+    {
+        "laborForce": 795,
+        "employmentRate": 299.4,
+        "name": "광주광역시",
+        "coord": [
+            126.8219,
+            35.155
+        ]
+    },
+    {
+        "laborForce": 810,
+        "employmentRate": 298.3,
+        "name": "대전광역시",
+        "coord": [
+            127.55,
+            36.2353
+        ]
+    },
+    {
+        "laborForce": 587,
+        "employmentRate": 295.40000000000003,
+        "name": "울산광역시",
+        "coord": [
+            129.4604,
+            35.5374
+        ]
+    },
+    {
+        "laborForce": 7752,
+        "employmentRate": 1912.6999999999998,
+        "name": "경기도",
+        "coord": [
+            127.5152,
+            37.4264
+        ]
+    },
+    {
+        "laborForce": 901,
+        "employmentRate": 1297.3,
+        "name": "강원특별자치도",
+        "coord": [
+            128.347,
+            37.7185
+        ]
+    },
+    {
+        "laborForce": 970,
+        "employmentRate": 737.4999999999998,
+        "name": "충청북도",
+        "coord": [
+            127.9639,
+            36.9066
+        ]
+    },
+    {
+        "laborForce": 1316,
+        "employmentRate": 1004.6,
+        "name": "충청남도",
+        "coord": [
+            126.6909,
+            36.5312
+        ]
+    },
+    {
+        "laborForce": 999,
+        "employmentRate": 963.1000000000001,
+        "name": "전북특별자치도",
+        "coord": [
+            126.9741,
+            35.819
+        ]
+    },
+    {
+        "laborForce": 1034,
+        "employmentRate": 1538.7999999999997,
+        "name": "전라남도",
+        "coord": [
+            127.2716,
+            34.9715
+        ]
+    },
+    {
+        "laborForce": 1472,
+        "employmentRate": 1491.1000000000001,
+        "name": "경상북도",
+        "coord": [
+            129.0499,
+            36.6869
+        ]
+    },
+    {
+        "laborForce": 1779,
+        "employmentRate": 1132.8999999999999,
+        "name": "경상남도",
+        "coord": [
+            127.953,
+            35.3317
+        ]
+    },
+    {
+        "laborForce": 405,
+        "employmentRate": 139.4,
+        "name": "제주특별자치도",
+        "coord": [
+            126.5425,
+            33.4471
+        ]
+    }
+]
