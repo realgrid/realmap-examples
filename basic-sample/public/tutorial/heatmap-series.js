@@ -1,9 +1,3 @@
-/**
- * @demo
- * 
- * 연간 이상기온
- * 데이터 출처: https://ourworldindata.org/grapher/annual-temperature-anomalies?tab=table
- */
 const config = {
     body: {
         projection: 'mercator',
@@ -39,10 +33,6 @@ const config = {
 };
 
 let chart;
-
-function setActions(container) {
-    
-}
 
 async function init() {
     chart = await RealMap.createChartAsync(document, 'realmap', config, true, () => {});
