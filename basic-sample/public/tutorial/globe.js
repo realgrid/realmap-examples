@@ -53,29 +53,6 @@ const config = {
 
 let chart;
 
-function setActions(container) {
-    createCheckBox(
-        container,
-        'Debug',
-        function (e) {
-            RealMap.setDebugging(_getChecked(e));
-            chart.render();
-        },
-        false
-    );
-    createButton(container, 'Test', async function (e) {
-    });
-    createCheckBox(
-        container,
-        'Zoomable',
-        async function (e) {
-            config.body.zoomable = _getChecked(e);
-            await chart.loadAsync(config);
-        },
-        true
-    );
-}
-
 async function init() {
     chart = await RealMap.createChartAsync(
         document,
@@ -83,5 +60,4 @@ async function init() {
         config,
         true,
     );
-    setActions('actions');
 }
