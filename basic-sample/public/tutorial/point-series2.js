@@ -44,7 +44,7 @@ const config = {
     map: [
         {
             name: 'usa',
-            url: '../map/wooritech/v1/maps/geojson/usa-state-low.geo.json',
+            url: '../realmap/maps/geojson/usa-state-low.geo.json',
             exclude: ['HI', 'AK'],
             padding: '0 0 -3 0'
         },

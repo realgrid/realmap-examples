@@ -102,7 +102,7 @@ const config = {
     map: [
         {
             name: 'sido',
-            url: '../map/wooritech/v1/maps/geojson/kr-sido-low.geo.json',
+            url: '../realmap/maps/geojson/kr-sido-low.geo.json',
             exclude: '37',
             padding: '0.8 0 0 0',
             showDummies: true
