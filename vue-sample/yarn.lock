@@ -526,10 +526,10 @@ postcss@^8.4.48, postcss@^8.5.3:
     picocolors "^1.1.1"
     source-map-js "^1.2.1"
 
-realmap@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/realmap/-/realmap-1.0.0.tgz#aab915e6a6d8d6f85cfe161ea9433a2edb2386f8"
-  integrity sha512-I649st4zKUxARmtIj401++bW/dDf2MhV480/Ow+5NjxFizLUS1ofh351HvOVLaUlnTI6xKBX4Gkwz0aR8QQJWw==
+realmap@^1.0.1:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/realmap/-/realmap-1.0.2.tgz#794771b539cfd6b77901098336a11b4dba2c8fc9"
+  integrity sha512-zi1Ry1kOCxItNrSZ+I5yH2/Y+V9m/FOAXg1oczkvX4oOAl6lz+ZabYHyMVLuFS/zNk0rnFjxAXCSVTlIEXceEw==
 
 rollup@^4.34.9:
   version "4.40.2"

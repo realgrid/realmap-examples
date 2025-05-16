@@ -3,14 +3,15 @@ import { onMounted } from 'vue';
 import {createChartAsync, type ChartConfiguration} from 'realmap'
 
 
-const {config} = withDefaults(defineProps<{ 
+const {
+    config,
+    width = 600,
+    height = 500,
+} = defineProps<{ 
     config: ChartConfiguration,
     width?: number,
     height?: number
- }>(), {
-    width: 600,
-    height: 500
- });
+ }>()
 
 onMounted(() => {
     const containerEl = document.getElementById('realmap') as HTMLDivElement;
