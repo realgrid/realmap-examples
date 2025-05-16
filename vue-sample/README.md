@@ -1,5 +1,11 @@
-# Vue 3 + TypeScript + Vite
+# Vite Sample
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## 설치 & 실행 방법
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+```
+npm install
+
+npm run dev
+```
+
+- http://localhost:5173 에서 데모 사이트를 확인하실 수 있습니다.
