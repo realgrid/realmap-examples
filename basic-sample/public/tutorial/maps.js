@@ -2,10 +2,10 @@ const config = {
     title: false,
     map: [
         {
-            url: `https://cdn.realmap.co.kr/v1/maps/geojson/world-low.geo.json`,
-            // url: `https://cdn.realmap.co.kr/v1/maps/geojson/kr-sido-low.geo.json`,
-            // url: `https://cdn.realmap.co.kr/v1/maps/geojson/kr-sigun-low.geo.json`,
-            // url: `https://cdn.realmap.co.kr/v1/maps/geojson/usa-state-low.geo.json`,
+            // url: `https://unpkg.com/realmap-collection/world-low.geo.json`,
+            // url: `https://unpkg.com/realmap-collection/kr-sido-low.geo.json`,
+            // url: `https://unpkg.com/realmap-collection/kr-sigun-low.geo.json`,
+            url: `https://unpkg.com/realmap-collection/usa-state-low.geo.json`,
         },
     ],
     body: {
