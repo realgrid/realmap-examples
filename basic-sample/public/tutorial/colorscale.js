@@ -10,7 +10,7 @@ const config = {
     },
     map: [
         {
-            url: '../map/wooritech/v1/maps/geojson/kr-sigun-low.geo.json',
+            url: '../realmap/maps/geojson/kr-sigun-low.geo.json',
         },
     ],
     body: {

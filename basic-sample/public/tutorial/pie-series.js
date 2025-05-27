@@ -2,7 +2,7 @@ const config = {
     title: false,
     map: [
         { 
-            url: '../map/wooritech/v1/maps/geojson/kr-sido-low.geo.json', 
+            url: '../realmap/maps/geojson/kr-sido-low.geo.json', 
             padding: '0.1 0'
         },
     ],

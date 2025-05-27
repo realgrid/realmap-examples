@@ -29,7 +29,7 @@ const config = {
     ],
     map: [
         {
-            url: '../map/wooritech/v1/maps/geojson/world-high.geo.json',
+            url: '../realmap/maps/geojson/world-high.geo.json',
             exclude: ['ATA'],
             padding: '6 0 0 0'
         },

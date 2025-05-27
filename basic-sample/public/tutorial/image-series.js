@@ -5,7 +5,7 @@ const config = {
     title: false,
     map: [
         {
-            url: '../map/wooritech/v1/maps/geojson/kr-sido-low.geo.json',
+            url: '../realmap/maps/geojson/kr-sido-low.geo.json',
             showDummies: true,
             padding: '0.8 0 0 0',
             insets: [RealMap.preset('울릉도', { frame: undefined })],

@@ -1,7 +1,7 @@
 const config = {
     title: false,
     map: [
-        { url: '../map/wooritech/v1/maps/geojson/world-low.geo.json', exclude: ["ATA"] },
+        { url: '../realmap/maps/geojson/world-low.geo.json', exclude: ["ATA"] },
     ],
     
     body: {

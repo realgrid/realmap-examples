@@ -1,4 +1,4 @@
-# RealChart Basic 예제
+# RealMap Basic 예제
 
 ## Node.js 설치
 
@@ -43,8 +43,8 @@ sudo yum install npm
 ## 설치
 
 ```
-$ git clone https://github.com/realgrid/realchart-examples
-$ cd realchart-examples/basic-sample
+$ git clone https://github.com/realgrid/realmap-examples
+$ cd realmap-examples/basic-sample
 $ npm install
 ```
 
