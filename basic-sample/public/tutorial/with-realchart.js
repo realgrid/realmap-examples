@@ -102,7 +102,7 @@ const config = {
 
                 chart.body.zoomToArea(point.area.id, 0.3);
                 
-                const seriesData = foundData.data.map(({ year, value }) => ({ x: year, y: value }));
+                const seriesData = foundData.data.map(({ year, value }) => ({ x: year + '', y: value }));
 
                 const { realchart } = window;
 
@@ -153,7 +153,7 @@ async function onChartLoaded(mapChart) {
                 visible: true
             },
             pointLabel: true,
-            data: krData.data.map(({ year, value }) => ({ x: year, y: value })),
+            data: krData.data.map(({ year, value }) => ({ x: year + '', y: value })),
         }
     });
 }
