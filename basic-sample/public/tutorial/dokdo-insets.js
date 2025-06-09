@@ -2,9 +2,9 @@ const config = {
     title: false,
     map: [
         {
-            url: '../realmap/maps/geojson/kr-sido-low.geo.json',
-            url_1: '../realmap/maps/geojson/kr-sido-low.geo.json',
-            url_2: '../realmap/maps/geojson/kr-sigun-low.geo.json',
+            url: '../maps/geojson/kr-sido-low.geo.json',
+            url_1: '../maps/geojson/kr-sido-low.geo.json',
+            url_2: '../maps/geojson/kr-sigun-low.geo.json',
             padding: 0.1,
             showDummies: true,
             insets: [],

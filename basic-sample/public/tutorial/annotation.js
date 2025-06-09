@@ -5,7 +5,7 @@ const config = {
     },
     map: [
         {
-            url: '../realmap/maps/geojson/kr-sigun-low.geo.json',
+            url: '../maps/geojson/kr-sigun-low.geo.json',
             dokdo: 0.1,
             padding: '1.2 0 0 2'
         },

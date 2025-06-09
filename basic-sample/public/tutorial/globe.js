@@ -1,7 +1,7 @@
 const config = {
     title: false,
     map: [
-        { url: '../realmap/maps/geojson/world-low.geo.json' },
+        { url: '../maps/geojson/world-low.geo.json' },
     ],
     
     axis: {

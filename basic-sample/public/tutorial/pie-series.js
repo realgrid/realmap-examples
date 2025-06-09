@@ -2,7 +2,7 @@ const config = {
     title: false,
     map: [
         { 
-            url: '../realmap/maps/geojson/kr-sido-low.geo.json', 
+            url: '../maps/geojson/kr-sido-low.geo.json', 
             padding: '0.1 0'
         },
     ],

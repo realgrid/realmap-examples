@@ -6,7 +6,7 @@ const config = {
     },
     map: [
         {
-            url: '../realmap/maps/geojson/world-low.geo.json',
+            url: '../maps/geojson/world-low.geo.json',
             exclude: ['ATA'],
         },
     ],

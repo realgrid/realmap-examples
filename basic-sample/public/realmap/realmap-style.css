@@ -732,3 +732,22 @@
     font-size: 20px;
     fill: #333;
 }
+
+/* loading indicator */
+.rm-loading-background {
+    fill: none;
+}
+
+.rm-loading-spinner {
+    animation: rm-spin 2.5s linear infinite;
+    transform-origin: 32px 32px;
+}
+
+@keyframes rm-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

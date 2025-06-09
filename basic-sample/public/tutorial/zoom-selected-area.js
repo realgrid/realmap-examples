@@ -2,7 +2,7 @@
 const config = {
     title: false,
     map: [
-        { url: '../realmap/maps/geojson/kr-sigun-low.geo.json'},
+        { url: '../maps/geojson/kr-sigun-low.geo.json'},
     ],
     
     body: {

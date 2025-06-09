@@ -10,7 +10,7 @@ const config = {
     title: false,
     map: [
         {
-            url: '../realmap/maps/geojson/world-low.geo.json',
+            url: '../maps/geojson/world-low.geo.json',
             exclude: ['ATA'],
             padding: '40 0 0 0'
         },

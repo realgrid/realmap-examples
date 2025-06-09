@@ -10,7 +10,7 @@ const config = {
     map: [
         {
             name: '시도',
-            url: '../realmap/maps/topojson/kr-sido-low.topo.json',
+            url: '../maps/topojson/kr-sido-low.topo.json',
             dokdo: 0.1,
             showDummies: true,
             insets: [RealMap.preset('울릉도'), RealMap.preset('제주도')],
@@ -18,7 +18,7 @@ const config = {
         },
         {
             name: '시군구',
-            url: '../realmap/maps/geojson/kr-sigun-low.geo.json',
+            url: '../maps/geojson/kr-sigun-low.geo.json',
             dokdo: 0,//0.1,
             showDummies: true,
             insets: [RealMap.preset('울릉도'), RealMap.preset('제주도')],

@@ -2,7 +2,7 @@
 const config = {
     title: false,
     map: [
-        { url: '../realmap/maps/geojson/world-low.geo.json', exclude: ['ATA'] },
+        { url: '../maps/geojson/world-low.geo.json', exclude: ['ATA'] },
     ],
     
     axis: {

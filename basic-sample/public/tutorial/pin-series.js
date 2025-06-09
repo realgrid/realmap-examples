@@ -38,13 +38,13 @@ const config = {
     map: [
         {
             name: 'usa',
-            url: '../realmap/maps/geojson/usa-state-low.geo.json',
+            url: '../maps/geojson/usa-state-low.geo.json',
             exclude: ['AK', 'HI'],
             padding: '0 3'
         },
         {
             name: 'world',
-            url: '../realmap/maps/geojson/world-low.geo.json',
+            url: '../maps/geojson/world-low.geo.json',
             exclude: ['MEX', 'CAN', 'CUB', 'HTI', 'DOM', 
                 'JAM', 'BLZ', 'GTM', 'HND', 'PRI', 
                 'BHS', 'CYM', 'BJN', 'SER', 'USG', 
