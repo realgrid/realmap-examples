@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "realmap": "latest",
+    "realmap": "1.0.4",
     "vue": "^3.5.13"
   },
   "devDependencies": {
