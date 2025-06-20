@@ -2,10 +2,10 @@
 const config = {
     title: false,
     chart: {
-        dblClickAction: 'drilldown'
+        clickAction: 'drilldown'
     },
     drilldownPanel: {
-        type: 'button'
+        // type: 'button'
     },
     map: [
         {
@@ -37,8 +37,8 @@ const config = {
             front: true,
             type: 'shape',
             shape: 'rectangle',
-            offsetX: 40,
-            offsetY: 46,
+            offsetX: 20,
+            offsetY: 20,
             width: 10,
             height: 28,
             style: {
@@ -47,19 +47,16 @@ const config = {
         },
         {
             front: true,
+            // scope: 'body',
             type: 'text',
             text: '시군구별 인구 밀도 - Drilldown',
+            offsetX: 40,
+            offsetY: 20,
             height: 28,
-            offsetX: 50,
-            offsetY: 46,
             style: {
                 fontSize: '15pt',
                 fontWeight: 700,
             },
-            backgroundStyle: {
-                fill: '#fff',
-                opacity: 0.7
-            }
         },
     ],
     body: {
@@ -109,7 +106,7 @@ const config = {
                     strokeWidth: 0.5,
                 },
                 onPointClick: args => {
-                    console.log(args);
+                    chart.drillup(chart.series);
                 },
             }
         },
