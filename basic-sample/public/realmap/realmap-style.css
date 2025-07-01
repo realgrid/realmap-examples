@@ -751,3 +751,8 @@
         transform: rotate(360deg);
     }
 }
+
+.rm-error-view {
+    stroke: red;
+    fill: red;
+}
