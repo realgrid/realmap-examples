@@ -1,6 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
-import {createChartAsync, MapChart, type ChartConfiguration} from 'realmap'
+import {MapChart, type ChartConfiguration} from 'realmap'
+import * as Realmap from 'realmap';
+import {RealMapExport} from 'realmap/export'
+import HeatmapSeries from 'realmap/heatmap'
 
+HeatmapSeries(Realmap);
 
 export interface RealMapComponentProps {
     config: ChartConfiguration;
@@ -20,9 +24,10 @@ export const RealMapComponent = ({config, width = 600, height = 500,}: RealMapCo
 
         lock.current = true;
 
-        createChartAsync(document, ref.current, config, true)
+        Realmap.createChartAsync(document, ref.current, config, true)
             .then((mapChart) => {
                 setChart(mapChart);
+                RealMapExport(mapChart)
             });
     }, [config]);
 
