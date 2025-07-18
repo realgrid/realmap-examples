@@ -547,6 +547,17 @@
     stroke-width: 2px;
 }
 
+/** track series */
+.rm-track-series {
+    stroke-width: 2px;
+}
+.rm-track-series-outline {
+    stroke: #777;
+    stroke-width: 20px;
+    stroke-opacity: 0.1;
+    stroke-linecap: round;
+}
+
 /** pin series */
 .rm-pin-series-inner {
     fill: transparent;
