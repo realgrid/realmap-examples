@@ -75,7 +75,7 @@ const config = {
             dataUrl: '../data/world-economic2.json',
             hoverColor: '#f2f6fc',
             tooltipText:
-                '<t style="font-weight: bold;">${name}(${gdpGrowth})</t>',
+                '<t style="font-weight: bold;">${name}(${value})</t>',
             style: {
                 stroke: '#000',
                 strokeWidth: 0.5,
@@ -194,9 +194,8 @@ async function onChartLoaded() {
         // RealMap
         const mapSeries = chart.seriesByType('map');
         const point = mapSeries.pointByProp('iso-a3', code);
-        point.updateValues(mapSeries, { value: gdpGrowth });
 
-        chart.render();
+        mapSeries.updatePoint(point, { value: gdpGrowth });
     };
 }
 
