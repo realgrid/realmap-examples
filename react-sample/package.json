@@ -9,9 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "realmap": "1.0.8",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "realmap": "1.0.8",
+    "realmap-react": "^0.0.1"
   },
   "devDependencies": {
     "@types/react": "^19.1.2",
