@@ -48,13 +48,13 @@ export function RealMapComponent() {
         if (!realmapRef.current) return;
 
         const { realmap } = realmapRef.current;
-        const barSeries = realmap.seriesByType('bubble');
+        const series = realmap.seriesByType('bubble');
 
-        const point = barSeries.pointById('1');
+        const point = series.pointById('1');
         const prevValue = point.getValue();
         const nextValue = prevValue + 1;
 
-        barSeries.updatePoint(point, { value: nextValue }, 0);
+        series.updatePoint(point, { value: nextValue }, 0);
     };
 
     return (
