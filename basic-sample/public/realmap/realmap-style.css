@@ -29,10 +29,18 @@
     
     --rm-legend-background: none;
 	--rm-legend-background-stroke: none;
-    --rm-legend-background-stroke: none;
     --rm-legend-fill: #333;
     --rm-legend-item-disabled: #aaa;
     --rm-legend-item-disabled-decoration: line-through;
+    
+    --rm-color-scale-background: none;
+	--rm-color-scale-background-stroke: none;
+    
+    --rm-bubble-scale-background: none;
+	--rm-bubble-scale-background-stroke: none;
+    
+    --rm-map-scale-background: none;
+	--rm-map-scale-background-stroke: none;
 
     --rm-point-label-font-size: 0.8em;
     --rm-point-label-font-weight: bold;
@@ -278,6 +286,19 @@
     fill: none;
 }
 
+/** map widget */
+.rm-map-widget-title {
+    font-weight: bold;
+}
+.rm-map-widget-footer {
+    font-size: 0.85em;
+    fill: #555;
+}
+/** map widget group */
+.rm-map-widget-group-background {
+    fill: none;
+    stroke: none;
+}
 /** legend */
 .rm-legend {
     fill: var(--rm-legend-fill);
@@ -305,10 +326,11 @@
 
 /** color scale */
 .rm-color-scale-background {
-    fill: #efefef;
+    fill: var(--rm-color-scale-background);
+    stroke: var(--rm-color-scale-background-stroke);
 }
-.rm-color-scale-bar {
-    stroke: #efefef;
+.rm-color-scale-box {
+    stroke: none;
 }
 .rm-color-scale-split {
     stroke: white;
@@ -328,8 +350,19 @@
     fill: #555;
     font-size: 0.9em;
 }
+.rm-color-scale-null {
+    font-size: 0.8em;
+}
+.rm-color-scale-null .rm-color-scale-box {
+    stroke: gray;
+    fill: white;
+}
 
 /** bubble scale */
+.rm-bubble-scale-background {
+    fill: var(--rm-bubble-scale-background);
+    stroke: var(--rm-bubble-scale-background-stroke);
+}
 .rm-bubble-scale-bubble {
     fill: none;
     stroke: #777;
@@ -340,6 +373,12 @@
 .rm-bubble-scale-label {
     fill: #777;
     font-size: 14px;
+}
+
+/** map scale */
+.rm-map-scale-background {
+    fill: var(--rm-map-scale-background);
+    stroke: var(--rm-map-scale-background-stroke);
 }
 
 /** tooltip */
@@ -360,12 +399,18 @@
 }
 
 /** axis */
-.rm-map-axis-grid {
+.rm-axis-grid {
     stroke: #ddd;
     fill: none !important;
 }
 
-/** axis guid */
+/** axis tick */
+.rm-axis-tick-labels {
+    font-size: 0.7em;
+    fill: #aaa;
+}
+
+/** axis guide */
 .rm-axis-guide-label {
     font-size: 0.8em;
 }
@@ -535,6 +580,11 @@
 .rm-map-series .rm-point-label[data-selected] {
     fill: var(--map-series-selected-label-fill) !important;
 }
+.rm-map-series-internal {
+    fill: none;
+    stroke: #555;
+    stroke-width: 2px;
+}
 .rm-map-series-inset {
     stroke-linejoin: round;
     stroke-linecap: round;
@@ -601,6 +651,9 @@
 .rm-pie-series .rm-point {
     stroke: white;
     stroke-width: 1.5px;
+}
+.rm-pie-series[data-threshold] {
+    fill: #333;
 }
 
 .rm-pie-series-sector[data-index="0"] {
@@ -742,6 +795,17 @@
 .rm-text-annotation {
     font-size: 20px;
     fill: #333;
+}
+
+/* html annotation */
+.rm-html-annotation-view {
+    height: 100%;
+}
+
+/* chart annotation */
+.rm-chart-annotation-container {
+    width: 100%;
+    height: 100%;
 }
 
 /* loading indicator */
