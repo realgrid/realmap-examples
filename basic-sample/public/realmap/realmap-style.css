@@ -330,7 +330,8 @@
     stroke: var(--rm-color-scale-background-stroke);
 }
 .rm-color-scale-box {
-    stroke: none;
+    stroke: #ddd;
+    stroke-width: 0.5px;
 }
 .rm-color-scale-split {
     stroke: white;
@@ -584,6 +585,16 @@
     fill: none;
     stroke: #555;
     stroke-width: 2px;
+}
+.rm-map-series-external {
+    fill: none;
+    stroke: #58F;
+    stroke-width: 1px;
+}
+.rm-map-series-border {
+    fill: none;
+    stroke: #333;
+    stroke-width: 1px;
 }
 .rm-map-series-inset {
     stroke-linejoin: round;

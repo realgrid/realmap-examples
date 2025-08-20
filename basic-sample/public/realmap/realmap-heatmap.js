@@ -1,6 +1,6 @@
 
 /** 
- * RealMap Heatmap v1.0.10
+ * RealMap Heatmap v1.0.11
  * Copyright (C) 2023-2025 WooriTech Inc.
  * All Rights Reserved. 
  */
