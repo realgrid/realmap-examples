@@ -1,6 +1,6 @@
 
 /** 
- * RealMap Chart v1.1.0
+ * RealMap Chart v1.1.1
  * Copyright (C) 2023-2025 WooriTech Inc.
  * All Rights Reserved. 
  */

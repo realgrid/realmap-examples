@@ -48,6 +48,22 @@
     --rm-point-label-fill: #333;
 
     --rm-credits-fill: #777;
+
+    --rm-tooltip-bg: #313131;
+    --rm-tooltip-color: #fff;
+    --rm-tooltip-headermode-color: #000;
+    --rm-tooltip-headermode-bg: #fff;
+    --rm-tooltip-border-color: #313131;
+
+    --rm-null-area-fill: #f4f4f4;
+    --rm-null-area-stroke: #ccc;
+
+    --rm-map-series-hover-filter: brightness(1.05);
+    --rm-map-series-hover-stroke-width: 2px;
+    --rm-map-series-hover-label-fill: #000;
+
+    --rm-map-series-selected-stroke-width: 2.5px;
+    --rm-map-series-selected-filter: brightness(1.1);
 }
 .rm-root[data-theme='dark'] {
     --rm-focus-stroke: #ccc;
@@ -133,15 +149,6 @@
 
 .rm-root {
     padding: 20px;
-}
-:root, .rm-root {
-    --map-series-hover-label-fill: black;
-    --map-series-hover-filter: brightness(1.05);
-    --map-series-hover-stroke-width: 2px;
-    --map-series-selected-label-fill: white;
-
-    --map-series-selected-stroke-width: 2.5px;
-    --map-series-selected-filter: brightness(1.1);
 }
 
 /** palette */
@@ -401,16 +408,21 @@
 .rm-tooltip {
     font-size: 0.8em;
     pointer-events: none;
-    opacity: 0.9;
+    opacity: 1;
 }
 .rm-tooltip-back {
-    fill: white;
+    fill: var(--rm-tooltip-bg);
+}
+.rm-tooltip-border {
+    fill: transparent;
+    stroke-width: 1px;
+    stroke: var(--rm-tooltip-border-color);
 }
 .rm-tooltip-tail {
-    fill: white;
+    fill: var(--rm-tooltip-bg);
 }
 .rm-tooltip-text {
-    fill: #333;
+    fill: white;
     stroke: none;
 }
 
@@ -512,7 +524,20 @@
     stroke: var(--color-12);
 }
 
-/** series */
+/** data point cluster */
+.rm-point-clusters[data-disabled] {
+    cursor: default;
+}
+.rm-point-cluster {
+    stroke: none;
+    cursor: pointer;
+}
+.rm-point-cluster-label {
+    font-size: 11px;
+    fill: white;
+}
+
+/** callout */
 .rm-callout-line {
     stroke: #555;
     stroke-width: 1.5px;
@@ -571,8 +596,8 @@
     /* stroke: #ccc; */
 }
 .rm-map-series .rm-point[data-null] {
-    fill: #f4f4f4;
-    stroke: #ccc;
+    fill: var(--rm-null-area-fill);
+    stroke: var(--rm-null-area-stroke);
     stroke-width: 1px;
 }
 .rm-map-series .rm-point[data-dummy] {
@@ -602,6 +627,16 @@
     stroke-linecap: round;
     stroke: #aaa;
     fill: none;
+}
+.rm-map-series .rm-point[data-virtual] {
+    fill: none;
+    fill-opacity: 0;
+}
+
+/** feature series */
+.rm-feature-series .rm-point {
+    fill-opacity: 0.5;
+    stroke-width: 2px;
 }
 
 /** route series */
@@ -746,6 +781,11 @@
     padding: 2px 4px;
 }
 
+/** heatmap series */
+.rm-heatmap-series .rm-series-points {
+    opacity: 0.7;
+}
+
 /** circle gauge */
 .rm-circle-gauge-face {
     fill: #0000ff10;
@@ -857,9 +897,4 @@
 .rm-error-view {
     stroke: red;
     fill: red;
-}
-
-.rm-map-series .rm-point[data-virtual] {
-    fill: none;
-    fill-opacity: 0;
 }
