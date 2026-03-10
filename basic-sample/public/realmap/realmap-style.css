@@ -13,6 +13,10 @@
 
     --rm-body-background-stroke: none;
 
+    --rm-empty-view-stroke: #eee;
+    --rm-empty-view-fill: #fcfcff;
+    --rm-empty-view-label-fill: #777;
+
     --rm-axis-title-fill: #333;
     --rm-axis-line-stroke: #aaa;
     --rm-axis-baseline-stroke: #333;
@@ -60,7 +64,6 @@
 
     --rm-map-series-hover-filter: brightness(1.05);
     --rm-map-series-hover-stroke-width: 2px;
-    --rm-map-series-hover-label-fill: #000;
 
     --rm-map-series-selected-stroke-width: 2.5px;
     --rm-map-series-selected-filter: brightness(1.1);
@@ -73,6 +76,10 @@
     --rm-subtitle-fill: #fff;
 
     --rm-body-background-stroke: none;
+
+    --rm-rct-empty-view-stroke: #898989;
+    --rm-rct-empty-view-fill: #414141;
+    --rm-rct-empty-view-label-fill: #939393;
     
     --rm-axis-title-fill: #fff;
     --rm-axis-line-stroke: #fff;
@@ -284,6 +291,15 @@
     transition: transform 0.1s ease-out; */
 }
 
+.rm-empty-view {
+    stroke: var(--rm-empty-view-stroke);
+    fill: var(--rm-empty-view-fill);
+}
+.rm-empty-view-label {
+    fill: var(--rm-empty-view-label-fill);
+    font-size: 1.4em;
+}
+
 /** credits */
 .rm-credits {
     font-size: 0.7em;
@@ -473,6 +489,15 @@
     stroke: #585;
     fill: none;
 }
+
+/** label */
+.rm-label-dark {
+    fill: #000;
+}
+.rm-label-light {
+    fill: #fff;
+}
+
 
 /** series */
 .rm-series[data-index="0"] {
