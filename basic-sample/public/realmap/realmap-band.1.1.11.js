@@ -1,6 +1,6 @@
 
 /** 
- * RealMap Band v1.1.10
+ * RealMap Band v1.1.11
  * Copyright (C) 2023-2026 WooriTech Inc.
  * All Rights Reserved. 
  */
