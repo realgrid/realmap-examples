@@ -36,12 +36,24 @@
     --rm-legend-fill: #333;
     --rm-legend-item-disabled: #aaa;
     --rm-legend-item-disabled-decoration: line-through;
+    --rm-legend-item-marker-hidden-fill: #aaa;
     
     --rm-color-scale-background: none;
 	--rm-color-scale-background-stroke: none;
+    --rm-color-scale-box-stroke: #ddd;
+    --rm-color-scale-split-stroke: white;
+    --rm-color-scale-marker-fill: #555;
+    --rm-color-scale-marker-null-fill: #eee;
+    --rm-color-scale-marker-null-stroke: #ccc;
+    --rm-color-scale-tick-line-stroke: #999;
+    --rm-color-scale-tick-label-fill: #555;
+    --rm-color-scale-null-box-stroke: gray;
+    --rm-color-scale-null-box-fill: white;
     
     --rm-bubble-scale-background: none;
 	--rm-bubble-scale-background-stroke: none;
+    --rm-bubble-scale-stroke: #777;
+    --rm-bubble-scale-label-fill: #777;
     
     --rm-map-scale-background: none;
 	--rm-map-scale-background-stroke: none;
@@ -62,6 +74,25 @@
     --rm-null-area-fill: #f4f4f4;
     --rm-null-area-stroke: #ccc;
 
+    --rm-button-fill: white;
+    --rm-button-background-fill: #00aaff;
+    --rm-button-fill-disabled: #999;
+    --rm-button-background-disabled-fill: #ddd;
+
+    --rm-drilldown-text-fill: #333;
+    --rm-drilldown-text-history-fill: #08f;
+    --rm-drilldown-separator-fill: #777;
+
+    --rm-map-widget-footer-fill: #555;
+
+    --rm-crosshair-line-stroke: #00000088;
+    --rm-crosshair-flag-fill: white;
+    --rm-crosshair-flag-back-fill: #00000090;
+
+    --rm-map-series-internal-stroke: #555;
+    --rm-map-series-border-stroke: #333;
+    --rm-map-series-inset-stroke: #aaa;
+
     --rm-map-series-hover-filter: brightness(1.05);
     --rm-map-series-hover-stroke-width: 2px;
 
@@ -77,26 +108,68 @@
 
     --rm-body-background-stroke: none;
 
-    --rm-rct-empty-view-stroke: #898989;
-    --rm-rct-empty-view-fill: #414141;
-    --rm-rct-empty-view-label-fill: #939393;
+    --rm-empty-view-stroke: #898989;
+    --rm-empty-view-fill: #414141;
+    --rm-empty-view-label-fill: #939393;
     
     --rm-axis-title-fill: #fff;
     --rm-axis-line-stroke: #fff;
     --rm-axis-baseline-stroke: #fff;
     --rm-axis-tick-stroke: #fff;
     --rm-axis-label-fill: #fff;
-    --rm-axis-grid-line-stroke: #fff;
+    --rm-axis-guide-label-fill: #fff;
+    --rm-axis-tick-label-fill: #ccc;
+    --rm-axis-grid-line-stroke: #939393;
     
     --rm-legend-background: none;
 	--rm-legend-background-stroke: none;
     --rm-legend-fill: #fff;
     --rm-legend-item-disabled: #707070;
     --rm-legend-item-disabled-decoration: line-through;
+    --rm-legend-item-marker-hidden-fill: #707070;
 
     --rm-point-label-fill: #ddd;
 
     --rm-credits-fill: #999;
+
+    --rm-null-area-fill: #414141;
+    --rm-null-area-stroke: #898989;
+
+    --rm-tooltip-bg: #555;
+    --rm-tooltip-color: #fff;
+    --rm-tooltip-border-color: #777;
+
+    --rm-button-fill: #fff;
+    --rm-button-background-fill: #0098ff;
+    --rm-button-fill-disabled: #707070;
+    --rm-button-background-disabled-fill: #4d4d4d;
+
+    --rm-drilldown-text-fill: #fff;
+    --rm-drilldown-text-history-fill: #66b3ff;
+    --rm-drilldown-separator-fill: #939393;
+
+    --rm-map-widget-footer-fill: #aaa;
+
+    --rm-color-scale-box-stroke: #939393;
+    --rm-color-scale-split-stroke: #262626;
+    --rm-color-scale-marker-fill: #fff;
+    --rm-color-scale-marker-null-fill: #414141;
+    --rm-color-scale-marker-null-stroke: #939393;
+    --rm-color-scale-tick-line-stroke: #939393;
+    --rm-color-scale-tick-label-fill: #fff;
+    --rm-color-scale-null-box-stroke: #939393;
+    --rm-color-scale-null-box-fill: #414141;
+
+    --rm-bubble-scale-stroke: #939393;
+    --rm-bubble-scale-label-fill: #fff;
+
+    --rm-crosshair-line-stroke: #ffffff88;
+    --rm-crosshair-flag-fill: #555;
+    --rm-crosshair-flag-back-fill: #fff;
+
+    --rm-map-series-border-stroke: #939393;
+    --rm-map-series-inset-stroke: #939393;
+    --rm-map-series-internal-stroke: #939393;
 }
 .rm-root[data-theme='real'] {
     --rm-focus-stroke: yellow;
@@ -106,22 +179,68 @@
     --rm-subtitle-fill: #f0d9be;
 
     --rm-body-background-stroke: none;
+
+    --rm-empty-view-stroke: #4e7b82;
+    --rm-empty-view-fill: #2a3f4a;
+    --rm-empty-view-label-fill: #f0d9be;
     
     --rm-axis-title-fill: #f0d9be;
     --rm-axis-line-stroke: #f0d9be;
     --rm-axis-tick-stroke: #f0d9be;
     --rm-axis-label-fill: #f0d9be;
-    --rm-axis-grid-line-stroke: #f0d9be;
+    --rm-axis-guide-label-fill: #f0d9be;
+    --rm-axis-tick-label-fill: #c9b89a;
+    --rm-axis-grid-line-stroke: #4e7b82;
     
     --rm-legend-background: none;
 	--rm-legend-background-stroke: none;
     --rm-legend-fill: #f0d9be;
     --rm-legend-item-disabled: #4e7b82;
     --rm-legend-item-disabled-decoration: line-through;
+    --rm-legend-item-marker-hidden-fill: #4e7b82;
 
     --rm-point-label-fill: #ddd;
 
     --rm-credits-fill: #999;
+
+    --rm-null-area-fill: #2a3f4a;
+    --rm-null-area-stroke: #4e7b82;
+
+    --rm-tooltip-bg: #1a2a33;
+    --rm-tooltip-color: #f0d9be;
+    --rm-tooltip-border-color: #4e7b82;
+
+    --rm-button-fill: #f0d9be;
+    --rm-button-background-fill: #2a9d8f;
+    --rm-button-fill-disabled: #4e7b82;
+    --rm-button-background-disabled-fill: #1a2a33;
+
+    --rm-drilldown-text-fill: #f0d9be;
+    --rm-drilldown-text-history-fill: #e9c46a;
+    --rm-drilldown-separator-fill: #4e7b82;
+
+    --rm-map-widget-footer-fill: #f0d9be;
+
+    --rm-color-scale-box-stroke: #4e7b82;
+    --rm-color-scale-split-stroke: #264653;
+    --rm-color-scale-marker-fill: #f0d9be;
+    --rm-color-scale-marker-null-fill: #2a3f4a;
+    --rm-color-scale-marker-null-stroke: #4e7b82;
+    --rm-color-scale-tick-line-stroke: #4e7b82;
+    --rm-color-scale-tick-label-fill: #f0d9be;
+    --rm-color-scale-null-box-stroke: #4e7b82;
+    --rm-color-scale-null-box-fill: #2a3f4a;
+
+    --rm-bubble-scale-stroke: #4e7b82;
+    --rm-bubble-scale-label-fill: #f0d9be;
+
+    --rm-crosshair-line-stroke: #f0d9be88;
+    --rm-crosshair-flag-fill: #264653;
+    --rm-crosshair-flag-back-fill: #f0d9be;
+
+    --rm-map-series-border-stroke: #4e7b82;
+    --rm-map-series-inset-stroke: #4e7b82;
+    --rm-map-series-internal-stroke: #4e7b82;
 }
 
 .rm-control {
@@ -249,40 +368,40 @@
 
 /** zoom panel */
 .rm-zoom-panel .rm-button {
-    fill: white;
+    fill: var(--rm-button-fill);
     font-family: Arial;
 }
 .rm-zoom-panel .rm-button-background {
-    fill: #00aaff;
+    fill: var(--rm-button-background-fill);
     rx: 5;
 }
 .rm-zoom-panel .rm-button[data-disabled] {
-    fill: #999;
+    fill: var(--rm-button-fill-disabled);
     cursor: default;
 }
 .rm-zoom-panel .rm-button[data-disabled] .rm-button-background {
-    fill: #ddd;
+    fill: var(--rm-button-background-disabled-fill);
 }
 
 /** drilldown panel */
 .rm-drilldown-panel .rm-button {
-    fill: white;
+    fill: var(--rm-button-fill);
     font-family: Arial;
 }
 .rm-drilldown-panel .rm-button-background {
     padding: 4px 5px;
-    fill: #00aaff;
+    fill: var(--rm-button-background-fill);
     rx: 3;
 }
 .rm-drilldown-text {
-    fill: #333;
+    fill: var(--rm-drilldown-text-fill);
 }
 .rm-drilldown-text[data-history] {
-    fill: #08f;
+    fill: var(--rm-drilldown-text-history-fill);
     cursor: pointer;
 }
 .rm-drilldown-separator {
-    fill: #777;
+    fill: var(--rm-drilldown-separator-fill);
 }
 
 /** body view */
@@ -330,7 +449,7 @@
 }
 .rm-map-widget-footer {
     font-size: 0.85em;
-    fill: #555;
+    fill: var(--rm-map-widget-footer-fill);
 }
 /** map widget group */
 .rm-map-widget-group-background {
@@ -355,11 +474,11 @@
     stroke: none;
 } */
 .rm-legend-item-marker[data-hidden] {
-    fill: #aaa !important;
-    stroke: #aaa !important;
+    fill: var(--rm-legend-item-marker-hidden-fill) !important;
+    stroke: var(--rm-legend-item-marker-hidden-fill) !important;
 }
 .rm-legend-item-marker[data-hidden] path[data-fill] {
-    fill: #aaa !important;
+    fill: var(--rm-legend-item-marker-hidden-fill) !important;
 }
 
 /** color scale */
@@ -368,33 +487,33 @@
     stroke: var(--rm-color-scale-background-stroke);
 }
 .rm-color-scale-box {
-    stroke: #ddd;
+    stroke: var(--rm-color-scale-box-stroke);
     stroke-width: 0.5px;
 }
 .rm-color-scale-split {
-    stroke: white;
+    stroke: var(--rm-color-scale-split-stroke);
 }
 .rm-color-scale-marker {
-    fill: #555;
+    fill: var(--rm-color-scale-marker-fill);
 }
 .rm-color-scale-marker[data-null] {
-    fill: #eee;
-    stroke: #ccc;
+    fill: var(--rm-color-scale-marker-null-fill);
+    stroke: var(--rm-color-scale-marker-null-stroke);
 }
 .rm-color-scale-tick-line {
-    stroke: #999;
+    stroke: var(--rm-color-scale-tick-line-stroke);
     stroke-width: 1px;
 }
 .rm-color-scale-tick-label {
-    fill: #555;
+    fill: var(--rm-color-scale-tick-label-fill, #555);
     font-size: 0.9em;
 }
 .rm-color-scale-null {
     font-size: 0.8em;
 }
 .rm-color-scale-null .rm-color-scale-box {
-    stroke: gray;
-    fill: white;
+    stroke: var(--rm-color-scale-null-box-stroke);
+    fill: var(--rm-color-scale-null-box-fill);
 }
 
 /** bubble scale */
@@ -404,13 +523,13 @@
 }
 .rm-bubble-scale-bubble {
     fill: none;
-    stroke: #777;
+    stroke: var(--rm-bubble-scale-stroke);
 }
 .rm-bubble-scale-line {
-    stroke: #777;
+    stroke: var(--rm-bubble-scale-stroke);
 }
 .rm-bubble-scale-label {
-    fill: #777;
+    fill: var(--rm-bubble-scale-label-fill, #777);
     font-size: 14px;
 }
 
@@ -438,40 +557,41 @@
     fill: var(--rm-tooltip-bg);
 }
 .rm-tooltip-text {
-    fill: white;
+    fill: var(--rm-tooltip-color, white);
     stroke: none;
 }
 
 /** axis */
 .rm-axis-grid {
-    stroke: #ddd;
+    stroke: var(--rm-axis-grid-line-stroke, #ddd);
     fill: none !important;
 }
 
 /** axis tick */
 .rm-axis-tick-labels {
     font-size: 0.7em;
-    fill: #aaa;
+    fill: var(--rm-axis-tick-label-fill, #aaa);
 }
 
 /** axis guide */
 .rm-axis-guide-label {
     font-size: 0.8em;
+    fill: var(--rm-axis-guide-label-fill);
 }
 
 /** crosshair */
 .rm-crosshair-line {
-    stroke: #00000088;
+    stroke: var(--rm-crosshair-line-stroke);
 }
 .rm-crosshair-flag {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9em;
-    fill: white;
+    fill: var(--rm-crosshair-flag-fill);
     stroke: none;
 }
 .rm-crosshair-flag-back {
     padding: 3px 5px;
-    fill: #00000090;
+    fill: var(--rm-crosshair-flag-back-fill);
     rx: 3
 }
 
@@ -626,7 +746,7 @@
     stroke-width: 1px;
 }
 .rm-map-series .rm-point[data-dummy] {
-    fill: #f4f4f4;
+    fill: var(--rm-null-area-fill);
     stroke: none;
 }
 .rm-map-series .rm-point-label[data-selected] {
@@ -634,7 +754,7 @@
 }
 .rm-map-series-internal {
     fill: none;
-    stroke: #555;
+    stroke: var(--rm-map-series-internal-stroke);
     stroke-width: 2px;
 }
 .rm-map-series-external {
@@ -644,13 +764,13 @@
 }
 .rm-map-series-border {
     fill: none;
-    stroke: #333;
+    stroke: var(--rm-map-series-border-stroke);
     stroke-width: 1px;
 }
 .rm-map-series-inset {
     stroke-linejoin: round;
     stroke-linecap: round;
-    stroke: #aaa;
+    stroke: var(--rm-map-series-inset-stroke);
     fill: none;
 }
 .rm-map-series .rm-point[data-virtual] {
