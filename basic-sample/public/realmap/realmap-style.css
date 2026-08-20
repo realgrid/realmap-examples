@@ -268,8 +268,6 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    touch-action: auto;
-    -ms-touch-action: auto; 
     text-align: initial;
 }   
 
@@ -352,6 +350,12 @@
 /** button */
 .rm-button {
     cursor: pointer;
+}
+/** 손가락으로 누를 수 있도록 보이는 버튼보다 넓게 잡은 투명 히트 영역 */
+.rm-button-hit {
+    fill: transparent;
+    stroke: none;
+    pointer-events: all;
 }
 
 /** feedback */
