@@ -16,7 +16,7 @@ const config = {
     general: {
         dragAction: 'zoom'
     },
-    title: 'Good',
+    title: false,
     credits: false,
     map: [
         {

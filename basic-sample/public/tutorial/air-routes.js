@@ -1,7 +1,6 @@
 const config = {
     title: false,
     credits: {visible: false},
-    credits: {visible: false},
     annotations: [
         {
             front: true,

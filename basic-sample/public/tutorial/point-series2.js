@@ -42,8 +42,6 @@ const config = {
         {
             name: 'usa',
             legend: -1,
-            // mapKeys: ['name', 'id'],
-            // data: [{ id: 'CA' }],
             nullStyle: { fill: '#efefef' },
             style: {
                 stroke: '#fff',

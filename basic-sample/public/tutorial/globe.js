@@ -62,7 +62,6 @@ function setActions(container) {
         },
         false
     );
-    createButton(container, 'Test', async function (e) {});
     createCheckBox(
         container,
         'Zoomable',

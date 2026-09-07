@@ -33,9 +33,7 @@ const data = [
     { "name": "Snake River (Idaho Falls)", "coord": [-112.0341, 43.4917], "type": "강" },
     { "name": "Rio Grande (El Paso)", "coord": [-106.485, 31.7619], "type": "강" }
   ]
-  
-console.log(data.filter(r=>r.type=='국립공원'));
-  
+
 const config = {
     title: false,
     credits: {visible: false},

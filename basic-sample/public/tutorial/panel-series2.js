@@ -66,9 +66,7 @@ const config = {
                 style: {
                     strokeWidth: 0,
                 },
-                backgroundStyle: {
-                    // fill: 'red'
-                }
+                backgroundStyle: {}
             },
             body: {
                 text: '최저: <t style="opacity: 0.7;">${tempMin}°C</t>ㅤ최대: <t style="opacity: 0.7;">${tempMax}°C</t>'

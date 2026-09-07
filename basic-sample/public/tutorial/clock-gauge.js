@@ -191,7 +191,6 @@ function setActions(container) {
         },
         false
     );
-    createButton(container, 'Test', function (e) {});
 }
 
 async function init() {

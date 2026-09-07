@@ -1,6 +1,4 @@
-let chartData;
 let mapChart;
-let realchart;
 
 const config = {
     title: {

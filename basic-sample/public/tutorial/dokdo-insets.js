@@ -113,8 +113,6 @@ const config = {
 let mapChart;
 
 function setActions(container) {
-    createButton(container, 'Test', function (e) {});
-    
     createListBox(
         container,
         '독도 표시',

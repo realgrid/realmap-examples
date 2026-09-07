@@ -155,8 +155,6 @@ const config = {
 let mapChart;
 
 function setActions(container) {
-    createButton(container, 'Test', function (e) {
-    });
     createButton(container, 'Drilldown', function (e) {
         mapChart.drilldown(mapChart.series);
     });

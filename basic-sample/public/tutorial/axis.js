@@ -157,7 +157,7 @@ const config = {
             legend: -1,
             tooltipText: false,
             pointLabel: {
-                text: '<t style="font-size: 16px;">${name}</t><br /><t style="font-size: 16px; opacity: 0.7;">경도 ${lon}°C</t><br /><t style="font-size: 16px; opacity: 0.7;">위도 ${lat}°C</t>',
+                text: '<t style="font-size: 16px;">${name}</t><br /><t style="font-size: 16px; opacity: 0.7;">경도 ${lon}°</t><br /><t style="font-size: 16px; opacity: 0.7;">위도 ${lat}°</t>',
                 textCallback: ({ source }) => {
                     if (source.name == '서울') {
                         return '<t style="font-size: 16px;">${name}</t>';
@@ -181,7 +181,7 @@ const config = {
             tooltipText: false,
             pointLabel: {
                 position: 'top',
-                text: '<t style="font-size: 16px; opacity: 0.7;">경도 ${lon}°C</t><br /><t style="font-size: 16px; opacity: 0.7;">위도 ${lat}°C</t>',
+                text: '<t style="font-size: 16px; opacity: 0.7;">경도 ${lon}°</t><br /><t style="font-size: 16px; opacity: 0.7;">위도 ${lat}°</t>',
             },
             style: {
                 fill: 'none',

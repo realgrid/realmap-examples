@@ -168,7 +168,6 @@ async function onChartLoaded(mapChart) {
 function setActions(container) {}
 
 let mapChart;
-let realchart;
 
 async function init() {
     mapChart = await RealMap.createChartAsync(document, 'realmap', config, true);
