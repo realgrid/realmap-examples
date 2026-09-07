@@ -3,8 +3,8 @@
         "b-code": "3611000000",
         "name": "세종시",
         "sido": "세종특별자치시",
-        "laborForce": "213",
-        "employmentRate": "66.1",
+        "laborForce": 213,
+        "employmentRate": 66.1,
         "coord": [
             127.1867,
             36.7068

@@ -229,3 +229,25 @@ function loadScript(parentId, script, callback) {
 		parent.appendChild(elt);
 	}
 }
+
+/**
+ * 깊은 복사 함수.
+ * 개발용 앱 페이지의 config를 데모페이지로 가져갈 때 해당 함수를 사용해서 config를 깊은 복사한다.
+ * 
+ * @param {*} obj 복사 대상 객체
+ * @returns 깊은 복사가 완료된 객체
+ */
+function deepClone(obj) {
+    if (obj instanceof Date) {
+        return new Date(obj);
+    } else if (obj == null || typeof obj !== 'object') {
+        return obj;
+    } else {
+        const result = Array.isArray(obj) ? [] : {};
+
+        for (let key of Object.keys(obj)) {
+            result[key] = deepClone(obj[key]);
+        }
+        return result;
+    }
+}
