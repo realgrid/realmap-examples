@@ -1,4 +1,4 @@
-# Vite Sample
+# Vue Sample
 
 ## 설치 & 실행 방법
 

@@ -14,6 +14,8 @@ import { RealMapVue } from 'realmap-vue';
 import { RealMapExport } from 'realmap/export';
 import Heatmap from 'realmap/heatmap';
 
+import MyTemplate from './MyTemplate.vue';
+
 // Export 모듈을 제외한 확장모듈은 아래와 같이 활성화한다.
 Heatmap(Realmap);
 </script>
@@ -36,6 +38,17 @@ Heatmap(Realmap);
             body: {
                 projection: 'mercator',
             },
+            annotations: [
+                {
+                    // html 타입 annotation. templates prop으로 넘긴 컴포넌트를 id 셀렉터로 참조한다.
+                    type: 'html',
+                    html: '#myTemplate',
+                    width: 200,
+                    offsetX: 20,
+                    offsetY: 20,
+                    front: true,
+                },
+            ],
             series: [
                 {
                     type: 'bubble',
@@ -65,7 +78,11 @@ Heatmap(Realmap);
                 RealMapExport(chart);
             }
         "
+        :templates="{
+            myTemplate: MyTemplate,
+        }"
     />
+    <!-- license prop으로 전역 realMapLic 대신 이 자리에 키를 넘길 수도 있다. -->
     <button :style="{ marginTop: '32px' }" @click="updatePoints">
         updatePoint
     </button>

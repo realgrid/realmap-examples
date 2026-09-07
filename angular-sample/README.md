@@ -5,7 +5,7 @@
 ```
 npm install
 
-npm run dev
+npm start
 ```
 
 - http://localhost:4200 에서 데모 사이트를 확인하실 수 있습니다.

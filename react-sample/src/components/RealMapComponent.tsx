@@ -11,6 +11,7 @@ import { type ChartConfiguration } from 'realmap';
 import { RealMapExport } from 'realmap/export';
 import Heatmap from 'realmap/heatmap';
 import { useRef, useState } from 'react';
+import { MyTemplate } from './MyTemplate';
 
 // Export 모듈을 제외한 확장모듈은 아래와 같이 활성화한다.
 Heatmap(Realmap);
@@ -27,6 +28,17 @@ export function RealMapComponent() {
         body: {
             projection: 'mercator',
         },
+        annotations: [
+            {
+                // html 타입 annotation. templates prop으로 넘긴 컴포넌트를 id 셀렉터로 참조한다.
+                type: 'html',
+                html: '#myTemplate',
+                width: 200,
+                offsetX: 20,
+                offsetY: 20,
+                front: true,
+            },
+        ],
         series: [
             {
                 type: 'bubble',
@@ -77,6 +89,10 @@ export function RealMapComponent() {
                     console.log('Chart loaded:', chart);
 
                     RealMapExport(chart);
+                }}
+                // license prop으로 전역 realMapLic 대신 이 자리에 키를 넘길 수도 있다.
+                templates={{
+                    myTemplate: <MyTemplate />,
                 }}
             />
 
