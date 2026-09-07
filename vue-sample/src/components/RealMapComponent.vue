@@ -6,7 +6,7 @@ import { ref } from 'vue';
 import 'realmap/realmap-export-style.css';
 import 'realmap/realmap-style.css';
 
-// 코어 라이브러리와 React 컴포넌트를 import 한다.
+// 코어 라이브러리와 Vue 컴포넌트를 import 한다.
 import * as Realmap from 'realmap';
 import { RealMapVue } from 'realmap-vue';
 
@@ -22,6 +22,7 @@ Heatmap(Realmap);
 
 <!-- 렌더 -->
 <template>
+    <!-- license prop으로 전역 realMapLic 대신 이 자리에 키를 넘길 수도 있다. -->
     <RealMapVue
         id="realmap"
         ref="realmapRef"
@@ -82,7 +83,6 @@ Heatmap(Realmap);
             myTemplate: MyTemplate,
         }"
     />
-    <!-- license prop으로 전역 realMapLic 대신 이 자리에 키를 넘길 수도 있다. -->
     <button :style="{ marginTop: '32px' }" @click="updatePoints">
         updatePoint
     </button>
