@@ -228,10 +228,6 @@ const config = {
 let mapChart;
 
 function setActions(container) {
-    createButton(container, 'Test', function (e) {
-        // console.log(mapChart.series.getPoint(0).area);
-        console.log(mapChart.series.pointByProp('iso-a3', 'BRA'));
-    });
     createListBox(
         container,
         'Projection',
@@ -257,13 +253,6 @@ function setActions(container) {
 }
 
 async function init() {
-    const t1 = +new Date();
-    console.log(+new Date() - t1 + ' ms.');
-
-    console.log('RealMap v' + RealMap.getVersion());
-    // RealMap.setDebugging(true);
-    RealMap.setLogging(true);
-
     mapChart = await RealMap.createChartAsync(
         document,
         'realmap',

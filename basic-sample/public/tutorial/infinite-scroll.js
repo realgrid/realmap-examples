@@ -115,9 +115,6 @@ const config = {
 let mapChart;
 
 function setActions(container) {
-    createButton(container, 'Test', function (e) {
-        mapChart.title.updateOption('text', new Date().getTime().toString());
-    });
     createCheckBox(
         container,
         'Zoomable',

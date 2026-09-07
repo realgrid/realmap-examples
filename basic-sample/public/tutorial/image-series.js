@@ -209,24 +209,9 @@ const config = {
 let mapChart;
 
 function setActions(container) {
-    createCheckBox(
-        container,
-        'Debug',
-        function (e) {
-            RealMap.setDebugging(_getChecked(e));
-            mapChart.render();
-        },
-        false
-    );
-    createButton(container, 'Test', function (e) {});
 }
 
 async function init() {
-    const t1 = +new Date();
-    console.log('RealMap v' + RealMap.getVersion());
-    // RealMap.setDebugging(true);
-    RealMap.setLogging(true);
-
     mapChart = RealMap.createChartAsync(document, 'realmap', config, true, () => {
         console.log('LOADED!');
     });

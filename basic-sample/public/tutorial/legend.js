@@ -120,12 +120,6 @@ function setActions(container) {
 }
 
 async function init() {
-    const t1 = +new Date();
-    console.log((+new Date() - t1) + ' ms.');
-    console.log('RealMap v' + RealMap.getVersion());
-    // RealMap.setDebugging(true);
-    RealMap.setLogging(true);
-
     mapChart = await RealMap.createChartAsync(document, 'realmap', config, true, () => {
         console.log('LoADED!')
     });

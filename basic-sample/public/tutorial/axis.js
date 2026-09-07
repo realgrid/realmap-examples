@@ -195,8 +195,6 @@ const config = {
 let mapChart;
 
 async function init() {
-    RealMap.setLogging(true);
-
     mapChart = await RealMap.createChartAsync(
         document,
         'realmap',

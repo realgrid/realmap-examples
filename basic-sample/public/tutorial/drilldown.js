@@ -173,7 +173,6 @@ function setActions(container) {
 }
 
 async function init() {
-    RealMap.setLogging(true);
     mapChart = await RealMap.createChartAsync(document, 'realmap', config, true, () => {
         console.log('LOADED!')
     });

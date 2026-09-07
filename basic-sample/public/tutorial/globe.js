@@ -55,15 +55,6 @@ let mapChart;
 function setActions(container) {
     createCheckBox(
         container,
-        'Debug',
-        function (e) {
-            RealMap.setDebugging(_getChecked(e));
-            mapChart.render();
-        },
-        false
-    );
-    createCheckBox(
-        container,
         'Zoomable',
         async function (e) {
             config.body.zoomable = _getChecked(e);

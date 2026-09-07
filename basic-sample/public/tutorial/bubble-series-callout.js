@@ -125,16 +125,6 @@ let mapChart;
 function setActions(container) {
     createCheckBox(
         container,
-        'Debug',
-        function (e) {
-            RealMap.setDebugging(_getChecked(e));
-            mapChart.render();
-        },
-        false
-    );
-    createButton(container, 'Test', function (e) {});
-    createCheckBox(
-        container,
         'Zoomable',
         async function (e) {
             config.body.zoomable = _getChecked(e);
@@ -145,13 +135,6 @@ function setActions(container) {
 }
 
 async function init() {
-    const t1 = +new Date();
-    console.log(+new Date() - t1 + ' ms.');
-
-    console.log('RealMap v' + RealMap.getVersion());
-    // RealMap.setDebugging(true);
-    RealMap.setLogging(true);
-
     mapChart = await RealMap.createChartAsync(
         document,
         'realmap',
