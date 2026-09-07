@@ -64,7 +64,7 @@ const config = {
         },
         {
             front: true, offsetX: 380, offsetY: 50,
-            text: '무효 투표수: <t style="font-weight: 700;">307.542</t>명',
+            text: '무효 투표수: <t style="font-weight: 700;">307,542</t>명',
             style: { textAlign: 'right', fill: 'black', fontSize: 15 },
         },
         {
