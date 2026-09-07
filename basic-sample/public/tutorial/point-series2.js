@@ -1,24 +1,10 @@
-const $ds = {
-    Flooding: [],
-    Wettest: [],
-    Wet: [],
-    Normal: [],
-    Dry: [],
-    Drier: [],
-    Driest: [],
-    'No data': [],
-};
-
-const MAX_ROWS = 1000;
-const $dsKeys = Object.keys($ds);
-
-data.sort(() => 0.5 - Math.random());
-data.forEach((row) => {
-    $ds[row.cat]?.length < MAX_ROWS && $ds[row.cat].push(row);
-});
+/**
+ * cat field: 'No data', 'Flooding', 'Wettest', 'Wet', 'Normal', 'Dry', 'Drier', 'Driest'
+ */
 
 const config = {
     title: false,
+    credits: {visible: false},
     annotations: [
         {
             front: true,
@@ -55,7 +41,9 @@ const config = {
     series: [
         {
             name: 'usa',
-            visibleInLegend: false,
+            legend: -1,
+            // mapKeys: ['name', 'id'],
+            // data: [{ id: 'CA' }],
             nullStyle: { fill: '#efefef' },
             style: {
                 stroke: '#fff',
@@ -144,21 +132,47 @@ const config = {
     },
 };
 
-let chart;
+async function onChartLoaded(chart) {
+    function runSteps(stepIndex = 0) {
+        if (stepIndex >= $dsKeys.length) return;
 
-function runSteps(stepIndex = 0) {
-    if (stepIndex >= $dsKeys.length) return;
-
-    requestAnimationFrame(() => {
-        const cat = $dsKeys[stepIndex];
-        chart.getSeries(cat).updateOptions({
-            data: $ds[cat],
+        requestAnimationFrame(() => {
+            const cat = $dsKeys[stepIndex];
+            mapChart.getSeries(cat).updateOptions({
+                data: $ds[cat],
+            });
+            runSteps(stepIndex + 1);
         });
-        runSteps(stepIndex + 1);
+    }
+
+    const data = await fetch('../data/us-river.json').then((res) => res.json());
+
+    const $ds = {
+        Flooding: [],
+        Wettest: [],
+        Wet: [],
+        Normal: [],
+        Dry: [],
+        Drier: [],
+        Driest: [],
+        'No data': [],
+    };
+
+    const MAX_ROWS = 1000;
+    const $dsKeys = Object.keys($ds);
+
+    // shuffle
+    data.sort(() => 0.5 - Math.random());
+    data.forEach((row) => {
+        $ds[row.cat]?.length < MAX_ROWS && $ds[row.cat].push(row);
     });
+
+    runSteps();
 }
 
+let mapChart;
+
 async function init() {
-    chart = await RealMap.createChartAsync(document, 'realmap', config, true, runSteps);
+    mapChart = await RealMap.createChartAsync(document, 'realmap', config, true, onChartLoaded);
 
 }

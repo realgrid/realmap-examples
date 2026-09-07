@@ -1,5 +1,6 @@
 const config = {
     title: false,
+    credits: {visible: false},
     map: [
         {
             url: '../maps/geojson/kr-sigun-low.geo.json',
@@ -28,6 +29,7 @@ const config = {
         },
         {
             front: true,
+            // scope: 'body',
             type: 'text',
             text: '산업단지 가동률',
             offsetX: 40,
@@ -47,6 +49,7 @@ const config = {
                 stroke: '#fff'
             },
             style: {
+                // fill: '#b3cde0',
                 stroke: '#9dafb0',
             },
         },
@@ -57,6 +60,7 @@ const config = {
                 offset: 5,
                 style: {
                     textShadow: '0px 0px 5px white',
+                    // fontSize: 14
                 },
             },
             face: {
@@ -73,12 +77,14 @@ const config = {
                     fontSize: '10pt',
                 },
             },
+            // size: 100,
             radius: 32,
             innerRadius: 18,
             style: {
                 stroke: 'none',
             },
             styleCallback: (ctx) => {
+                // console.log(ctx.source.value);
                 const value = +ctx.source.value;
                 if (value >= 80) {
                     return { 
@@ -92,13 +98,43 @@ const config = {
             maxValue: 100,
             zoomLevel: 250,
             dataUrl: '../data/산업단지가동률-남부.json',
+            // callout: true,
             tooltipText: '<b>${name}</b>: ${value}',
         },
     ],
 };
 
-let chart;
+let mapChart;
+
+function setActions(container) {
+    createCheckBox(
+        container,
+        'Debug',
+        function (e) {
+            RealMap.setDebugging(_getChecked(e));
+            mapChart.render();
+        },
+        false
+    );
+    createButton(container, 'Test', function (e) {});
+}
 
 async function init() {
-    chart = await RealMap.createChartAsync(document, 'realmap', config, true);
+    const t1 = +new Date();
+    console.log(+new Date() - t1 + ' ms.');
+
+    console.log('RealMap v' + RealMap.getVersion());
+    // RealMap.setDebugging(true);
+    RealMap.setLogging(true);
+
+    mapChart = await RealMap.createChartAsync(
+        document,
+        'realmap',
+        config,
+        true,
+        () => {
+            console.log('LOADED!');
+        }
+    );
+    setActions('actions');
 }

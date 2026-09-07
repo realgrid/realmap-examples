@@ -1,6 +1,6 @@
-
 const config = {
     title: false,
+    credits: {visible: false},
     map: [
         { url: '../maps/geojson/kr-sigun-low.geo.json'},
     ],
@@ -11,10 +11,10 @@ const config = {
         onClickArea: (e) => {
             const areaId = e.area.id;
 
-            if (chart.body.zoom > 100) {
-                chart.body.zoomTo(100, [127.7, 36.6]);
+            if (mapChart.body.zoom > 100) {
+                mapChart.body.zoomTo(100, [127.7, 36.6]);
             } else {
-                chart.body.zoomToArea(areaId);
+                mapChart.body.zoomToArea(areaId);
             }
             
         }
@@ -34,6 +34,7 @@ const config = {
         },
         {
             front: true,
+            // scope: 'body',
             type: 'text',
             text: '선택한 지역 확대',
             offsetX: 40,
@@ -56,10 +57,10 @@ const config = {
             },
             hoverColor: '#83A8DC',
             onPointClick: (e) => {
-                if (chart.body.zoom === 800) {
-                    chart.body.zoomTo(100, e.series.getCenter(e.id));
+                if (mapChart.body.zoom === 800) {
+                    mapChart.body.zoomTo(100, e.series.getCenter(e.id));
                 } else {
-                    chart.body.zoomTo(800, e.series.getCenter(e.id));
+                    mapChart.body.zoomTo(800, e.series.getCenter(e.id));
                 }
                 
             }
@@ -67,8 +68,13 @@ const config = {
     ],
 };
 
-let chart;
+let mapChart;
 
 async function init() {
-    chart = await RealMap.createChartAsync(document, 'realmap', config, true);
+    mapChart = await RealMap.createChartAsync(
+        document,
+        'realmap',
+        config,
+        true,
+    );
 }

@@ -1,5 +1,6 @@
 const config = {
     title: false,
+    credits: {visible: false},
     map: [
         {
             url: '../maps/geojson/kr-sido-low.geo.json',
@@ -25,6 +26,7 @@ const config = {
         },
         {
             front: true,
+            // scope: 'body',
             type: 'text',
             text: '지역별 최저 기온',
             offsetX: 40,
@@ -73,8 +75,8 @@ const config = {
     ],
 };
 
-let chart;
+let mapChart;
 
 async function init() {
-    chart = await RealMap.createChartAsync(document, 'realmap', config, true);
+    mapChart = await RealMap.createChartAsync(document, 'realmap', config, true);
 }

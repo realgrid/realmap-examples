@@ -1,5 +1,6 @@
 const config = {
     title: false,
+    credits: {visible: false},
     map: [
         {
             url: '../maps/geojson/kr-sigun-low.geo.json',
@@ -33,6 +34,7 @@ const config = {
         },
         {
             front: true,
+            // scope: 'body',
             type: 'text',
             text: '2024년 2월 전국 경제활동인구',
             offsetX: 40,
@@ -46,6 +48,9 @@ const config = {
     ],
     body: {
         projection: 'mercator',
+        style: {
+           // fill: 'var(--area-color-1)',
+        },
     },
     colorScale: {
         maxColor: '#4492F5',
@@ -76,7 +81,7 @@ const config = {
             name: '행정구역경계(시군구)',
             tooltipText: '${name}<br/>${value;;#,0.#}명',
             mapKeys: ['b-code', 'id'],
-            visibleInLegend: false,
+            legend: -1,
             dataUrl: '../data/active-population.json',
             hoverColor: `#C3C3C3`,
             style: {
@@ -87,6 +92,7 @@ const config = {
         {
             type: 'bubble',
             name: '시도별 경제활동인구',
+            // tooltipText: false,
             pointLabel: {
                 text: '${name}<br><t style="opacity:0.7">${laborForce;;#,0.#}</t>',
                 effect: 'outline',
@@ -97,15 +103,29 @@ const config = {
                 stroke: '#FFAB70',
                 strokeWidth: 1.5,
             },
+            // styleCallback: () => ({ fill: '#FFDB9A', stroke: '#ccc' }),
             mapKeys: ['b-code', 'b-code'],
             valueField: 'laborForce',
             dataUrl: '../data/sido-labor-force.json',
+            // callout: {
+            //     visible: true,
+            //     anchorPoint: {
+            //         visible: !false,
+            //         style: {
+            //             stroke: 'blue',
+            //             fill: 'blue',
+            //         },
+            //     },
+            //     style: {
+            //         stroke: 'red',
+            //     },
+            // },
         },
     ],
 };
 
-let chart;
+let mapChart;
 
 async function init() {
-    chart = await RealMap.createChartAsync(document, 'realmap', config, true);
+    mapChart = await RealMap.createChartAsync(document, 'realmap', config, true);
 }

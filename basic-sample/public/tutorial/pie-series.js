@@ -1,12 +1,12 @@
 const config = {
     title: false,
+    credits: {visible: false},
     map: [
         { 
             url: '../maps/geojson/kr-sido-low.geo.json', 
             padding: '0.1 0'
         },
     ],
-
     body: {
         projection: 'mercator',
     },
@@ -43,11 +43,14 @@ const config = {
             name: '행정구역경계(시도)',
             dataUrl: '../data/kr-gender-ratio.json',
             mapKeys: ['b-code', 'code'],
-            hoverColor: '#DBD4CE',
+            // hoverColor: '#DBD4CE',
             tooltipText: false,
             style: {
-                stroke: '#fff',
+                stroke: '#6d6d6d',
                 strokeWidth: 0.7
+            },
+            hoverStyle: {
+                filter: 'brightness(0.95)'
             },
             pointColors: (args) => {
                 const ratio = args.source.genderRatio;
@@ -55,7 +58,7 @@ const config = {
                 if (ratio < 1) return '#FFD5A3';
                 return '#FCE7C8';
             },
-            visibleInLegend: false,
+            legend: -1,
         },
         {
             type: "pie",
@@ -83,8 +86,8 @@ const config = {
     ],
 };
 
-let chart;
+let mapChart;
 
 async function init() {
-    chart = await RealMap.createChartAsync(document, 'realmap', config, true);
+    mapChart = await RealMap.createChartAsync(document, 'realmap', config, true);
 }

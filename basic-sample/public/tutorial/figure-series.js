@@ -1,5 +1,3 @@
-
-
 const data = [
     { "name": "서울특별시", "s_name": "서울", "pm2_5": 25, "pm10": 43, "coord": [126.9780, 37.5665], "offset": [0, 0.1] },
     { "name": "부산광역시", "s_name": "부산", "pm2_5": 19, "pm10": 40, "coord": [129.0756, 35.1796], "offset": [0.3, -0.2] },
@@ -44,7 +42,8 @@ const data = [
 });
 const config = {
     title: false,
-    chart: {
+    credits: {visible: false},
+    general: {
         backgroundStyle: {
             backgroundColor: '#85c6f8'
         }
@@ -111,14 +110,15 @@ const config = {
             mapKeys: 'name',
             valueField: 'pm2_5',
             data,
-            visibleInLegend: false,
+            legend: -1,
             style: {
                 opacity: 1,
             },
             hoverStyle: {
-                stroke: 'white',
-                fill: 'inherit',
-                opacity: 0.8,
+                filter: 'brightness(1.15)',
+                // stroke: 'white',
+                // fill: 'inherit',
+                // opacity: 0.8,
             },
         },
         {
@@ -152,22 +152,14 @@ const config = {
                 visible: true,
                 layoutOnly: true
             },
-            visibleInLegend: false,
+            legend: -1,
         },
     ],
 };
 
-
-
-const tool = {
-    description: [
-        '- 리얼맵은 지역 위에 바 차트 등, 다양한 시리즈의 차트를 그릴 수 있습니다.',
-    ],
-};
-
-let chart;
+let mapChart;
 
 async function init() {
     RealMap.setLogging(true);
-    chart = await RealMap.createChartAsync(document, 'realmap', config, true);
+    mapChart = await RealMap.createChartAsync(document, 'realmap', config, true);
 }

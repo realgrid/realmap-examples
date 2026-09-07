@@ -2,7 +2,7 @@ const config = {
     templates: {
         '@series': {
             map: {
-                hoverColor: '#d9dcd6',
+                // hoverColor: '#d9dcd6',
                 pointLabel: false,
                 allAreas: false,
                 style: {
@@ -13,16 +13,28 @@ const config = {
             },
         },
     },
-    title: false,
+    general: {
+        dragAction: 'zoom'
+    },
+    title: 'Good',
+    credits: false,
     map: [
         {
             url: '../maps/geojson/kr-sido-low.geo.json',
-            padding: '0.8 0 0.3 0'
+            // padding: '0.8 0 0.3 0',
+            // insets: ['제주도', '울릉도'],
+            // insets: ['제주도_B', '울릉도_B']
         },
     ],
     body: {
         projection: 'mercator',
         zoomable: true,
+    },
+    axis: {
+        crosshair: true
+    },
+    zoomPanel: {
+        verticalAlign: 'bottom'
     },
     annotations: [
         {
@@ -57,6 +69,10 @@ const config = {
             tooltipText: '${name}<br/>${qty}',
             mapKeys: ['b-code', 'id'],
             dataUrl: '../data/kr-bookstore.json',
+            hoverStyle: {
+                stroke: '#6d6d6d'
+            },
+            // hiddenAreas: ['5000000000'],
             pointColors: (args) => {
                 const ratio = args.source.ratio;
                 
@@ -81,13 +97,13 @@ const config = {
             valueField: 'qty',
             style: {
                 opacity: 1
-            }
+            },
         },
     ],
 };
 
-let chart;
+let mapChart;
 
 async function init() {
-    chart = await RealMap.createChartAsync(document, 'realmap', config, true);
+    mapChart = await RealMap.createChartAsync(document, 'realmap', config, true);
 }

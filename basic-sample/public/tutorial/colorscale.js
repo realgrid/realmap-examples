@@ -1,4 +1,3 @@
-
 const config = {
     title: {
         text: '시군구별 인구 밀도',
@@ -8,9 +7,11 @@ const config = {
             fontWeight: 700,
         },
     },
+    credits: {visible: false},
     map: [
         {
             url: '../maps/geojson/kr-sigun-low.geo.json',
+            insets: '제주도'
         },
     ],
     body: {
@@ -36,17 +37,21 @@ const config = {
                 '<t style="font-size: 18px; font-weight: 700;">${sido} ${name}</t>',
                 '인구 밀도: <t style="font-weight: 700;">${value}</t>',
             ].join('<br />'),
-            hoverColor: '#FBDEB5',
             style: {
                 stroke: '#fff',
                 strokeWidth: 0.5,
+            },
+            hoverStyle: {
+                stroke: 'black',
+                strokeWidth: 1,
+                filter: 'brightness(1.05)',
             },
         },
     ],
 };
 
-let chart;
+let mapChart;
 
 async function init() {
-    chart = await RealMap.createChartAsync(document, 'realmap', config, true);
+    mapChart = await RealMap.createChartAsync(document, 'realmap', config, true);
 }

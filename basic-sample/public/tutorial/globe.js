@@ -1,9 +1,11 @@
 const config = {
     title: false,
-    map: [
-        { url: '../maps/geojson/world-low.geo.json' },
-    ],
-    
+    credits: { visible: false },
+    map: [{ url: '../maps/geojson/world-low.geo.json' }],
+    body: {
+        projection: 'orthographic',
+        zoomable: true,
+    },
     axis: {
         grid: true,
     },
@@ -22,6 +24,7 @@ const config = {
         },
         {
             front: true,
+            // scope: 'body',
             type: 'text',
             text: '구 형태의 지도 회전',
             offsetX: 40,
@@ -33,31 +36,50 @@ const config = {
             },
         },
     ],
-    body: {
-        projection: 'orthographic',
-        zoomable: true,
-    },
     series: [
         {
             useMapData: true,
-            style: { 
+            style: {
                 stroke: '#fff',
                 fill: '#B4CBEF',
                 strokeWidth: 0.7,
             },
             hoverColor: '#83A8DC',
             pointLabel: false,
-        }
+        },
     ],
 };
 
-let chart;
+let mapChart;
+
+function setActions(container) {
+    createCheckBox(
+        container,
+        'Debug',
+        function (e) {
+            RealMap.setDebugging(_getChecked(e));
+            mapChart.render();
+        },
+        false
+    );
+    createButton(container, 'Test', async function (e) {});
+    createCheckBox(
+        container,
+        'Zoomable',
+        async function (e) {
+            config.body.zoomable = _getChecked(e);
+            await mapChart.loadAsync(config);
+        },
+        true
+    );
+}
 
 async function init() {
-    chart = await RealMap.createChartAsync(
+    mapChart = await RealMap.createChartAsync(
         document,
         'realmap',
         config,
-        true,
+        true
     );
+    setActions('actions');
 }

@@ -1,5 +1,5 @@
 const config = {
-    chart: {
+    general: {
         backgroundStyle: {
             backgroundColor: '#F2F1EF',
         },
@@ -8,6 +8,7 @@ const config = {
         {
             url: '../maps/geojson/world-low.geo.json',
             exclude: ['ATA'],
+            // padding: '10 0',
         },
     ],
     annotations: [
@@ -38,15 +39,29 @@ const config = {
         },
     ],
     title: false,
+    credits: false,
     body: {
         projection: 'mercator',
+        // projection: 'equalearth',
         style: {
             // fill: '#F2F1EF',
         },
+        scrollable: true
     },
     axis: {
         grid: false,
     },
+    // annotation: [
+    //     {
+    //         type: 'text',
+    //         front: true,
+    //         text: '2024 Peak Hours Spent in congestion',
+    //         style: { fontWeight: 700 },
+    //         offsetX: 20,
+    //         offsetY: 20,
+    //     },
+    // ],
+    // tooltip: false,
     series: [
         {
             type: 'map',
@@ -105,7 +120,7 @@ const config = {
     ],
 };
 
-let chart;
+let mapChart;
 
 function setActions(container) {
     createCheckBox(
@@ -113,7 +128,7 @@ function setActions(container) {
         'Debug',
         function (e) {
             RealMap.setDebugging(_getChecked(e));
-            chart.render();
+            mapChart.render();
         },
         false
     );
@@ -123,13 +138,28 @@ function setActions(container) {
         'Zoomable',
         async function (e) {
             config.body.zoomable = _getChecked(e);
-            await chart.loadAsync(config);
+            await mapChart.loadAsync(config);
         },
         true
     );
 }
 
 async function init() {
-    chart = await RealMap.createChartAsync(document, 'realmap', config, true);
+    const t1 = +new Date();
+    console.log(+new Date() - t1 + ' ms.');
+
+    console.log('RealMap v' + RealMap.getVersion());
+    // RealMap.setDebugging(true);
+    RealMap.setLogging(true);
+
+    mapChart = await RealMap.createChartAsync(
+        document,
+        'realmap',
+        config,
+        true,
+        () => {
+            console.log('LOADED!');
+        }
+    );
     setActions('actions');
 }

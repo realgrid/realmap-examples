@@ -41,10 +41,8 @@ const data = [
     }
 ];
 const config = {
-    options: {
-        theme: '',
-    },
     title: false,
+    credits: false,
     map: [
         {
             url: '../maps/geojson/kr-sido-low.geo.json',
@@ -210,8 +208,29 @@ const config = {
     ],
 };
 
-let chart;
+let mapChart;
+
+function setActions(container) {
+    createCheckBox(
+        container,
+        'Debug',
+        function (e) {
+            RealMap.setDebugging(_getChecked(e));
+            mapChart.render();
+        },
+        false
+    );
+    createButton(container, 'Test', function (e) {});
+}
 
 async function init() {
-    chart = RealMap.createChartAsync(document, 'realmap', config, true);
+    const t1 = +new Date();
+    console.log('RealMap v' + RealMap.getVersion());
+    // RealMap.setDebugging(true);
+    RealMap.setLogging(true);
+
+    mapChart = RealMap.createChartAsync(document, 'realmap', config, true, () => {
+        console.log('LOADED!');
+    });
+    setActions('actions');
 }

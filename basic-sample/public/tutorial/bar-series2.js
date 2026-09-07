@@ -8,6 +8,7 @@ const data = [
 
 const config = {
     title: false,
+    credits: {visible: false},
     map: [
         {
             url: '../maps/geojson/world-low.geo.json',
@@ -92,8 +93,8 @@ const config = {
     ],
 };
 
-let chart;
+let mapChart;
 
 async function init() {
-    chart = await RealMap.createChartAsync(document, 'realmap', config, true);
+    mapChart = await RealMap.createChartAsync(document, 'realmap', config, true);
 }

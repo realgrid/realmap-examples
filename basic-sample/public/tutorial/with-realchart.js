@@ -1,9 +1,6 @@
-/**
- * @demo
- *
- */
 const config = {
     title: false,
+    credits: {visible: false},
     asset: [
         {
             type: 'pattern',
@@ -73,7 +70,6 @@ const config = {
         {
             mapKeys: ['iso-a2', 'id'],
             dataUrl: '../data/gdp-growth-by-country.json',
-            hoverColor: '#f2f6fc',
             tooltipText:
                 '<t style="font-weight: bold;">${name} 2023년 GDP 성장률: ${value}</t>',
             style: {
@@ -81,16 +77,26 @@ const config = {
                 strokeWidth: 0.5,
                 cursor: 'pointer'
             },
+            hoverStyle: {
+                stroke: '#5d5d5d',
+                filter: 'brightness(0.9)',
+                strokeWidth: 1.5,
+            },
+            selectStyle: {
+                stroke: '#5d5d5d',
+                strokeWidth: 2,
+                filter: 'none',
+            },
             onPointClick: (args) => {
                 const { id } = args.source;
-                const point = chart.seriesByType('map').pointByProp('iso-a2', id);
+                const map = mapChart.seriesByType('map');
+                const point = map.pointByProp('iso-a2', id);
 
                 if (window.prevPoint2) {
-                    window.prevPoint2.setSelected(false);
+                    map.unselect(window.prevPoint2);
                 }
 
-                point.setSelected(true);
-                chart.render();
+                map.select(point);
 
                 window.prevPoint2 = point;
                 
@@ -100,7 +106,7 @@ const config = {
                     return;
                 }
 
-                chart.body.zoomToArea(point.area.id, 0.3);
+                mapChart.body.zoomToArea(point.area.id, 0.3);
                 
                 const seriesData = foundData.data.map(({ year, value }) => ({ x: year + '', y: value }));
 
@@ -126,6 +132,8 @@ const config = {
 async function onChartLoaded(mapChart) {
     window.chartData = await fetch('../data/gdp-growth-by-country.json').then((res) => res.json());
 
+    if (mapChart.isDestroying()) return;
+
     const point = mapChart.seriesByType('map').pointByProp('iso-a2', 'KR');
     window.prevPoint2 = point;
     point?.setSelected(true);
@@ -144,9 +152,8 @@ async function onChartLoaded(mapChart) {
         },
         xAxis: {
             type: 'category',
-            crosshair: true
+            crosshair: true,
         },
-        yAxis: {},
         series: {
             type: 'spline',
             marker: {
@@ -158,11 +165,15 @@ async function onChartLoaded(mapChart) {
     });
 }
 
-let chart;
+function setActions(container) {}
+
+let mapChart;
 let realchart;
 
 async function init() {
-    chart = await RealMap.createChartAsync(document, 'realmap', config, true);
+    mapChart = await RealMap.createChartAsync(document, 'realmap', config, true);
 
-    await onChartLoaded(chart);
+    await onChartLoaded(mapChart);
+
+    setActions('actions');
 }

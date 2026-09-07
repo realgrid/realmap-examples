@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>지도</title>
+<style>
+html {
+	margin: 0px;
+}
+body {
+	margin: 20px 30px;
+}
+
+#realmap {
+	width: 850px;
+	height: 750px;
+    border: 1px solid lightgray;
+    margin-bottom: 20px;
+}
+.template-container {
+    display: none;
+}
+</style>
+
+<style id="rmd-demo-style">
+    :root {
+    --demo-anime-delay: 5s;
+    --demo-fadeout-duration: 2s;
+    --demo-type-duration: 4s;
+}
+
+#realmap .typewriter {
+    font: 1rem/1.4 monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    width: 0ch;
+    border-right: 2px solid currentColor;  /* 커서 */
+    animation:
+        typing var(--demo-type-duration) steps(23) forwards,
+        caret 0.6s step-end infinite;
+}
+
+@keyframes show {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes typing {
+    from { width: 0ch; }
+    to   { width: 23ch; }
+}
+
+@keyframes caret {
+    50% { border-color: transparent; }
+}
+
+#realmap .intro {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: show var(--demo-fadeout-duration) ease-in-out forwards alternate var(--demo-anime-delay);
+
+    &::after {
+        z-index: 1;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .content {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+        color: white;
+        
+
+        .title {
+            font-size: 42px;
+            margin-bottom: 10px;
+            background-color: #1d6c6f;
+            padding: 8px 32px;
+            color: white;
+            &::after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 3px;
+                background-color: #fff;
+                margin-top: 8px;
+            }
+        }
+        .description {
+            font-weight: 500;
+            font-size: 18px;
+        }
+    }
+}
+
+#realmap .memo {
+    width: 300px;
+    background-color: #2b2b2b;
+    border: 6px solid #6a6a6a;
+    color: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    word-break: keep-all;
+    
+    opacity: 0;
+    animation: show var(--demo-fadeout-duration) ease-in-out forwards reverse var(--demo-anime-delay);
+
+    h4, p {
+        margin: 0;
+        font-weight: 700;
+    }
+
+    h4 {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    p {
+        line-height: 28px;
+    }
+}
+</style>
+
+<link href="../realmap/realmap-style.css" rel="stylesheet">
+<link href="../realmap/realmap-export-style.css" rel="stylesheet">
+<style>
+.green-layout {
+    background-color: #00880020;
+}
+.red-button {
+    color: red;
+}
+</style>
+<script type="text/javascript" src="../js/domutils.js"></script>
+<script type="text/javascript" src="../js/realmap-lic.js"></script>
+<script type="text/javascript" src="../realmap/realmap-export.1.1.22.js"></script>
+<script type="text/javascript" src="../realmap/realmap.min.js"></script>
+<script defer type="text/javascript" src="./html-annotation.js"></script>
+<script type="text/javascript">
+	window.addEventListener('DOMContentLoaded', function () {
+		try {
+			init();
+		} catch (err) {
+			alert(err);
+			console.error(err);
+		}
+	});	
+</script>
+</head>
+<body>
+	<div id="realmap"></div>
+	<div id="actions"></div>
+
+    <div class="template-container">
+        <div id="template1">
+            <div class="intro">
+                <div class="content">
+                    <h2 class="title">호미닌과 인간의 뿌리</h2>
+                    <p class="description typewriter">초기 인류 다섯 종이 남긴 기원 퍼즐 조각</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="template2">
+            <div class="memo">
+                <h4>호미닌과 인간의 뿌리</h4>
+                <p>사헬란트로푸스(약 700만 년 전)는 머리뼈 밑 구멍 위치로 초기 두발보행을 시사합니다. <br />
+                    오로린은 대퇴골, 아르디피테쿠스는 잡을 수 있는 엄지발가락으로 나무·지상 생활을 병행했죠. <br />
+                    뒤이어 아나멘시스와 아파렌시스가 더 확실한 직립 보행의 길을 닦았습니다.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>		

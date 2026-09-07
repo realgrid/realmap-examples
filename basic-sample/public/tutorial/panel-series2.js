@@ -1,5 +1,6 @@
 const config = {
     title: false,
+    credits: {visible: false},
     map: [
         {
             url: '../maps/geojson/kr-sido-low.geo.json',
@@ -22,6 +23,7 @@ const config = {
         },
         {
             front: true,
+            // scope: 'body',
             type: 'text',
             text: '지역별 기상 예보(서울, 세종, 광주, 제주, 부산)',
             offsetX: 40,
@@ -33,7 +35,6 @@ const config = {
             },
         },
     ],
-
 
     body: {
         projection: 'mercator',
@@ -65,6 +66,9 @@ const config = {
                 style: {
                     strokeWidth: 0,
                 },
+                backgroundStyle: {
+                    // fill: 'red'
+                }
             },
             body: {
                 text: '최저: <t style="opacity: 0.7;">${tempMin}°C</t>ㅤ최대: <t style="opacity: 0.7;">${tempMax}°C</t>'
@@ -80,8 +84,8 @@ const config = {
     ],
 };
 
-let chart;
+let mapChart;
 
 async function init() {
-    chart = await RealMap.createChartAsync(document, 'realmap', config, true);
+    mapChart = await RealMap.createChartAsync(document, 'realmap', config, true);
 }

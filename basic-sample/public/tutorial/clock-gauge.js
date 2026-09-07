@@ -8,6 +8,8 @@ const clockConfig = {
             opacity: 0.9,
             fill: 'rgba(0, 0, 35, 0.9)',
             filter: 'drop-shadow( 0px 0px 6px rgba(0, 0, 0, .6))'
+            // fill: 'url(#gradientFill)',
+            // filter: 'url(#dropShadow)',
         },
     },
     rim: {
@@ -66,9 +68,9 @@ const data = [
 ].map(r => {
     return { ...r, offset: [r.target[0] - r.coord[0], r.target[1] - r.coord[1]]};
 })
-
 const config = {
     title: false,
+    credits: {visible: false},
     map: [
         {
             name: 'nation',
@@ -83,6 +85,7 @@ const config = {
         panX: 6,
         panY: -10,
         zoomable: false,
+        movable: false
     },
     axis: {
         grid: true,
@@ -176,8 +179,36 @@ const config = {
     ],
 };
 
-let chart;
+let mapChart;
+
+function setActions(container) {
+    createCheckBox(
+        container,
+        'Debug',
+        function (e) {
+            RealMap.setDebugging(_getChecked(e));
+            mapChart.render();
+        },
+        false
+    );
+    createButton(container, 'Test', function (e) {});
+}
 
 async function init() {
-    chart = await RealMap.createChartAsync(document, 'realmap', config, true);
+    const t1 = +new Date();
+    console.log(+new Date() - t1 + ' ms.');
+
+    console.log('RealMap v' + RealMap.getVersion());
+    // RealMap.setDebugging(true);
+    RealMap.setLogging(true);
+    mapChart = await RealMap.createChartAsync(
+        document,
+        'realmap',
+        config,
+        true,
+        () => {
+            console.log('LOADED!');
+        }
+    );
+    setActions('actions');
 }

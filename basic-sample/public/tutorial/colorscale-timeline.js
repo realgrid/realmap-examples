@@ -1,5 +1,6 @@
 const config = {
     title: false,
+    credits: {visible: false},
     annotations: [
         {
             front: true,
@@ -30,7 +31,6 @@ const config = {
     map: [
         {
             url: '../maps/geojson/world-low.geo.json',
-            exclude: ['ATA'],
         },
     ],
     
@@ -43,17 +43,22 @@ const config = {
     colorScale: {
         maxColor: '#b10303',
         stepCount: 9,
+        // nullStyle: {
+        //     fill: 'white',
+        // },
+        // showNull: false,
+        // -4.3122134 2.4297276
         steps: [
-            { from: -4.5, to: -2, color: '#D0EFFF' },
-            { from: -2, to: -1.5, color: '#B0DFF1' },
-            { from: -1.5, to: -1, color: '#76C1D8' },
-            { from: -1, to: -0.5, color: '#59B2CB' },
-            { from: -0.5, to: 0, color: '#fff' },
-            { from: 0, to: 0.5, color: '#E0B2D8' },
-            { from: 0.5, to: 1, color: '#BE9ECD' },
-            { from: 1, to: 1.5, color: '#9F8CC2' },
-            { from: 1.5, to: 2, color: '#7E79B7' },
-            { from: 2, to: 2.5, color: '#5E66AC' },
+            { from: -4.5, to: -2, color: '#6794dc' },
+            { from: -2, to: -1.5, color: '#78a9e2' },
+            { from: -1.5, to: -1, color: '#a4c6ec' },
+            { from: -1, to: -0.5, color: '#f2f6fc' },
+            { from: -0.5, to: 0, color: '#fff0f0' },
+            { from: 0, to: 0.5, color: '#ffc0c0' },
+            { from: 0.5, to: 1, color: '#ff9494' },
+            { from: 1, to: 1.5, color: '#ff5757' },
+            { from: 1.5, to: 2, color: '#ff2323' },
+            { from: 2, to: 2.5, color: '#b10303' },
         ],
     },
     series: [
@@ -62,6 +67,7 @@ const config = {
             useMapData: true,
             color: 'white',
             hoverColor: '#808080',
+            //tooltipText: '<t style="font-size: 20px; font-weight: 700;">${name}</t><br /><t style="opacity: 0.7; font-weight: 700;">온도편차: ${value}°C</t>',
             tooltipText: '<b>${name}</b><br/><t>온도편차: ${value}°C</t>',
             style: {
                 stroke: '#6d6d6d',
@@ -71,10 +77,9 @@ const config = {
     ],
 };
 
+const NEW_LINE = '\n'
 
-
-
-const onChartLoaded = async (chart) => {
+const onChartLoaded = async (mapChart) => {
     const sliderId = 'timeline-component';
     /**
      * 상태
@@ -84,7 +89,7 @@ const onChartLoaded = async (chart) => {
     ).then((res) =>
         res.text().then((data) =>
             data
-                .split('\n')
+                .split(NEW_LINE)
                 .filter((v) => v)
                 .filter((_, i) => i > 0)
                 .map((line) => {
@@ -130,6 +135,10 @@ const onChartLoaded = async (chart) => {
     let timeoutPointer = null;
 
     const render = (tick = 0) => {
+        if (mapChart.isDestroying()) {
+            return;
+        }
+
         const currentYear = startYear + tick;
 
         slider.value = tick;
@@ -137,7 +146,7 @@ const onChartLoaded = async (chart) => {
 
         const currentDataList = annualData[currentYear];
 
-        const mapSeries = chart.seriesByName('worldmap');
+        const mapSeries = mapChart.seriesByName('worldmap');
 
         for (const currentData of currentDataList) {
             const point = mapSeries.pointByProp('iso-a3', currentData.code);
@@ -213,11 +222,11 @@ function setActions(container) {
     createTimelineSlider(container);
 }
 
-let chart;
+let mapChart;
 
 async function init() {
-    chart = await RealMap.createChartAsync(document, 'realmap', config, true);
+    mapChart = await RealMap.createChartAsync(document, 'realmap', config, true);
 
     setActions('actions');
-    onChartLoaded(chart, { sliderId: 'timeline-component' });
+    onChartLoaded(mapChart, { sliderId: 'timeline-component' });
 }

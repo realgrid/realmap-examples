@@ -2,18 +2,22 @@ const config = {
     templates: {
         '@series': {
             map: {
-                hoverColor: '#F1F0E9',
+                hoverColor: '#C0D2AC',
                 pointLabel: false,
                 allAreas: false,
                 style: {
                     stroke: '#fff',
                     strokeWidth: 0.7
                 },
+                hoverStyle: {
+                    filter: 'none',
+                },
                 tooltipText: '${name}<br />${qty} 지점',
             },
         },
     },
     title: false,
+    credits: false,
     map: [
         {
             url: '../maps/geojson/kr-sido-low.geo.json', 
@@ -41,6 +45,7 @@ const config = {
         },
         {
             front: true,
+            // scope: 'body',
             type: 'text',
             text: '2019년 전국 서점 수 통계',
             offsetX: 40,
@@ -58,6 +63,9 @@ const config = {
             tooltipText: '${name}<br/>${qty}',
             mapKeys: ['b-code', 'id'],
             dataUrl: '../data/kr-bookstore.json',
+            style: {
+                stroke: '#6d6d6d'
+            },
             pointColors: (args) => {
                 const ratio = args.source.ratio;
                 
@@ -85,8 +93,8 @@ const config = {
     ],
 };
 
-let chart;
+let mapChart;
 
 async function init() {
-    chart = await RealMap.createChartAsync(document, 'realmap', config, true);
+    mapChart = await RealMap.createChartAsync(document, 'realmap', config, true);
 }

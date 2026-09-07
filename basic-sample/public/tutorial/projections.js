@@ -1,21 +1,18 @@
 const config = {
     title: false,
+    credits: { visible: false },
     map: [
         {
             url: '../maps/geojson/world-low.geo.json',
         },
     ],
-    
     axis: {
         grid: true,
+        crosshair: !true,
     },
     body: {
         zoomable: true,
-        projection: '',
-        // projection: 'mercator',
-        // projection: 'equalearth',
-        // projection: 'miller',
-        // projection: 'orthographic',
+        projection: undefined
     },
     annotations: [
         {
@@ -32,6 +29,7 @@ const config = {
         },
         {
             front: true,
+            // scope: 'body',
             type: 'text',
             text: '도법 동적 변경',
             offsetX: 40,
@@ -46,7 +44,7 @@ const config = {
     series: [
         {
             useMapData: true,
-            style: { 
+            style: {
                 stroke: '#fff',
                 fill: '#C7D9DD',
                 strokeWidth: 0.7,
@@ -59,30 +57,35 @@ const config = {
 
 function setActions(container) {
     createButton(container, '도법 미지정', async function (e) {
-        chart.body.updateOption('projection', '');
+        mapChart.body.updateOption('projection', '');
     });
 
     createButton(container, '메르카토르', async function (e) {
-        chart.body.updateOption('projection', 'mercator');
+        mapChart.body.updateOption('projection', 'mercator');
     });
 
     createButton(container, 'EqualEarth', async function (e) {
-        chart.body.updateOption('projection', 'equalearth');
+        mapChart.body.updateOption('projection', 'equalearth');
     });
 
     createButton(container, '밀러', async function (e) {
-        chart.body.updateOption('projection', 'miller');
+        mapChart.body.updateOption('projection', 'miller');
     });
 
     createButton(container, '직교투영', async function (e) {
-        chart.body.updateOption('projection', 'orthographic');
+        mapChart.body.updateOption('projection', 'orthographic');
     });
 }
 
-let chart;
+let mapChart;
 
 async function init() {
-    chart = await RealMap.createChartAsync(document, 'realmap', config, true);
-    
+    mapChart = await RealMap.createChartAsync(
+        document,
+        'realmap',
+        config,
+        true
+    );
+
     setActions('actions');
 }

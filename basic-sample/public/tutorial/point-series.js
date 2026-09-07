@@ -1,5 +1,6 @@
 const config = {
     title: false,
+    credits: {visible: false},
     map: [
         { 
             url: '../maps/geojson/kr-sido-low.geo.json', 
@@ -25,6 +26,7 @@ const config = {
         },
         {
             front: true,
+            // scope: 'body',
             type: 'text',
             text: '전국 장애인 복지관 현황',
             offsetX: 40,
@@ -38,7 +40,7 @@ const config = {
     ],
     series: [
         {
-            visibleInLegend: false,
+            legend: -1,
             tooltipText: '${id}<br />복지관: ${welfareCount}개',
             mapKeys: ['name', 'id'],
             hoverColor: '#C0D2AC',
@@ -95,8 +97,8 @@ const config = {
     ],
 };
 
-let chart;
+let mapChart;
 
 async function init() {
-    chart = await RealMap.createChartAsync(document, 'realmap', config, true);
+    mapChart = await RealMap.createChartAsync(document, 'realmap', config, true);
 }

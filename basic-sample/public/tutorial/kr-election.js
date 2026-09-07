@@ -16,17 +16,30 @@ const tooltipText = [
     '<t style="">심상정: </t><t style="opacity: 1;">${sim}표</t>',
 ].join('<br />');
 
-
 const config = {
     title: {
         visible: false,
     },
+    credits: false,
     map: [
         {
             url: '../maps/geojson/kr-sido-low.geo.json',
-            padding: '3 0 0.8 2.5',
+            padding: '0.7 0 0.2 1.2',
+            insets: [
+                '백령도',
+                '울릉도',
+                '제주도',
+            ],
+            dokdo: 0.2
         },
     ],
+    general: {
+        onClick: (args) => {
+            const [lon, lat] = args.coord;
+            console.log(`[${lon.toFixed(3)}, ${lat.toFixed(1)}]`);
+            
+        },
+    },
     body: {
         projection: 'mercator',
         style: {
@@ -64,8 +77,8 @@ const config = {
         {
             name: '지도',
             dataUrl: '../data/elections.json',
-            tooltipText,
-            visibleInLegend: false,
+            tooltipText: false,
+            legend: -1,
             pointColors: (args) => {
                 const {lee, yoon} = args.source;
                 
@@ -81,7 +94,7 @@ const config = {
         {
             type: 'bar',
             name: '시도별 통계',
-            visibleInLegend: false,
+            legend: -1,
             categories,
             width: 60,
             valueField: 'percents',
@@ -105,7 +118,7 @@ const config = {
             callout: {
                 visible: true,
                 style: {
-                    stroke: '#fff',
+                    stroke: '#2b2b2b',
                     strokeWidth: 1,
                     fill: 'black'
                 }
@@ -130,19 +143,24 @@ const config = {
                     '<t style="width: 30px;">심상정: </t><t style="opacity: 1;">803,358표</t>',
                     '<t style="width: 30px;">기타ㅤ: </t><t style="opacity: 1;">721,942표</t>',
                 ].join('<br />'),
+                style: {
+                    // textAlign: 'left',
+                    // position: 'right'
+                
+                }
             },
             data: [
                 {
                     value: [ 16147738, 16394815, 803358, 721942 ],
-                    coord: [ 122.5, 38.2 ]
+                    coord: [123.8, 37.6]
                 }
             ]
         }
     ],
 };
 
-let chart;
+let mapChart;
 
 async function init() {
-    chart = await RealMap.createChartAsync(document, 'realmap', config, true);
+    mapChart = await RealMap.createChartAsync(document, 'realmap', config, true);
 }

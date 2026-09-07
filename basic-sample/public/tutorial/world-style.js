@@ -1,4 +1,33 @@
 const config = {
+    title: false,
+    credits: false,
+    annotations: [
+        {
+            front: true,
+            type: 'shape',
+            shape: 'rectangle',
+            offsetX: 20,
+            offsetY: 20,
+            width: 10,
+            height: 28,
+            style: {
+                fill: '#83A8DC',
+            },
+        },
+        {
+            front: true,
+            // scope: 'body',
+            type: 'text',
+            text: 'Fill Assets(Pattern, Gradient)',
+            offsetX: 40,
+            offsetY: 20,
+            height: 28,
+            style: {
+                fontSize: '15pt',
+                fontWeight: 700,
+            },
+        },
+    ],
     map: [{ 
         url: '../maps/geojson/world-low.geo.json',
         exclude: ['ATA'],
@@ -135,15 +164,6 @@ const config = {
             dir: 'up',
         },
     ],
-    title: {
-        type: 'text',
-        text: 'Fill Assets(Pattern, Gradient)',
-        align: 'left',
-        style: {
-            fontSize: '15pt',
-            fontWeight: 700,
-        },
-    },
     body: {
         projection: 'mercator',
         zoomable: false,
@@ -159,6 +179,9 @@ const config = {
                 visible: true,
                 effect: 'outline',
             },
+            // style: {
+            //     fill: 'url(#pattern-2)',
+            // },
             pointColors: [
                 'url(#pattern-0)',
                 'url(#pattern-1)',
@@ -169,6 +192,9 @@ const config = {
                 'url(#pattern-6)',
                 'url(#pattern-7)',
             ],
+            hoverStyle: {
+                stroke: '#6d6d6d'
+            },
             data: [
                 {
                     id: 'CHN',
@@ -199,16 +225,20 @@ const config = {
     ],
 };
 
-let chart;
+let mapChart;
 
 function setActions(container) {
+    createButton(container, 'Test', function (e) {
+        // console.log(mapChart.series.getPoint(0).area);
+        console.log(mapChart.series.pointByProp('iso-a3', 'BRA'));
+    });
     createListBox(
         container,
         'Projection',
         ['', 'equalearth', 'mercator', 'miller', 'orthographic'],
         function (e) {
             config.body.projection = _getValue(e);
-            chart.load(config);
+            mapChart.load(config);
         },
         'equalearth'
     );
@@ -220,13 +250,28 @@ function setActions(container) {
             const suffix = _getValue(e);
             const pointColors = Array.from({ length: 7 }, (_, i) => `url(#${suffix}-${i})`);
             config.series[0].pointColors = pointColors;
-            await chart.loadAsync(config);
+            await mapChart.loadAsync(config);
         },
         'pattern'
     )
 }
 
 async function init() {
-    chart = await RealMap.createChartAsync(document, 'realmap', config, true);
+    const t1 = +new Date();
+    console.log(+new Date() - t1 + ' ms.');
+
+    console.log('RealMap v' + RealMap.getVersion());
+    // RealMap.setDebugging(true);
+    RealMap.setLogging(true);
+
+    mapChart = await RealMap.createChartAsync(
+        document,
+        'realmap',
+        config,
+        true,
+        () => {
+            console.log('LOADED!');
+        }
+    );
     setActions('actions');
 }

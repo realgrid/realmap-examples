@@ -64,6 +64,9 @@ const $data = {
 let $selected = '브라질 상파울루';
 const config = {
     title: false,
+    credits: {visible: false},
+    // title: 'S전자 글로벌 네트워크',
+    // subtitle: '지역 총괄',
     map: [
         {
             name: 'world',
@@ -73,7 +76,9 @@ const config = {
         },
     ],
     body: {
+        // projection: 'miller',
         zoomable: true,
+        // style: { fill: '#0088ff20' },
         style: { fill: '#fff' },
     },
     legend: false,
@@ -92,6 +97,7 @@ const config = {
         },
         {
             front: true,
+            // scope: 'body',
             type: 'text',
             text: 'S전자 글로벌 네트워크',
             offsetX: 40,
@@ -103,6 +109,7 @@ const config = {
         },
         {
             front: true,
+            // scope: 'body',
             type: 'text',
             align: 'right',
             text: '지역총괄',
@@ -129,6 +136,7 @@ const config = {
                 stroke: '#fff',
             },
             data: $data[$selected].map((country) => ({ id: country })),
+            // hoverColor: '#B4CBEF',
             hoverColor: '#83A8DC',
             hoverEffect: 'none',
         },
@@ -138,7 +146,9 @@ const config = {
             onPointClick: async (e) => {
                 $selected = e.name;
                 if ($data[e.name]) {
-                    chart.series.updateOption('data', $data[e.name].map((country) => ({ id: country })));
+                    mapChart.series.updateOption('data', $data[e.name].map((country) => ({ id: country })));
+                    // config.series[0].data = $data[e.name].map((country) => ({ id: country })),
+                    // await mapChart.loadAsync(config);
                 }
             },
             style: {
@@ -218,8 +228,36 @@ const config = {
     },
 };
 
-let chart;
+let mapChart;
+
+function setActions(container) {
+    createCheckBox(
+        container,
+        'Debug',
+        function (e) {
+            RealMap.setDebugging(_getChecked(e));
+            mapChart.render();
+        },
+        false
+    );
+    createButton(container, 'Test', function (e) {});
+}
 
 async function init() {
-    chart = await RealMap.createChartAsync(document, 'realmap', config, true);
+    const t1 = +new Date();
+
+    console.log('RealMap v' + RealMap.getVersion());
+    // RealMap.setDebugging(true);
+    RealMap.setLogging(true);
+
+    mapChart = await RealMap.createChartAsync(
+        document,
+        'realmap',
+        config,
+        true,
+        () => {
+            console.log('LOADED!');
+        }
+    );
+    setActions('actions');
 }

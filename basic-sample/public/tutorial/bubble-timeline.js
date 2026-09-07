@@ -1,6 +1,6 @@
-
 const config = {
     title: false,
+    credits: {visible: false},
     annotations: [
         {
             front: true,
@@ -16,6 +16,7 @@ const config = {
         },
         {
             front: true,
+            // scope: 'body',
             type: 'text',
             text: '2000년 1월 ~ 2025년 2월 한반도, 일본 인근 지진(규모 6 이상) 현황',
             offsetX: 40,
@@ -23,15 +24,15 @@ const config = {
             height: 28,
             style: {
                 fontSize: '15pt',
-                fontWeight: 700
-            }
+                fontWeight: 700,
+            },
         },
     ],
     map: [
         {
             url: '../maps/geojson/world-high.geo.json',
             exclude: ['ATA'],
-            padding: '6 0 0 0'
+            padding: '6 0 0 0',
         },
     ],
     body: {
@@ -57,7 +58,7 @@ const config = {
         {
             type: 'bubble',
             name: 'earthquakeBubble',
-            visibleInLegend: false,
+            legend: -1,
             tooltipText:
                 '<t style="font-size: 18px">${place}</t><br /><t>${value}</t>',
             pointLabel: {
@@ -87,9 +88,7 @@ const config = {
     ],
 };
 
-
-
-const onChartLoaded = async (chart) => {
+const onChartLoaded = async (mapChart) => {
     const sliderId = 'timeline-component';
     /**
      * 상태
@@ -132,6 +131,10 @@ const onChartLoaded = async (chart) => {
      * @param {number} tick 틱, 단위는 개월
      */
     const render = (tick = 0) => {
+        if (mapChart.isDestroying()) {
+            return;
+        }
+
         const currentTime = new Date(startTime);
         currentTime.setMonth(currentTime.getMonth() + tick);
 
@@ -140,18 +143,14 @@ const onChartLoaded = async (chart) => {
             currentTime.getMonth() + 1
         }월`;
 
-        const bubbleSeries = chart.seriesByType('bubble');
+        const bubbleSeries = mapChart.seriesByType('bubble');
 
-        // 기존 지진 버블은 전부 지운다.
-        while (bubbleSeries.getLabeledPoints().length > 0) {
-            bubbleSeries.removeFirst(0);
-        }
-
-        // 현재 지진 데이터를 기준으로, 최근 지진 데이터를 가져와서 그린다.
-        // 매 틱마다 과거(BUBBLE_LIFETIME)부터 현재까지 발생한 지진을 새로 그린다.
+        // 현재 그려야 하는 지진 데이터를 필터링한다.
+        // 현재 시간 기준으로 1년 전부터 30일 후까지의 지진 데이터를 필터링한다.
         const fromTime = currentTime.getTime() - BUBBLE_LIFETIME * msOfDay;
         const toTime = currentTime.getTime() + 30 * msOfDay;
         const recentQuakes = [];
+        const prevPoints = bubbleSeries.findAll();
 
         for (const quake of originalQuakes) {
             const targetDate = new Date(quake.time).getTime();
@@ -160,10 +159,25 @@ const onChartLoaded = async (chart) => {
             }
         }
 
-        for (const currentQuake of recentQuakes) {
-            // 지진 버블 추가
-            bubbleSeries.addPoint(currentQuake, -1, 0);
-        }
+        // 시간이 지나서 현재 데이터에 없는 버블을 제거한다.
+        bubbleSeries.removePointList(
+            bubbleSeries
+                .findAll()
+                .filter(
+                    (p) =>
+                        !recentQuakes.some(
+                            (recentQuake) => recentQuake.id === p.id
+                        )
+                )
+        );
+
+        // 새로 그려야 하는 버블을 추가한다.
+        bubbleSeries.addPointList(
+            recentQuakes.filter(
+                (currentQuake) =>
+                    !prevPoints.some((q) => q.id === currentQuake.id)
+            )
+        );
     };
 
     const play = (timeStep = 0) => {
@@ -174,7 +188,7 @@ const onChartLoaded = async (chart) => {
         if (timeStep < totalMonth) {
             timeoutPointer = setTimeout(() => {
                 play(timeStep + 1);
-            }, 180);
+            }, 500);
         } else {
             playLock = false;
             pause();
@@ -231,11 +245,11 @@ function setActions(container) {
     createTimelineSlider(container);
 }
 
-let chart;
+let mapChart;
 
 async function init() {
-    chart = await RealMap.createChartAsync(document, 'realmap', config, true);
+    mapChart = await RealMap.createChartAsync(document, 'realmap', config, true);
 
     setActions('actions');
-    onChartLoaded(chart, { sliderId: 'timeline-component' });
+    onChartLoaded(mapChart, { sliderId: 'timeline-component' });
 }

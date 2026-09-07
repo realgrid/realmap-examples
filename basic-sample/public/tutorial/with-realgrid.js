@@ -1,9 +1,6 @@
-/**
- * @demo
- *
- */
 const config = {
     title: false,
+    credits: {visible: false},
     asset: [
         {
             type: 'pattern',
@@ -73,7 +70,6 @@ const config = {
         {
             mapKeys: ['iso-a3', 'countryCode'],
             dataUrl: '../data/world-economic2.json',
-            hoverColor: '#f2f6fc',
             tooltipText:
                 '<t style="font-weight: bold;">${name}(${value})</t>',
             style: {
@@ -81,8 +77,18 @@ const config = {
                 strokeWidth: 0.5,
                 cursor: 'pointer'
             },
+            hoverStyle: {
+                stroke: '#5d5d5d',
+                filter: 'brightness(0.9)',
+                strokeWidth: 1.5,
+            },
+            selectStyle: {
+                stroke: '#5d5d5d',
+                strokeWidth: 2,
+                filter: 'none',
+            },
             onPointClick: (args) => {
-                const point = chart.seriesByType('map').pointByProp('iso-a3', args.source.countryCode);
+                const point = args.chart.seriesByType('map').pointByProp('iso-a3', args.source.countryCode);
 
                 if (window.prevPoint2) {
                     window.prevPoint2.setSelected(false);
@@ -91,7 +97,7 @@ const config = {
                 const { grid: { gridView, provider } } = window;
 
                 point.setSelected(true);
-                chart.render();
+                mapChart.render();
 
                 window.prevPoint2 = point;
 
@@ -115,7 +121,11 @@ const config = {
     },
 };
 
-async function onChartLoaded() {
+async function onChartLoaded(mapChart) {
+    const data = await fetch('../data/world-economic2.json').then((res) => res.json());
+    
+    if (mapChart.isDestroying()) return;
+
     const provider = new RealGrid.LocalDataProvider();
     const gridView = new RealGrid.GridView('realgrid');
 
@@ -148,8 +158,6 @@ async function onChartLoaded() {
         }))
     );
 
-    const data = await fetch('../data/world-economic2.json').then((res) => res.json());
-
     provider.setRows(data);
 
     // gridView 설정
@@ -161,17 +169,18 @@ async function onChartLoaded() {
 
         const code = gridView.getValue(startItem, 'countryCode');
 
-        const point = chart.seriesByType('map').pointByProp('iso-a3', code);
+        const map = mapChart.seriesByType('map');
+        const point = map.pointByProp('iso-a3', code);
 
         if (point) {
             if (prevSelection) {
-                prevSelection.setSelected(false);
+                map.unselect(prevSelection);
             }
 
-            point.setSelected(true);
+            map.select(point);
             prevSelection = point;
 
-            chart.body.zoomToArea(point.area.id, 0.3);
+            mapChart.body.zoomToArea(point.area.id, 0.3);
         }
     };
 
@@ -192,19 +201,23 @@ async function onChartLoaded() {
         const gdpGrowth = provider.getValue(row, 'gdpGrowth');
 
         // RealMap
-        const mapSeries = chart.seriesByType('map');
+        const mapSeries = mapChart.seriesByType('map');
         const point = mapSeries.pointByProp('iso-a3', code);
 
         mapSeries.updatePoint(point, { value: gdpGrowth });
     };
 }
 
-let chart;
+function setActions(container) {}
+
+let mapChart;
 let grid;
 
 async function init() {
-    chart = await RealMap.createChartAsync(document, 'realmap', config, true);
+    mapChart = await RealMap.createChartAsync(document, 'realmap', config, true);
 
     // Provider, GridView 설정
-    await onChartLoaded();
+    await onChartLoaded(mapChart);
+
+    setActions('actions');
 }

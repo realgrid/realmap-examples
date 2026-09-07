@@ -1,3 +1,4 @@
+const NEW_LINE = '\n';
 const data = [
     {
         name: '서울특별시',
@@ -99,6 +100,7 @@ const data = [
 
 const config = {
     title: false,
+    credits: {visible: false},
     map: [
         {
             name: 'sido',
@@ -205,8 +207,30 @@ const config = {
     ],
 };
 
-let chart;
+let mapChart;
+
+function setActions(container) {
+    createCheckBox(
+        container,
+        'Debug',
+        function (e) {
+            RealMap.setDebugging(_getChecked(e));
+            mapChart.render();
+        },
+        false
+    );
+    createButton(container, 'Test', function (e) {});
+}
 
 async function init() {
-    chart = await RealMap.createChartAsync(document, 'realmap', config, true);
+    const t1 = +new Date();
+    console.log(+new Date() - t1 + ' ms.');
+
+    console.log('RealMap v' + RealMap.getVersion());
+    // RealMap.setDebugging(true);
+    RealMap.setLogging(true);
+    mapChart = await RealMap.createChartAsync(document, 'realmap', config, true, () => {
+        console.log('LOADED!');
+    });
+    setActions('actions');
 }

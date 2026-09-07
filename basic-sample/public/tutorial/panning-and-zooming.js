@@ -1,8 +1,8 @@
-
 const config = {
     title: false,
+    credits: {visible: false},
     map: [
-        { url: '../maps/geojson/world-low.geo.json', exclude: ['ATA'] },
+        { url: '../maps/geojson/world-low.geo.json' },
     ],
     
     axis: {
@@ -12,12 +12,14 @@ const config = {
         projection: 'equalearth',
         zoomable: true,
         zoom: 300,
+        panX: 127,
+        panY: -50,
         onClickArea: (e) => {
             const areaId = e.area.id;
-            if (chart.body.zoom > 100) {
-                chart.body.zoomTo(100, [127.7, 36.6]);
+            if (mapChart.body.zoom > 100) {
+                mapChart.body.zoomTo(100, [127.7, 36.6]);
             } else {
-                chart.body.zoomToArea(areaId, 0.7);
+                mapChart.body.zoomToArea(areaId, 0.7);
             }
             
         }
@@ -37,6 +39,7 @@ const config = {
         },
         {
             front: true,
+            // scope: 'body',
             type: 'text',
             text: '지도 확대 및 이동',
             offsetX: 40,
@@ -62,38 +65,41 @@ const config = {
     ],
 };
 
-
-
 function setActions(container) {
     createButton(container, 'LEFT', async function (e) {
-        chart.body.updateOption('panX', chart.body.panX - 5);
+        mapChart.body.updateOption('panX', mapChart.body.panX - 5);
     });
 
     createButton(container, 'RIGHT', async function (e) {
-        chart.body.updateOption('panX', chart.body.panX + 5);
+        mapChart.body.updateOption('panX', mapChart.body.panX + 5);
     });
 
     createButton(container, 'UP', async function (e) {
-        chart.body.updateOption('panY', chart.body.panY - 5);
+        mapChart.body.updateOption('panY', mapChart.body.panY - 5);
     });
 
     createButton(container, 'DOWN', async function (e) {
-        chart.body.updateOption('panY', chart.body.panY + 5);
+        mapChart.body.updateOption('panY', mapChart.body.panY + 5);
     });
 
     createButton(container, 'ZOOM_IN', async function (e) {
-        chart.body.updateOption('zoom', chart.body.zoom + 5);
+        mapChart.body.updateOption('zoom', mapChart.body.zoom + 5);
     });
 
     createButton(container, 'ZOOM_OUT', async function (e) {
-        chart.body.updateOption('zoom', chart.body.zoom - 5);
+        mapChart.body.updateOption('zoom', mapChart.body.zoom - 5);
     });
 }
 
-let chart;
+let mapChart;
 
 async function init() {
-    chart = await RealMap.createChartAsync(document, 'realmap', config, true);
+    mapChart = await RealMap.createChartAsync(
+        document,
+        'realmap',
+        config,
+        true,
+    );
 
     setActions('actions');
 }
