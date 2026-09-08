@@ -152,12 +152,11 @@ const config = {
             name: '전국',
             type: 'line',
             curved: true,
-            area: true,
             area: {
                 visible: true,
                 style: { fillOpacity: 0.5 },
-              },
-              baseLine: {
+            },
+            baseLine: {
                 style: {
                     stroke: 'none',
                  },

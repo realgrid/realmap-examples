@@ -30,7 +30,6 @@ const config = {
             visible: true,
             label: {
                 style: {
-                    fill: '#0088ff80',
                     fill: 'red',
                 },
             },

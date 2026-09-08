@@ -115,7 +115,6 @@ const config = {
         {
             name: '지도',
             hoverColor: '#919191',
-            tooltipText: false,
             legend: -1,
             dataUrl: '../data/kr-snow.json',
             tooltipText: '<t style="font-size: 18px; font-weight: 700;">${name}</t><br /><t style="opacity: 0.7;">${alert}</t>',
@@ -136,11 +135,6 @@ const config = {
             type: 'point',
             radius: 8,
             shape: 'diamond',
-            style: {
-                stroke: 'orange',
-                fill: 'white',
-                strokeWidth: 4,
-            },
             style: {
                 color: 'white'
             },

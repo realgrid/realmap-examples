@@ -226,5 +226,5 @@ async function init() {
     mapChart = await RealMap.createChartAsync(document, 'realmap', config, true);
 
     setActions('actions');
-    onChartLoaded(mapChart, { sliderId: 'timeline-component' });
+    onChartLoaded(mapChart);
 }

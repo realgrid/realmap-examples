@@ -1,19 +1,6 @@
 const config = {
     title: false,
     credits: {visible: false},
-    asset: [
-        {
-            type: 'pattern',
-            id: 'pattern-3',
-            pattern: 3,
-            style: {
-                fill: '#F87986',
-            },
-            backgroundStyle: {
-                fill: '#FFE8E2',
-            },
-        },
-    ],
     map: [
         {
             url: `../maps/geojson/world-high.geo.json`,

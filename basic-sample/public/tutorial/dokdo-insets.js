@@ -79,7 +79,6 @@ const config = {
     }, {
         type: 'point',
         name: '전국 서점 수',
-        width: 40,
         pointLabel: {
             text: '${name}<br><t style="opacity:0.7">${qty}</t>',
         },
