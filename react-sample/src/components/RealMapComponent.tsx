@@ -77,7 +77,7 @@ export function RealMapComponent() {
                 config={config}
                 w={700}
                 h={700}
-                // license prop으로 전역 realMapLic 대신 이 자리에 키를 넘길 수도 있다.
+                // 전역 realMapLic 대신 license prop으로 키를 넘길 수도 있다.
                 data-user-custom-id="MyChart01"
                 style={{
                     boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',

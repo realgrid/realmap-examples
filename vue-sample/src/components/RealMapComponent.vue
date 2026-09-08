@@ -22,7 +22,7 @@ Heatmap(Realmap);
 
 <!-- 렌더 -->
 <template>
-    <!-- license prop으로 전역 realMapLic 대신 이 자리에 키를 넘길 수도 있다. -->
+    <!-- 전역 realMapLic 대신 license prop으로 키를 넘길 수도 있다. -->
     <RealMapVue
         id="realmap"
         ref="realmapRef"
