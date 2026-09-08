@@ -53,7 +53,6 @@ const config = {
     colorScale: {
         location: 'right',
         valueField: 'gdpGrowth',
-        // -20.1115759693272 75.0613769262435
         minValue: -25,
         minColor: '#ff5757',
         maxColor: '#78a9e2',
@@ -123,7 +122,7 @@ const config = {
 
 async function onChartLoaded(mapChart) {
     const data = await fetch('../data/world-economic2.json').then((res) => res.json());
-    
+
     if (mapChart.isDestroying()) return;
 
     const provider = new RealGrid.LocalDataProvider();
@@ -160,7 +159,6 @@ async function onChartLoaded(mapChart) {
 
     provider.setRows(data);
 
-    // gridView 설정
     let prevSelection = null;
 
     gridView.displayOptions.selectionStyle = 'singleRow';
@@ -200,7 +198,6 @@ async function onChartLoaded(mapChart) {
         const code = provider.getValue(row, 'countryCode');
         const gdpGrowth = provider.getValue(row, 'gdpGrowth');
 
-        // RealMap
         const mapSeries = mapChart.seriesByType('map');
         const point = mapSeries.pointByProp('iso-a3', code);
 
@@ -208,15 +205,10 @@ async function onChartLoaded(mapChart) {
     };
 }
 
-function setActions(container) {}
-
 let mapChart;
 
 async function init() {
     mapChart = await RealMap.createChartAsync(document, 'realmap', config, true);
 
-    // Provider, GridView 설정
     await onChartLoaded(mapChart);
-
-    setActions('actions');
 }

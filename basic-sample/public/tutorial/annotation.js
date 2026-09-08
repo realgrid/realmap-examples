@@ -29,7 +29,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: '대설 특보',
             offsetX: 40,
@@ -75,7 +74,7 @@ const config = {
                 fontSize: 16,
             },
         },
-        
+
         {
             front: true,
             scope: 'container',

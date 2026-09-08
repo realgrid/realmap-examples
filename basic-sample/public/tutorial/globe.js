@@ -24,7 +24,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: '구 형태의 지도 회전',
             offsetX: 40,

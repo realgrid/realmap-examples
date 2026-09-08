@@ -16,7 +16,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: 'Fill Assets(Pattern, Gradient)',
             offsetX: 40,
@@ -28,7 +27,7 @@ const config = {
             },
         },
     ],
-    map: [{ 
+    map: [{
         url: '../maps/geojson/world-low.geo.json',
         exclude: ['ATA'],
         padding: '8 0 0 0'
@@ -125,7 +124,6 @@ const config = {
             id: 'gradient-0',
             color: ['#BAFFF1', '#3EADA4'],
             dir: 'up',
-            
         },
         {
             type: 'linearGradient',
@@ -179,9 +177,6 @@ const config = {
                 visible: true,
                 effect: 'outline',
             },
-            // style: {
-            //     fill: 'url(#pattern-2)',
-            // },
             pointColors: [
                 'url(#pattern-0)',
                 'url(#pattern-1)',
@@ -208,7 +203,7 @@ const config = {
                 {
                     id: 'CAN',
                 },
-                { 
+                {
                     id: 'AUS'
                 },
                 {
@@ -257,10 +252,7 @@ async function init() {
         document,
         'realmap',
         config,
-        true,
-        () => {
-            console.log('LOADED!');
-        }
+        true
     );
     setActions('actions');
 }

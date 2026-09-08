@@ -2,7 +2,6 @@ const config = {
     templates: {
         '@series': {
             map: {
-                // hoverColor: '#d9dcd6',
                 pointLabel: false,
                 allAreas: false,
                 style: {
@@ -21,9 +20,6 @@ const config = {
     map: [
         {
             url: '../maps/geojson/kr-sido-low.geo.json',
-            // padding: '0.8 0 0.3 0',
-            // insets: ['제주도', '울릉도'],
-            // insets: ['제주도_B', '울릉도_B']
         },
     ],
     body: {
@@ -51,7 +47,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: '2019년 전국 서점 수 통계',
             offsetX: 40,
@@ -72,10 +67,9 @@ const config = {
             hoverStyle: {
                 stroke: '#6d6d6d'
             },
-            // hiddenAreas: ['5000000000'],
             pointColors: (args) => {
                 const ratio = args.source.ratio;
-                
+
                 if (ratio < -0.5) return '#DCEEF3';
                 if (ratio < 0) return '#C2E2EA';
                 if (ratio < 10) return '#A7D5E1';

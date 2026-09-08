@@ -67,9 +67,7 @@ const config = {
             { "name": "다낭", "coord": [108.2022, 16.0471] },
             { "name": "나트랑", "coord": [109.1967, 12.2388] },
             { "name": "호치민", "coord": [106.6297, 10.8231] },
-            // { "name": "송샨", "coord": [121.5525, 25.0694] },
             { "name": "타오위안", "coord": [121.2168, 25.0128] },
-            // { "name": "오키나와", "coord": [127.6809, 26.2124] },
             { "name": "후쿠오카", "coord": [130.4017, 33.5904] },
             { "name": "오사카", "coord": [135.5022, 34.6937] },
             { "name": "도쿄", "coord": [139.6917, 35.6895] },
@@ -86,10 +84,7 @@ const config = {
         shape: 'circle',
         style: { fill: '#FF6B6B', stroke: '#fff' },
         data: [
-            // { "name": "김포", "coord": [126.7831, 37.5583] },
             { "name": "인천", "coord": [126.7052, 37.4563] },
-            // { "name": "청주", "coord": [127.4956, 36.6372] },
-            // { "name": "군산", "coord": [126.7160, 35.9676] },
             { "name": "부산", "coord": [129.0756, 35.1796] },
             { "name": "제주", "coord": [126.5312, 33.4996] },
             { "name": "홍콩", "coord": [114.1694, 22.3193] }
@@ -99,8 +94,8 @@ const config = {
         legend: -1,
         style: {
             fill: '#FFD700',
-            stroke: '#FFD700', 
-            strokeWidth: '2px', 
+            stroke: '#FFD700',
+            strokeWidth: '2px',
             strokeDasharray: '3 3',
         },
         styleCallback: ({source}) => {
@@ -172,8 +167,6 @@ function setActions(container) {
 }
 
 async function init() {
-    mapChart = await RealMap.createChartAsync(document, 'realmap', config, true, () => {
-        console.log('LoADED!')
-    });
+    mapChart = await RealMap.createChartAsync(document, 'realmap', config, true);
     setActions('actions');
 }

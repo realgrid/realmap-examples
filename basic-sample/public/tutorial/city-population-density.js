@@ -4,11 +4,11 @@ const config = {
     title: {
         visible: false,
     },
-    credits: { 
-        visible: false 
+    credits: {
+        visible: false
     },
-    axis: { 
-        crosshair: false 
+    axis: {
+        crosshair: false
     },
     map: [
         {
@@ -86,7 +86,7 @@ const config = {
             onPointClick: (args) => {
                 const sortedData = window.chartData.sort((v1, v2) => v2['인구밀도'] - v1['인구밀도']);
                 const index = sortedData.findIndex((data) => data.id === args.source.id);
-                
+
                 if (index !== -1) {
                     window.realchart.xAxis.updateOption('guide', {
                         type: 'line',
@@ -129,23 +129,23 @@ const config = {
             },
             internalBorder: {
                 visible: true,
-                style: { 
-                    stroke: '#884400' 
+                style: {
+                    stroke: '#884400'
                 },
             },
             mapBorders: [
                 {
                     name: 'na',
-                    style: { 
-                        stroke: '#555', 
-                        strokeWidth: '1px', 
-                        strokeDasharray: '3' 
+                    style: {
+                        stroke: '#555',
+                        strokeWidth: '1px',
+                        strokeDasharray: '3'
                     },
                 },
             ],
-            style: { 
-                stroke: 'none', 
-                fill: 'transparent' 
+            style: {
+                stroke: 'none',
+                fill: 'transparent'
             },
         },
         {

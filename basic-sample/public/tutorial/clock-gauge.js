@@ -8,8 +8,6 @@ const clockConfig = {
             opacity: 0.9,
             fill: 'rgba(0, 0, 35, 0.9)',
             filter: 'drop-shadow( 0px 0px 6px rgba(0, 0, 0, .6))'
-            // fill: 'url(#gradientFill)',
-            // filter: 'url(#dropShadow)',
         },
     },
     rim: {
@@ -106,7 +104,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: '세계 시계',
             offsetX: 40,
@@ -137,7 +134,6 @@ const config = {
             ...clockConfig,
             pointLabel: {
                 offset: 10,
-                // position: 'top',
                 style: {
                     fill: 'var(--color-1)',
                 },
@@ -181,18 +177,11 @@ const config = {
 
 let mapChart;
 
-function setActions(container) {
-}
-
 async function init() {
     mapChart = await RealMap.createChartAsync(
         document,
         'realmap',
         config,
-        true,
-        () => {
-            console.log('LOADED!');
-        }
+        true
     );
-    setActions('actions');
 }

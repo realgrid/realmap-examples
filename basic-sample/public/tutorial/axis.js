@@ -21,7 +21,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: '본초자오선과 적도',
             offsetX: 40,

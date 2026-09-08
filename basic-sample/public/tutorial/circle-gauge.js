@@ -29,7 +29,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: '산업단지 가동률',
             offsetX: 40,
@@ -49,7 +48,6 @@ const config = {
                 stroke: '#fff'
             },
             style: {
-                // fill: '#b3cde0',
                 stroke: '#9dafb0',
             },
         },
@@ -60,7 +58,6 @@ const config = {
                 offset: 5,
                 style: {
                     textShadow: '0px 0px 5px white',
-                    // fontSize: 14
                 },
             },
             face: {
@@ -77,17 +74,15 @@ const config = {
                     fontSize: '10pt',
                 },
             },
-            // size: 100,
             radius: 32,
             innerRadius: 18,
             style: {
                 stroke: 'none',
             },
             styleCallback: (ctx) => {
-                // console.log(ctx.source.value);
                 const value = +ctx.source.value;
                 if (value >= 80) {
-                    return { 
+                    return {
                         fill: '#8EC1C2' };
                 } else if (value >= 70) {
                     return { fill: '#FFD79C' };
@@ -98,7 +93,6 @@ const config = {
             maxValue: 100,
             zoomLevel: 250,
             dataUrl: '../data/산업단지가동률-남부.json',
-            // callout: true,
             tooltipText: '<b>${name}</b>: ${value}',
         },
     ],
@@ -106,18 +100,11 @@ const config = {
 
 let mapChart;
 
-function setActions(container) {
-}
-
 async function init() {
     mapChart = await RealMap.createChartAsync(
         document,
         'realmap',
         config,
-        true,
-        () => {
-            console.log('LOADED!');
-        }
+        true
     );
-    setActions('actions');
 }

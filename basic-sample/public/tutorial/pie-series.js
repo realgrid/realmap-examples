@@ -2,8 +2,8 @@ const config = {
     title: false,
     credits: {visible: false},
     map: [
-        { 
-            url: '../maps/geojson/kr-sido-low.geo.json', 
+        {
+            url: '../maps/geojson/kr-sido-low.geo.json',
             padding: '0.1 0'
         },
     ],
@@ -25,7 +25,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: '시도별 남녀 인구 구조',
             offsetX: 40,
@@ -43,7 +42,6 @@ const config = {
             name: '행정구역경계(시도)',
             dataUrl: '../data/kr-gender-ratio.json',
             mapKeys: ['b-code', 'code'],
-            // hoverColor: '#DBD4CE',
             tooltipText: false,
             style: {
                 stroke: '#6d6d6d',
@@ -54,7 +52,7 @@ const config = {
             },
             pointColors: (args) => {
                 const ratio = args.source.genderRatio;
-                
+
                 if (ratio < 1) return '#FFD5A3';
                 return '#FCE7C8';
             },

@@ -65,8 +65,6 @@ let $selected = '브라질 상파울루';
 const config = {
     title: false,
     credits: {visible: false},
-    // title: 'S전자 글로벌 네트워크',
-    // subtitle: '지역 총괄',
     map: [
         {
             name: 'world',
@@ -76,9 +74,7 @@ const config = {
         },
     ],
     body: {
-        // projection: 'miller',
         zoomable: true,
-        // style: { fill: '#0088ff20' },
         style: { fill: '#fff' },
     },
     legend: false,
@@ -97,7 +93,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: 'S전자 글로벌 네트워크',
             offsetX: 40,
@@ -109,7 +104,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             align: 'right',
             text: '지역총괄',
@@ -136,7 +130,6 @@ const config = {
                 stroke: '#fff',
             },
             data: $data[$selected].map((country) => ({ id: country })),
-            // hoverColor: '#B4CBEF',
             hoverColor: '#83A8DC',
             hoverEffect: 'none',
         },
@@ -147,8 +140,6 @@ const config = {
                 $selected = e.name;
                 if ($data[e.name]) {
                     mapChart.series.updateOption('data', $data[e.name].map((country) => ({ id: country })));
-                    // config.series[0].data = $data[e.name].map((country) => ({ id: country })),
-                    // await mapChart.loadAsync(config);
                 }
             },
             style: {
@@ -230,18 +221,11 @@ const config = {
 
 let mapChart;
 
-function setActions(container) {
-}
-
 async function init() {
     mapChart = await RealMap.createChartAsync(
         document,
         'realmap',
         config,
-        true,
-        () => {
-            console.log('LOADED!');
-        }
+        true
     );
-    setActions('actions');
 }

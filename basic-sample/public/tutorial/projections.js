@@ -29,7 +29,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: '도법 동적 변경',
             offsetX: 40,

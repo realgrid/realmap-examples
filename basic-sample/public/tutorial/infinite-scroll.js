@@ -4,14 +4,10 @@ const config = {
     map: [
         {
             url: '../maps/geojson/world-low.geo.json',
-            // url: '../maps/geojson/usa-state-low.geo.json',
-            // exclude: ['ATA']
-            // useOffset: true,
         },
     ],
     body: {
         projection: 'equalearth',
-        // projection: 'mercator',
         zoomable: true,
         scrollable: true,
         scroll: 150,
@@ -166,7 +162,6 @@ function setActions(container) {
         mapChart.body.zoom = 200;
     });
     createButton(container, 'zoom to Korea', function (e) {
-        // mapChart.body.zoomTo(300, [128.235, 35.875]);
         mapChart.body.zoomToBounds([124.6, 38.65], [131.87, 33.1]);
     });
     createButton(container, 'zoom to USA', function (e) {
@@ -179,10 +174,7 @@ async function init() {
         document,
         'realmap',
         config,
-        true,
-        () => {
-            console.log('LoADED!');
-        }
+        true
     );
 
     setActions('actions');

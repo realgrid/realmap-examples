@@ -16,12 +16,12 @@ const data = [
     { "name": "경상북도", "s_name": "경북", "pm2_5": 16, "pm10": 32, "coord": [128.8889, 36.4919] },
     { "name": "경상남도", "s_name": "경남", "pm2_5": 21, "pm10": 43, "coord": [128.2132, 35.4606], "offset": [0, -0.2] },
     { "name": "제주특별자치도", "s_name": "제주", "pm2_5": 17, "pm10": 52, "coord": [126.5312, 33.4996] }
-].map(r => { 
+].map(r => {
     if (r.pm2_5 <= 15) {
         r['pm2_5_color'] = '#30a2ff';
     } else if(r.pm2_5 <= 35) {
-        r['pm2_5_color'] = '#03c73c';   
-    } else if(r.pm2_5 <= 75) {  
+        r['pm2_5_color'] = '#03c73c';
+    } else if(r.pm2_5 <= 75) {
         r['pm2_5_color'] = '#fcc029';
     } else {
         r['pm2_5_color'] = '#e64746';
@@ -30,14 +30,13 @@ const data = [
     if (r.pm10 <= 50) {
         r['pm10_color'] = '#30a2ff';
     } else if(r.pm10 <= 100) {
-        r['pm10_color'] = '#03c73c';   
+        r['pm10_color'] = '#03c73c';
     } else if(r.pm10 <= 250) {
         r['pm10_color'] = '#fcc029';
-    }  else { 
+    }  else {
         r['pm10_color'] = '#e64746';
     }
 
-    // r['value'] = r.pm2_5;
     return r;
 });
 const config = {
@@ -90,7 +89,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: '전국 미세먼지',
             offsetX: 40,
@@ -116,9 +114,6 @@ const config = {
             },
             hoverStyle: {
                 filter: 'brightness(1.15)',
-                // stroke: 'white',
-                // fill: 'inherit',
-                // opacity: 0.8,
             },
         },
         {

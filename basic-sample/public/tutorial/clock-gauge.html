@@ -51,20 +51,17 @@ body {
 				<stop offset="100%" stop-color="#000011" />
 			</radialGradient>
 			<filter id="dropShadow" x="-50%" y="-50%" width="200%" height="200%">
-      <!-- 쉐도우 효과 -->
       <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="blur"/>
       <feOffset dx="5" dy="8" result="offsetBlur"/>
       <feFlood flood-color="#000000" flood-opacity="0.4" result="shadowColor"/>
       <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadowBlur"/>
       
-      <!-- 유리 효과 -->
       <feSpecularLighting in="SourceAlpha" surfaceScale="5" specularConstant="0.3" specularExponent="20" lighting-color="#FFFFFF" result="specOut">
         <fePointLight x="150" y="60" z="200"/>
       </feSpecularLighting>
       <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut"/>
       <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic" k1="0" k2="1" k3="0.1" k4="0" result="litPaint"/>
       
-      <!-- 합치기 -->
       <feMerge>
         <feMergeNode in="shadowBlur"/>
         <feMergeNode in="litPaint"/>

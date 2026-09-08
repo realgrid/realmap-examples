@@ -33,13 +33,6 @@ const config = {
             dokdo: 0.2
         },
     ],
-    general: {
-        onClick: (args) => {
-            const [lon, lat] = args.coord;
-            console.log(`[${lon.toFixed(3)}, ${lat.toFixed(1)}]`);
-            
-        },
-    },
     body: {
         projection: 'mercator',
         style: {
@@ -81,7 +74,7 @@ const config = {
             legend: -1,
             pointColors: (args) => {
                 const {lee, yoon} = args.source;
-                
+
                 return lee >= yoon ? '#78a9e2' : '#ff5757';
             },
             hoverColor: '#b0b0b0',
@@ -144,9 +137,6 @@ const config = {
                     '<t style="width: 30px;">기타ㅤ: </t><t style="opacity: 1;">721,942표</t>',
                 ].join('<br />'),
                 style: {
-                    // textAlign: 'left',
-                    // position: 'right'
-                
                 }
             },
             data: [

@@ -89,7 +89,6 @@ const data = [
         coord: [128.36, 35.31],
     },
 ].map((r) => {
-    // 증감율
     return {
         ...r,
         value: r.value
@@ -130,7 +129,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: '대한민국 시도별 인구 증감율 추이(2014-2023)',
             offsetX: 40,
@@ -165,7 +163,6 @@ const config = {
                  },
               },
             color: '#7B84BD',
-            // tooltipText: '${name}',
             pointLabel: true,
             height: 30,
             data: data.filter((d) => d.name != '세종특별자치시'),
@@ -209,12 +206,6 @@ const config = {
 
 let mapChart;
 
-function setActions(container) {
-}
-
 async function init() {
-    mapChart = await RealMap.createChartAsync(document, 'realmap', config, true, () => {
-        console.log('LOADED!');
-    });
-    setActions('actions');
+    mapChart = await RealMap.createChartAsync(document, 'realmap', config, true);
 }

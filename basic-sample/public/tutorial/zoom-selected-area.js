@@ -4,7 +4,7 @@ const config = {
     map: [
         { url: '../maps/geojson/kr-sigun-low.geo.json'},
     ],
-    
+
     body: {
         projection: 'mercator',
         zoomable: true,
@@ -16,7 +16,6 @@ const config = {
             } else {
                 mapChart.body.zoomToArea(areaId);
             }
-            
         }
     },
     annotations: [
@@ -34,7 +33,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: '선택한 지역 확대',
             offsetX: 40,
@@ -50,7 +48,7 @@ const config = {
         {
             pointLabel: false,
             useMapData: true,
-            style: { 
+            style: {
                 fill: '#B4CBEF',
                 stroke: '#fff',
                 strokeWidth: 0.5,
@@ -62,7 +60,6 @@ const config = {
                 } else {
                     mapChart.body.zoomTo(800, e.series.getCenter(e.id));
                 }
-                
             }
         }
     ],

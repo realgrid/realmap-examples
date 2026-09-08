@@ -53,7 +53,6 @@ const config = {
     colorScale: {
         location: 'right',
         valueField: 'gdpGrowth',
-        // -20.1115759693272 75.0613769262435
         minValue: -25,
         minColor: '#ff5757',
         maxColor: '#78a9e2',
@@ -99,7 +98,7 @@ const config = {
                 map.select(point);
 
                 window.prevPoint2 = point;
-                
+
                 const foundData = chartData.find((data) => data.id === id);
 
                 if (!foundData) {
@@ -107,7 +106,7 @@ const config = {
                 }
 
                 mapChart.body.zoomToArea(point.area.id, 0.3);
-                
+
                 const seriesData = foundData.data.map(({ year, value }) => ({ x: year + '', y: value }));
 
                 const { realchart } = window;
@@ -137,10 +136,10 @@ async function onChartLoaded(mapChart) {
     const point = mapChart.seriesByType('map').pointByProp('iso-a2', 'KR');
     window.prevPoint2 = point;
     point?.setSelected(true);
-    
+
     const krData = window.chartData.find((data) => data.id === 'KR');
 
-    window.realchart = RealChart.createChart(document, 'realchart', { 
+    window.realchart = RealChart.createChart(document, 'realchart', {
         options: {},
         title: {
             text: `GDP Growth Rate of ${krData['name-en']} `,
@@ -165,14 +164,10 @@ async function onChartLoaded(mapChart) {
     });
 }
 
-function setActions(container) {}
-
 let mapChart;
 
 async function init() {
     mapChart = await RealMap.createChartAsync(document, 'realmap', config, true);
 
     await onChartLoaded(mapChart);
-
-    setActions('actions');
 }

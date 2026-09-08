@@ -8,7 +8,6 @@ const config = {
         {
             url: '../maps/geojson/world-low.geo.json',
             exclude: ['ATA'],
-            // padding: '10 0',
         },
     ],
     annotations: [
@@ -26,7 +25,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: '2024 Peak Hours Spent in congestion',
             offsetX: 40,
@@ -42,26 +40,13 @@ const config = {
     credits: false,
     body: {
         projection: 'mercator',
-        // projection: 'equalearth',
         style: {
-            // fill: '#F2F1EF',
         },
         scrollable: true
     },
     axis: {
         grid: false,
     },
-    // annotation: [
-    //     {
-    //         type: 'text',
-    //         front: true,
-    //         text: '2024 Peak Hours Spent in congestion',
-    //         style: { fontWeight: 700 },
-    //         offsetX: 20,
-    //         offsetY: 20,
-    //     },
-    // ],
-    // tooltip: false,
     series: [
         {
             type: 'map',
@@ -78,7 +63,6 @@ const config = {
             pointLabel: {
                 text: '<t>${value}</t>h<br><t wrap style="font-size:8pt;font-weight:normal">${city}</t>',
                 styleCallback: (e) => {
-                    // console.log(e);
                     return {
                         fontSize: Math.max(10, ~~e.value / 4),
                         fill: '#fff',
@@ -97,7 +81,6 @@ const config = {
                     }
                 },
                 style: {
-                    // textShadow: '#793212 1px 0px 5px',
                 },
             },
             styleCallback: (e) => {
@@ -139,10 +122,7 @@ async function init() {
         document,
         'realmap',
         config,
-        true,
-        () => {
-            console.log('LOADED!');
-        }
+        true
     );
     setActions('actions');
 }

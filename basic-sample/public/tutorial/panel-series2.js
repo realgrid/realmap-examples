@@ -23,7 +23,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: '지역별 기상 예보(서울, 세종, 광주, 제주, 부산)',
             offsetX: 40,

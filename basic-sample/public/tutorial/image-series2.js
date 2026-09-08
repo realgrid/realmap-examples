@@ -76,7 +76,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: '기초자치단체장 선거결과',
             offsetX: 40,
@@ -91,7 +90,6 @@ const config = {
         {
             useMapData: true,
             tooltipText: false,
-            // hoverColor: 'var(--area-color-1)',
             hoverStyle: { fill: 'inherited '},
             style: {
                 fill: '#dadada'
@@ -155,7 +153,7 @@ const config = {
                     stroke: '#D1333E'
                 }
             },
-            style: { 
+            style: {
                 stroke: '#D1333E',
                 strokeWidth: 2
             },
@@ -187,7 +185,7 @@ const config = {
                     stroke: '#006CB6'
                 }
             },
-            style: { 
+            style: {
                 stroke: '#006CB6',
                 strokeWidth: 2
             },
@@ -210,12 +208,6 @@ const config = {
 
 let mapChart;
 
-function setActions(container) {
-}
-
 async function init() {
-    mapChart = RealMap.createChartAsync(document, 'realmap', config, true, () => {
-        console.log('LOADED!');
-    });
-    setActions('actions');
+    mapChart = RealMap.createChartAsync(document, 'realmap', config, true);
 }

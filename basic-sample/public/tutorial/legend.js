@@ -16,7 +16,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: '세계 인구 밀도',
             offsetX: 40,
@@ -29,7 +28,7 @@ const config = {
         },
     ],
     map: [
-        { 
+        {
             url: '../maps/geojson/world-low.geo.json',
         }
     ],
@@ -38,18 +37,14 @@ const config = {
     },
     body: {
         projection: 'equalearth',
-        // padding: '0 30'
     },
     legend: {
         location: 'left',
-        visible: true,   
+        visible: true,
     },
     colorScale: {
         location: 'bottom',
-        // series: 'main',
         display: 'legend',
-        // minValue: 1,
-        // maxValue: 100000,
         logBase: 10,
         maxColor: '#f00',
         colors: [{
@@ -64,13 +59,9 @@ const config = {
                 numberFormat: ',0',
                 style: {
                     fontSize: '0.9em',
-                    // fontWeight: 'bold',
-                    // fontFamily: 'Courier New',
-                    // fill: '#558'
                 }
             }
         },
-        // integralSteps: true,
         stepCount: 3,
         steps: [{
             to: 2,
@@ -92,19 +83,7 @@ const config = {
         name: 'main',
         idField: 'code3',
         dataUrl: '../data/world-population-density.json',
-        // color: 'blue',
         pointLabel: !true,
-        // data: [{
-        //     id: 'KR',
-        //     name: 'Korea',
-        //     value: 123
-        // }, {
-        //     id: 'CN',
-        //     value: 532
-        // }, {
-        //     id: 'BR',
-        //     value: 235
-        // }]
     }]
 };
 
@@ -115,13 +94,11 @@ function setActions(container) {
         mapChart.series.toggleOption('visible');
     }, true);
     createCheckBox(container, 'antarctica', function (e) {
-        mapChart.map.hiddenAreas = _getChecked(e) ? null : ['ATA'];//['AQ'];
+        mapChart.map.hiddenAreas = _getChecked(e) ? null : ['ATA'];
     }, true);
 }
 
 async function init() {
-    mapChart = await RealMap.createChartAsync(document, 'realmap', config, true, () => {
-        console.log('LoADED!')
-    });
+    mapChart = await RealMap.createChartAsync(document, 'realmap', config, true);
     setActions('actions');
 }

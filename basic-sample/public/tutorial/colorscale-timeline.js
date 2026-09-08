@@ -16,7 +16,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: '연간 기온 이상현상(1940 ~ 2024)',
             offsetX: 40,
@@ -33,7 +32,7 @@ const config = {
             url: '../maps/geojson/world-low.geo.json',
         },
     ],
-    
+
     body: {
         projection: 'equalEarth',
     },
@@ -43,11 +42,6 @@ const config = {
     colorScale: {
         maxColor: '#b10303',
         stepCount: 9,
-        // nullStyle: {
-        //     fill: 'white',
-        // },
-        // showNull: false,
-        // -4.3122134 2.4297276
         steps: [
             { from: -4.5, to: -2, color: '#6794dc' },
             { from: -2, to: -1.5, color: '#78a9e2' },
@@ -67,7 +61,6 @@ const config = {
             useMapData: true,
             color: 'white',
             hoverColor: '#808080',
-            //tooltipText: '<t style="font-size: 20px; font-weight: 700;">${name}</t><br /><t style="opacity: 0.7; font-weight: 700;">온도편차: ${value}°C</t>',
             tooltipText: '<b>${name}</b><br/><t>온도편차: ${value}°C</t>',
             style: {
                 stroke: '#6d6d6d',
@@ -81,9 +74,6 @@ const NEW_LINE = '\n'
 
 const onChartLoaded = async (mapChart) => {
     const sliderId = 'timeline-component';
-    /**
-     * 상태
-     */
     const anomalies = await fetch(
         '../data/temperature-anomaly-full.csv'
     ).then((res) =>
@@ -108,7 +98,6 @@ const onChartLoaded = async (mapChart) => {
     );
     const annualData = {};
 
-    // Date
     let startYear = 2025;
     let endYear = 1940;
 
@@ -124,13 +113,11 @@ const onChartLoaded = async (mapChart) => {
 
     const stepCount = endYear - startYear;
 
-    // Elements
     const container = document.getElementById(sliderId);
     const slider = container.querySelector('.timeline-slider');
     const toggleButton = container.querySelector('.timeline-toggle');
     const indicator = container.querySelector('.timeline-indicator');
 
-    // Mutable
     let playLock = true;
     let timeoutPointer = null;
 
@@ -163,7 +150,6 @@ const onChartLoaded = async (mapChart) => {
         toggleButton.innerText = '▮▮';
         render(+timeStep);
 
-        // 다음 렌더 함수 호출
         if (timeStep < stepCount) {
             timeoutPointer = setTimeout(() => {
                 play(timeStep + 1);
@@ -183,9 +169,6 @@ const onChartLoaded = async (mapChart) => {
         timeoutPointer = null;
     };
 
-    /**
-     * 컴포넌트 초기화
-     */
     const initComponents = () => {
         slider.min = 0;
         slider.max = stepCount;
@@ -211,9 +194,6 @@ const onChartLoaded = async (mapChart) => {
         });
     };
 
-    /**
-     * 로직 호출
-     */
     initComponents();
     play(0);
 };

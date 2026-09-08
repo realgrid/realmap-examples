@@ -26,7 +26,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: '지역별 최저 기온',
             offsetX: 40,
@@ -54,7 +53,7 @@ const config = {
                 backgroundStyle: (args) => {
                     return {fill: 'red'}
                 },
-                style: { 
+                style: {
                     fill: 'white',
                     fontWeight: 'bold'
                 } ,
@@ -64,7 +63,6 @@ const config = {
                     style: {
                     fontSize: '14px'
                 },
-                
             },
             style: {
                 strokeWidth: 1,

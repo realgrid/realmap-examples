@@ -20,8 +20,6 @@ const config = {
                 name: 'memo',
                 front: true,
                 type: 'html',
-                // width: 400,
-                // height: 300,
                 offsetX: 30,
                 offsetY: 300,
                 html: '#template2',
@@ -98,12 +96,8 @@ const config = {
         ],
     };
 
-function setActions(container) {}
-
 let mapChart;
 
 async function init() {
     mapChart = await RealMap.createChartAsync(document, 'realmap', config, true);
-
-    setActions('actions');
 }

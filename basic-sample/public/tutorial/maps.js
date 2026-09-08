@@ -232,15 +232,12 @@ function setActions(container) {
         'series.style.fill',
         Array.from({ length: 10 }, (_, i) => `area-color-${i + 1}`),
         async function (e) {
-            // config.series[0].color = `--area-color-${_getValue(e)}`;
             const color = `var(--${_getValue(e)})`;
             mapChart.series.updateOptions({
                 style: {
                     fill: color,
-                    // stroke: color,
                 },
             });
-            // await mapChart.loadAsync(config);
         },
         'area-color-1'
     );

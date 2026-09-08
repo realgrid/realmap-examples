@@ -4,7 +4,7 @@ const config = {
     map: [
         { url: '../maps/geojson/world-low.geo.json' },
     ],
-    
+
     axis: {
         grid: true,
     },
@@ -21,7 +21,6 @@ const config = {
             } else {
                 mapChart.body.zoomToArea(areaId, 0.7);
             }
-            
         }
     },
     annotations: [
@@ -39,7 +38,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: '지도 확대 및 이동',
             offsetX: 40,
@@ -54,7 +52,7 @@ const config = {
     series: [
         {
             useMapData: true,
-            style: { 
+            style: {
                 stroke: '#fff',
                 fill: '#B4CBEF',
                 strokeWidth: 0.6,

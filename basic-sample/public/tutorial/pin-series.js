@@ -1,4 +1,3 @@
-/** 방문자수 통계 2023년 기준. 출처 - https://irma.nps.gov/Stats/ */
 const data = [
     { "name": "Yellowstone", "coord": [-110.5, 44.6], "type": "국립공원", "visitors": 4_128_000 },
     { "name": "Yosemite", "coord": [-119.5383, 37.8651], "type": "국립공원", "visitors": 3_677_000 },
@@ -48,18 +47,17 @@ const config = {
             name: 'world',
             url: '../maps/geojson/world-low.geo.json',
             bounds: [-127, 23.5, -65, 51],
-            exclude: ['MEX', 'CAN', 'CUB', 'HTI', 'DOM', 
-                'JAM', 'BLZ', 'GTM', 'HND', 'PRI', 
-                'BHS', 'CYM', 'BJN', 'SER', 'USG', 
+            exclude: ['MEX', 'CAN', 'CUB', 'HTI', 'DOM',
+                'JAM', 'BLZ', 'GTM', 'HND', 'PRI',
+                'BHS', 'CYM', 'BJN', 'SER', 'USG',
                 'TCA', 'BMU', 'VGB', 'VIR', 'SLV', 'NIC'],
         },
     ],
     legend: true,
-    
+
     body: {
         projection: 'mercator',
         style: {
-           // fill: 'var(--area-color-1)',
         },
     },
     annotations: [
@@ -77,7 +75,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: '미국 자연 명소 30곳',
             offsetX: 40,
@@ -143,7 +140,6 @@ const config = {
         {
             type: 'pin',
             name: '국립공원',
-            // radius: 30,
             innerRadius: 0.5,
             style: {
                 fill: '#1085E5',

@@ -37,7 +37,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: '시도별 심플 로고',
             offsetX: 40,
@@ -56,7 +55,6 @@ const config = {
             style: {
                 stroke: '#fff',
             },
-            // hoverColor: '#E3E3E3',
             hoverStyle: {
                 filter: 'brightness(1.05)',
             },
@@ -208,12 +206,6 @@ const config = {
 
 let mapChart;
 
-function setActions(container) {
-}
-
 async function init() {
-    mapChart = RealMap.createChartAsync(document, 'realmap', config, true, () => {
-        console.log('LOADED!');
-    });
-    setActions('actions');
+    mapChart = RealMap.createChartAsync(document, 'realmap', config, true);
 }

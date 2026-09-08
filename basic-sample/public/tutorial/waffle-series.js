@@ -20,7 +20,7 @@ const config = {
     credits: false,
     map: [
         {
-            url: '../maps/geojson/kr-sido-low.geo.json', 
+            url: '../maps/geojson/kr-sido-low.geo.json',
             padding: '0.8 0 0.2 0',
             dokdo: 0.1
         },
@@ -45,7 +45,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: '2019년 전국 서점 수 통계',
             offsetX: 40,
@@ -68,7 +67,7 @@ const config = {
             },
             pointColors: (args) => {
                 const ratio = args.source.ratio;
-                
+
                 if (ratio < -0.5) return '#E4EFE7';
                 if (ratio < 0) return '#FFF5E4';
                 if (ratio < 10) return '#C1D8C3';

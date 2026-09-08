@@ -2,8 +2,8 @@ const config = {
     title: false,
     credits: {visible: false},
     map: [
-        { 
-            url: '../maps/geojson/kr-sido-low.geo.json', 
+        {
+            url: '../maps/geojson/kr-sido-low.geo.json',
             padding: '0.8 0 0.3 0',
         },
     ],
@@ -26,7 +26,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: '전국 장애인 복지관 현황',
             offsetX: 40,

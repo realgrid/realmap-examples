@@ -4,7 +4,7 @@ const config = {
     map: [
         { url: '../maps/geojson/world-low.geo.json', exclude: ["ATA"] },
     ],
-    
+
     body: {
         projection: 'mercator',
         zoom: 1500,
@@ -30,7 +30,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: '장보고 무역항로',
             offsetX: 40,
@@ -64,22 +63,22 @@ const config = {
             lineWidth: 10,
             data: [
                 {
-                    name: '완도 - 다자이후', 
+                    name: '완도 - 다자이후',
                     coords: [ [127.32717, 34.47240], [130.05,33.6] ],
                     curveFactor: 0.3
                 },
                 {
-                    name: '완도 - 닝보', 
+                    name: '완도 - 닝보',
                     coords: [ [127.32717, 34.47240], [121.9,29.8] ],
                     curveFactor: 1.5
                 },
                 {
-                    name: '완도 - 초주, 연수(연운항, 롄윈강)', 
+                    name: '완도 - 초주, 연수(연운항, 롄윈강)',
                     coords: [ [127.32717, 34.47240], [120.4,34.2] ],
                     curveFactor: -0.2
                 },
                 {
-                    name: '완도 - 적산포(웨이하이, 법화원)', 
+                    name: '완도 - 적산포(웨이하이, 법화원)',
                     coords: [ [127.32717, 34.47240], [122.2,37.3] ],
                     curveFactor: -1.5
                 },
@@ -100,7 +99,7 @@ const config = {
                 text: '<t style="font-size: 20px;">${id}</t><br /><t style="opacity: 0.7">${subId}</t>',
                 positionCallback: ({point}) => {
                     const id = point.source.id;
-                    
+
                     switch(id) {
                         case '완도':
                             return 'top';
@@ -108,7 +107,7 @@ const config = {
                             return 'bottom';
                         case '닝보':
                             return 'bottom';
-                        default: 
+                        default:
                             return 'left';
                     }
                 },
@@ -199,7 +198,7 @@ function setActions(container) {
         ['none', 'always', 'moving'],
         async function (e) {
             const isChecked = _getValue(e);
-            
+
             config.series[1].arrowDisplay = isChecked;
 
             mapChart.loadAsync(config, true);

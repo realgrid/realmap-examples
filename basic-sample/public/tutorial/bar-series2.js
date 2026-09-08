@@ -34,7 +34,6 @@ const config = {
         },
         {
             front: true,
-            // scope: 'body',
             type: 'text',
             text: '마인크래프트 지역별 플랫폼 점유율',
             offsetX: 40,
@@ -77,7 +76,7 @@ const config = {
             categories: [
                 { name: 'PC/Java Version', color: '#A4C76C' },
                 { name: 'Console', color: '#F7CB55' },
-                { name: 'Pocket Edition', color: '#A77C57' }  
+                { name: 'Pocket Edition', color: '#A77C57' }
             ],
             legendByCategory: true,
             pointLabel: {

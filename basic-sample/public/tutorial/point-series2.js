@@ -1,7 +1,3 @@
-/**
- * cat field: 'No data', 'Flooding', 'Wettest', 'Wet', 'Normal', 'Dry', 'Drier', 'Driest'
- */
-
 const config = {
     title: false,
     credits: {visible: false},
@@ -159,7 +155,6 @@ async function onChartLoaded(chart) {
     const MAX_ROWS = 1000;
     const $dsKeys = Object.keys($ds);
 
-    // shuffle
     data.sort(() => 0.5 - Math.random());
     data.forEach((row) => {
         $ds[row.cat]?.length < MAX_ROWS && $ds[row.cat].push(row);
@@ -172,5 +167,4 @@ let mapChart;
 
 async function init() {
     mapChart = await RealMap.createChartAsync(document, 'realmap', config, true, onChartLoaded);
-
 }
