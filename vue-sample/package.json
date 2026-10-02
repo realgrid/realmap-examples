@@ -9,8 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "realmap": "1.1.24",
-    "realmap-vue": "^0.0.4",
+    "realmap": "1.1.25",
+    "realmap-vue": "^0.0.5",
     "vue": "^3.5.13"
   },
   "devDependencies": {
