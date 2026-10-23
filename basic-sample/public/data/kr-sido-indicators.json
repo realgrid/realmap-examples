@@ -1,0 +1,172 @@
+[
+  {
+    "id": "11",
+    "name": "서울특별시",
+    "shortName": "서울",
+    "region": "수도권",
+    "population": 9284263,
+    "agedRatio": 20.9,
+    "grdpPerCapita": 6121.5,
+    "grdp": 575.0
+  },
+  {
+    "id": "21",
+    "name": "부산광역시",
+    "shortName": "부산",
+    "region": "영남권",
+    "population": 3230982,
+    "agedRatio": 25.9,
+    "grdpPerCapita": 3708.5,
+    "grdp": 121.1
+  },
+  {
+    "id": "22",
+    "name": "대구광역시",
+    "shortName": "대구",
+    "region": "영남권",
+    "population": 2347389,
+    "agedRatio": 22.7,
+    "grdpPerCapita": 3137.4,
+    "grdp": 74.5
+  },
+  {
+    "id": "23",
+    "name": "인천광역시",
+    "shortName": "인천",
+    "region": "수도권",
+    "population": 3051961,
+    "agedRatio": 19.5,
+    "grdpPerCapita": 4118.7,
+    "grdp": 125.6
+  },
+  {
+    "id": "24",
+    "name": "광주광역시",
+    "shortName": "광주",
+    "region": "호남권",
+    "population": 1384801,
+    "agedRatio": 19.3,
+    "grdpPerCapita": 3767.5,
+    "grdp": 54.8
+  },
+  {
+    "id": "25",
+    "name": "대전광역시",
+    "shortName": "대전",
+    "region": "충청권",
+    "population": 1442190,
+    "agedRatio": 19.7,
+    "grdpPerCapita": 3822.0,
+    "grdp": 56.3
+  },
+  {
+    "id": "26",
+    "name": "울산광역시",
+    "shortName": "울산",
+    "region": "영남권",
+    "population": 1086756,
+    "agedRatio": 19.4,
+    "grdpPerCapita": 8519.4,
+    "grdp": 94.0
+  },
+  {
+    "id": "29",
+    "name": "세종특별자치시",
+    "shortName": "세종",
+    "region": "충청권",
+    "population": 390972,
+    "agedRatio": 12.7,
+    "grdpPerCapita": 4461.0,
+    "grdp": 17.4
+  },
+  {
+    "id": "31",
+    "name": "경기도",
+    "shortName": "경기",
+    "region": "수도권",
+    "population": 13768157,
+    "agedRatio": 18.3,
+    "grdpPerCapita": 4699.6,
+    "grdp": 651.4
+  },
+  {
+    "id": "32",
+    "name": "강원특별자치도",
+    "shortName": "강원",
+    "region": "강원권",
+    "population": 1507224,
+    "agedRatio": 27.5,
+    "grdpPerCapita": 4256.3,
+    "grdp": 64.6
+  },
+  {
+    "id": "33",
+    "name": "충청북도",
+    "shortName": "충북",
+    "region": "충청권",
+    "population": 1601156,
+    "agedRatio": 23.8,
+    "grdpPerCapita": 5632.8,
+    "grdp": 91.8
+  },
+  {
+    "id": "34",
+    "name": "충청남도",
+    "shortName": "충남",
+    "region": "충청권",
+    "population": 2138955,
+    "agedRatio": 24.1,
+    "grdpPerCapita": 6775.8,
+    "grdp": 150.7
+  },
+  {
+    "id": "35",
+    "name": "전북특별자치도",
+    "shortName": "전북",
+    "region": "호남권",
+    "population": 1717841,
+    "agedRatio": 27.2,
+    "grdpPerCapita": 3798.0,
+    "grdp": 66.8
+  },
+  {
+    "id": "36",
+    "name": "전라남도",
+    "shortName": "전남",
+    "region": "호남권",
+    "population": 1772976,
+    "agedRatio": 29.0,
+    "grdpPerCapita": 5917.7,
+    "grdp": 104.0
+  },
+  {
+    "id": "37",
+    "name": "경상북도",
+    "shortName": "경북",
+    "region": "영남권",
+    "population": 2494470,
+    "agedRatio": 28.2,
+    "grdpPerCapita": 5229.8,
+    "grdp": 134.7
+  },
+  {
+    "id": "38",
+    "name": "경상남도",
+    "shortName": "경남",
+    "region": "영남권",
+    "population": 3193742,
+    "agedRatio": 24.0,
+    "grdpPerCapita": 4655.0,
+    "grdp": 151.2
+  },
+  {
+    "id": "39",
+    "name": "제주특별자치도",
+    "shortName": "제주",
+    "region": "제주권",
+    "population": 662680,
+    "agedRatio": 20.5,
+    "grdpPerCapita": 3991.4,
+    "grdp": 26.9
+  }
+]

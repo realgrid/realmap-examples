@@ -68,24 +68,20 @@ const config = {
                 filter: 'brightness(0.9)',
                 strokeWidth: 1.5,
             },
-            selectStyle: {
-                stroke: '#5d5d5d',
-                strokeWidth: 2,
-                filter: 'none',
+            selection: {
+                visible: true,
+                style: {
+                    stroke: '#5d5d5d',
+                    strokeWidth: 2,
+                    filter: 'none',
+                },
             },
             onPointClick: (args) => {
-                const point = args.chart.seriesByType('map').pointByProp('iso-a3', args.source.countryCode);
-
-                if (window.prevPoint2) {
-                    window.prevPoint2.setSelected(false);
-                }
-
+                const map = args.chart.seriesByType('map');
+                const point = map.pointByProp('iso-a3', args.source.countryCode);
                 const { grid: { gridView, provider } } = window;
 
-                point.setSelected(true);
-                mapChart.render();
-
-                window.prevPoint2 = point;
+                map.select(point);
 
                 const { countryCode } = args.source;
 
@@ -146,8 +142,6 @@ async function onChartLoaded(mapChart) {
 
     provider.setRows(data);
 
-    let prevSelection = null;
-
     gridView.displayOptions.selectionStyle = 'singleRow';
     gridView.onSelectionChanged = (_, clickData) => {
         const { startItem } = clickData;
@@ -158,13 +152,7 @@ async function onChartLoaded(mapChart) {
         const point = map.pointByProp('iso-a3', code);
 
         if (point) {
-            if (prevSelection) {
-                map.unselect(prevSelection);
-            }
-
             map.select(point);
-            prevSelection = point;
-
             mapChart.body.zoomToArea(point.area.id, 0.3);
         }
     };

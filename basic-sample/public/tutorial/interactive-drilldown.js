@@ -68,7 +68,7 @@ const config = {
                 style: { stroke: '#2b3a55', strokeWidth: 0.8 },
                 hoverStyle: { stroke: '#e2e8f0', strokeWidth: 1.6 },
                 pointLabel: { visible: true, effect: 'outline', hideOverlapped: true },
-                selectStyle: { stroke: '#fb923c', strokeWidth: 2.4 },
+                selection: { visible: true, style: { stroke: '#fb923c', strokeWidth: 2.4 } },
             },
         },
     ],

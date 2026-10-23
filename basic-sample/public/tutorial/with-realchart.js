@@ -68,23 +68,20 @@ const config = {
                 filter: 'brightness(0.9)',
                 strokeWidth: 1.5,
             },
-            selectStyle: {
-                stroke: '#5d5d5d',
-                strokeWidth: 2,
-                filter: 'none',
+            selection: {
+                visible: true,
+                style: {
+                    stroke: '#5d5d5d',
+                    strokeWidth: 2,
+                    filter: 'none',
+                },
             },
             onPointClick: (args) => {
                 const { id } = args.source;
                 const map = mapChart.seriesByType('map');
                 const point = map.pointByProp('iso-a2', id);
 
-                if (window.prevPoint2) {
-                    map.unselect(window.prevPoint2);
-                }
-
                 map.select(point);
-
-                window.prevPoint2 = point;
 
                 const foundData = chartData.find((data) => data.id === id);
 
@@ -120,9 +117,10 @@ async function onChartLoaded(mapChart) {
 
     if (mapChart.isDestroying()) return;
 
-    const point = mapChart.seriesByType('map').pointByProp('iso-a2', 'KR');
-    window.prevPoint2 = point;
-    point?.setSelected(true);
+    const map = mapChart.seriesByType('map');
+    const point = map.pointByProp('iso-a2', 'KR');
+
+    point && map.select(point);
 
     const krData = window.chartData.find((data) => data.id === 'KR');
 

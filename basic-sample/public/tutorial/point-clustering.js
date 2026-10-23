@@ -10,7 +10,7 @@ const config = {
     body: {
         projection: 'equalearth',
         zoomable: true,
-        scrollable: true,
+        scrollable: false,
         scroll: 150,
         mapBackground: {
             visible: true,
@@ -45,7 +45,7 @@ const config = {
         {
             front: true,
             type: 'text',
-            text: '<t style="font-size:15pt;font-weight:bold;fill:#0F172A">세계 규모 6.5 이상 지진</t><br><t style="font-size:10pt;fill:#64748B">1990–2025 · 출처 USGS</t>',
+            text: '<t style="font-size:15pt;font-weight:bold;fill:#0F172A">세계 규모 6.7 이상 지진</t><br><t style="font-size:10pt;fill:#64748B">2000–2025 · 출처 USGS</t>',
             offsetX: 12,
             offsetY: 12,
             backgroundStyle: {
@@ -72,7 +72,7 @@ const config = {
         {
             front: true,
             type: 'text',
-            text: '<t style="font-size:8pt;fill:#64748B">총 지진</t><br><t style="font-size:16pt;font-weight:bold;fill:#0F172A">1,674</t>',
+            text: '<t style="font-size:8pt;fill:#64748B">총 지진</t><br><t style="font-size:16pt;font-weight:bold;fill:#0F172A">760</t>',
             offsetX: 250,
             offsetY: 12,
             backgroundStyle: {
@@ -86,7 +86,7 @@ const config = {
         {
             front: true,
             type: 'text',
-            text: '<t style="font-size:8pt;fill:#64748B">규모 7 이상</t><br><t style="font-size:16pt;font-weight:bold;fill:#1D4ED8">541</t>',
+            text: '<t style="font-size:8pt;fill:#64748B">규모 7 이상</t><br><t style="font-size:16pt;font-weight:bold;fill:#1D4ED8">387</t>',
             offsetX: 337,
             offsetY: 12,
             backgroundStyle: {
@@ -114,7 +114,7 @@ const config = {
         {
             front: true,
             type: 'text',
-            text: '<t style="font-size:9pt;font-weight:bold;fill:#0F172A">규모</t>  <t style="fill:#60A5FA;font-size:12pt">●</t><t style="font-size:9pt;fill:#475569"> 6.5–7  </t><t style="fill:#2563EB;font-size:12pt">●</t><t style="font-size:9pt;fill:#475569"> 7–8  </t><t style="fill:#1E3A8A;font-size:12pt">●</t><t style="font-size:9pt;fill:#475569"> 8 이상  </t><t style="fill:#B45309;font-size:12pt">○</t><t style="font-size:9pt;fill:#475569"> 8.8 이상 대지진</t><br><t style="font-size:9pt;fill:#64748B">배지 숫자는 묶인 지진 수 · 클릭하면 나뉩니다</t>',
+            text: '<t style="font-size:9pt;font-weight:bold;fill:#0F172A">규모</t>  <t style="fill:#60A5FA;font-size:12pt">●</t><t style="font-size:9pt;fill:#475569"> 6.7–7  </t><t style="fill:#2563EB;font-size:12pt">●</t><t style="font-size:9pt;fill:#475569"> 7–8  </t><t style="fill:#1E3A8A;font-size:12pt">●</t><t style="font-size:9pt;fill:#475569"> 8 이상  </t><t style="fill:#B45309;font-size:12pt">○</t><t style="font-size:9pt;fill:#475569"> 8.8 이상 대지진</t><br><t style="font-size:9pt;fill:#64748B">배지 숫자는 묶인 지진 수 · 클릭하면 나뉩니다</t>',
             align: 'left',
             verticalAlign: 'bottom',
             offsetX: 12,
