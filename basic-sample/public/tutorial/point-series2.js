@@ -83,7 +83,7 @@ const config = {
             shape: 'circle',
             style: {
                 fill: 'none',
-                stroke: 'var(--color-4)',
+                stroke: 'var(--rm-color-4)',
             },
             radius: 1,
         },
@@ -94,7 +94,7 @@ const config = {
             shape: 'circle',
             style: {
                 fill: 'none',
-                stroke: 'var(--color-5)',
+                stroke: 'var(--rm-color-5)',
             },
             radius: 2,
         },
@@ -105,7 +105,7 @@ const config = {
             shape: 'circle',
             style: {
                 fill: 'none',
-                stroke: 'var(--color-3)',
+                stroke: 'var(--rm-color-3)',
             },
             radius: 3,
         },

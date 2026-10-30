@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "realmap": "1.1.27",
+    "realmap": "1.1.28",
     "realmap-vue": "^0.0.6",
     "vue": "^3.5.13"
   },

@@ -276,67 +276,67 @@
 }
 
 /** palette */
-:root, .rm-root {
-    --color-1: #0098ff;
-    --color-2: #66d0ff;
-    --color-3: #ff5c35;
-    --color-4: #ff9f00;
-    --color-5: #ffd938;
-    --color-6: #00ac69;
-    --color-7: #91cc39;
-    --color-8: #8fc6a9;
-    --color-9: #c45db9;
-    --color-10: #ef5e99;
-    --color-11: #afa4c6;
-    --color-12: #5b63aa;
+.rm-svg {
+    --rm-color-1: #0098ff;
+    --rm-color-2: #66d0ff;
+    --rm-color-3: #ff5c35;
+    --rm-color-4: #ff9f00;
+    --rm-color-5: #ffd938;
+    --rm-color-6: #00ac69;
+    --rm-color-7: #91cc39;
+    --rm-color-8: #8fc6a9;
+    --rm-color-9: #c45db9;
+    --rm-color-10: #ef5e99;
+    --rm-color-11: #afa4c6;
+    --rm-color-12: #5b63aa;
 }
 .rm-root[data-palette="gray"] {
-    --color-1: #464646;
-    --color-2: #61666a;
-    --color-3: #6f6f6d;
-    --color-4: #82898f;
-    --color-5: #8d8d8b;
-    --color-6: #9ea7a6;
-    --color-7: #acaba7;
-    --color-8: #bcbcbc;
-    --color-9: #c5c9ca;
-    --color-10: #d9d4ce;
-    --color-11: #dedede;
-    --color-12: #e8ecef;
+    --rm-color-1: #464646;
+    --rm-color-2: #61666a;
+    --rm-color-3: #6f6f6d;
+    --rm-color-4: #82898f;
+    --rm-color-5: #8d8d8b;
+    --rm-color-6: #9ea7a6;
+    --rm-color-7: #acaba7;
+    --rm-color-8: #bcbcbc;
+    --rm-color-9: #c5c9ca;
+    --rm-color-10: #d9d4ce;
+    --rm-color-11: #dedede;
+    --rm-color-12: #e8ecef;
 }
-:root, .rm-root {
-    --area-color-1: #B4CBEF;
-    --area-color-2: #E4CBDE;
-    --area-color-3: #8EC1C2;
-    --area-color-4: #FDD69F;
-    --area-color-5: #C7B6AE;
-    --area-color-6: #B4CF9A;
-    --area-color-7: #EDCEBD;
-    --area-color-8: #FECCC9;
-    --area-color-9: #F9BBAB;
-    --area-color-10: #A7D5E1;
+.rm-svg {
+    --rm-area-color-1: #B4CBEF;
+    --rm-area-color-2: #E4CBDE;
+    --rm-area-color-3: #8EC1C2;
+    --rm-area-color-4: #FDD69F;
+    --rm-area-color-5: #C7B6AE;
+    --rm-area-color-6: #B4CF9A;
+    --rm-area-color-7: #EDCEBD;
+    --rm-area-color-8: #FECCC9;
+    --rm-area-color-9: #F9BBAB;
+    --rm-area-color-10: #A7D5E1;
 
-    --area-stroke-1: #fff;
-    --area-stroke-2: #FFF;
-    --area-stroke-3: #FFF;
-    --area-stroke-4: #fff;
-    --area-stroke-5: #FFF;
-    --area-stroke-6: #FFF;
-    --area-stroke-7: #FFF;
-    --area-stroke-8: #FFF;
-    --area-stroke-9: #FFF;
-    --area-stroke-10: #FFF;
+    --rm-area-stroke-1: #fff;
+    --rm-area-stroke-2: #FFF;
+    --rm-area-stroke-3: #FFF;
+    --rm-area-stroke-4: #fff;
+    --rm-area-stroke-5: #FFF;
+    --rm-area-stroke-6: #FFF;
+    --rm-area-stroke-7: #FFF;
+    --rm-area-stroke-8: #FFF;
+    --rm-area-stroke-9: #FFF;
+    --rm-area-stroke-10: #FFF;
 
-    --area-label-1: #fff;
-    --area-label-2: #fff;
-    --area-label-3: #fff;
-    --area-label-4: #fff;
-    --area-label-5: #fff;
-    --area-label-6: #fff;
-    --area-label-7: #fff;
-    --area-label-8: #fff;
-    --area-label-9: #fff;
-    --area-label-10: #fff;
+    --rm-area-label-1: #fff;
+    --rm-area-label-2: #fff;
+    --rm-area-label-3: #fff;
+    --rm-area-label-4: #fff;
+    --rm-area-label-5: #fff;
+    --rm-area-label-6: #fff;
+    --rm-area-label-7: #fff;
+    --rm-area-label-8: #fff;
+    --rm-area-label-9: #fff;
+    --rm-area-label-10: #fff;
 }
 
 /** rich text */
@@ -625,52 +625,52 @@
 
 /** series */
 .rm-series[data-index="0"] {
-    fill: var(--color-1);
-    stroke: var(--color-1);
+    fill: var(--rm-color-1);
+    stroke: var(--rm-color-1);
 }
 .rm-series[data-index="1"] {
-    fill: var(--color-2);
-    stroke: var(--color-2);
+    fill: var(--rm-color-2);
+    stroke: var(--rm-color-2);
 }
 .rm-series[data-index="2"] {
-    fill: var(--color-3);
-    stroke: var(--color-3);
+    fill: var(--rm-color-3);
+    stroke: var(--rm-color-3);
 }
 .rm-series[data-index="3"] {
-    fill: var(--color-4);
-    stroke: var(--color-4);
+    fill: var(--rm-color-4);
+    stroke: var(--rm-color-4);
 }
 .rm-series[data-index="4"] {
-    fill: var(--color-5);
-    stroke: var(--color-5);
+    fill: var(--rm-color-5);
+    stroke: var(--rm-color-5);
 }
 .rm-series[data-index="5"] {
-    fill: var(--color-6);
-    stroke: var(--color-6);
+    fill: var(--rm-color-6);
+    stroke: var(--rm-color-6);
 }
 .rm-series[data-index="6"] {
-    fill: var(--color-7);
-    stroke: var(--color-7);
+    fill: var(--rm-color-7);
+    stroke: var(--rm-color-7);
 }
 .rm-series[data-index="7"] {
-    fill: var(--color-8);
-    stroke: var(--color-8);
+    fill: var(--rm-color-8);
+    stroke: var(--rm-color-8);
 }
 .rm-series[data-index="8"] {
-    fill: var(--color-9);
-    stroke: var(--color-9);
+    fill: var(--rm-color-9);
+    stroke: var(--rm-color-9);
 }
 .rm-series[data-index="9"] {
-    fill: var(--color-10);
-    stroke: var(--color-10);
+    fill: var(--rm-color-10);
+    stroke: var(--rm-color-10);
 }
 .rm-series[data-index="10"] {
-    fill: var(--color-11);
-    stroke: var(--color-11);
+    fill: var(--rm-color-11);
+    stroke: var(--rm-color-11);
 }
 .rm-series[data-index="11"] {
-    fill: var(--color-12);
-    stroke: var(--color-12);
+    fill: var(--rm-color-12);
+    stroke: var(--rm-color-12);
 }
 
 /** data point cluster */
@@ -699,44 +699,44 @@
 
 /** map series */
 .rm-map-series[data-index="0"] {
-    fill: var(--area-color-1);
-    stroke: var(--area-stroke-1);
+    fill: var(--rm-area-color-1);
+    stroke: var(--rm-area-stroke-1);
 }
 .rm-map-series[data-index="1"] {
-    fill: var(--area-color-2);
-    stroke: var(--area-stroke-2);
+    fill: var(--rm-area-color-2);
+    stroke: var(--rm-area-stroke-2);
 }
 .rm-map-series[data-index="2"] {
-    fill: var(--area-color-3);
-    stroke: var(--area-stroke-3);
+    fill: var(--rm-area-color-3);
+    stroke: var(--rm-area-stroke-3);
 }
 .rm-map-series[data-index="3"] {
-    fill: var(--area-color-4);
-    stroke: var(--area-stroke-4);
+    fill: var(--rm-area-color-4);
+    stroke: var(--rm-area-stroke-4);
 }
 .rm-map-series[data-index="4"] {
-    fill: var(--area-color-5);
-    stroke: var(--area-stroke-5);
+    fill: var(--rm-area-color-5);
+    stroke: var(--rm-area-stroke-5);
 }
 .rm-map-series[data-index="5"] {
-    fill: var(--area-color-6);
-    stroke: var(--area-stroke-6);
+    fill: var(--rm-area-color-6);
+    stroke: var(--rm-area-stroke-6);
 }
 .rm-map-series[data-index="6"] {
-    fill: var(--area-color-7);
-    stroke: var(--area-stroke-7);
+    fill: var(--rm-area-color-7);
+    stroke: var(--rm-area-stroke-7);
 }
 .rm-map-series[data-index="7"] {
-    fill: var(--area-color-8);
-    stroke: var(--area-stroke-8);
+    fill: var(--rm-area-color-8);
+    stroke: var(--rm-area-stroke-8);
 }
 .rm-map-series[data-index="8"] {
-    fill: var(--area-color-9);
-    stroke: var(--area-stroke-9);
+    fill: var(--rm-area-color-9);
+    stroke: var(--rm-area-stroke-9);
 }
 .rm-map-series[data-index="9"] {
-    fill: var(--area-color-10);
-    stroke: var(--area-stroke-10);
+    fill: var(--rm-area-color-10);
+    stroke: var(--rm-area-stroke-10);
 }
 
 .rm-map-series .rm-series-points {
@@ -752,9 +752,6 @@
 .rm-map-series .rm-point[data-dummy] {
     fill: var(--rm-null-area-fill);
     stroke: none;
-}
-.rm-map-series .rm-point-label[data-selected] {
-    fill: var(--map-series-selected-label-fill) !important;
 }
 .rm-map-series-internal {
     fill: none;
@@ -853,40 +850,40 @@
 }
 
 .rm-pie-series-sector[data-index="0"] {
-    fill: var(--color-1);
+    fill: var(--rm-color-1);
 }
 .rm-pie-series-sector[data-index="1"] {
-    fill: var(--color-2);
+    fill: var(--rm-color-2);
 }
 .rm-pie-series-sector[data-index="2"] {
-    fill: var(--color-3);
+    fill: var(--rm-color-3);
 }
 .rm-pie-series-sector[data-index="3"] {
-    fill: var(--color-4);
+    fill: var(--rm-color-4);
 }
 .rm-pie-series-sector[data-index="4"] {
-    fill: var(--color-5);
+    fill: var(--rm-color-5);
 }
 .rm-pie-series-sector[data-index="5"] {
-    fill: var(--color-6);
+    fill: var(--rm-color-6);
 }
 .rm-pie-series-sector[data-index="6"] {
-    fill: var(--color-7);
+    fill: var(--rm-color-7);
 }
 .rm-pie-series-sector[data-index="7"] {
-    fill: var(--color-8);
+    fill: var(--rm-color-8);
 }
 .rm-pie-series-sector[data-index="8"] {
-    fill: var(--color-9);
+    fill: var(--rm-color-9);
 }
 .rm-pie-series-sector[data-index="9"] {
-    fill: var(--color-10);
+    fill: var(--rm-color-10);
 }
 .rm-pie-series-sector[data-index="10"] {
-    fill: var(--color-11);
+    fill: var(--rm-color-11);
 }
 .rm-pie-series-sector[data-index="11"] {
-    fill: var(--color-12);
+    fill: var(--rm-color-12);
 }
 
 /** image series */
