@@ -50,6 +50,47 @@ function createCheckBox(parentId, label, handler, checked) {
 }
 const createCheck = createCheckBox;
 
+/**
+ * 값 범위를 슬라이더로 고르는 입력과 현재 값 표시를 만든다. 슬라이더를 움직일 때마다 handler(숫자)를 부른다.
+ */
+function createRangeSlider(parentId, label, range, value, handler) {
+	var parent = document.getElementById(parentId);
+	if (parent) {
+		var wrap = document.createElement("div");
+		wrap.style.display = "inline-flex";
+		wrap.style.alignItems = "center";
+		wrap.style.margin = "3px 14px 3px 3px";
+		wrap.style.fontSize = "12px";
+
+		var lab = document.createElement("label");
+		lab.textContent = label;
+		lab.style.marginRight = "6px";
+		wrap.appendChild(lab);
+
+		var slider = document.createElement("input");
+		slider.type = "range";
+		slider.min = range.min;
+		slider.max = range.max;
+		slider.step = range.step;
+		slider.value = value;
+		wrap.appendChild(slider);
+
+		var text = document.createElement("span");
+		text.textContent = value;
+		text.style.margin = "0 0 0 6px";
+		text.style.minWidth = "28px";
+		wrap.appendChild(text);
+
+		slider.oninput = function () {
+			text.textContent = slider.value;
+			handler(Number(slider.value));
+		};
+		parent.appendChild(wrap);
+		return slider;
+	}
+	return null;
+}
+
 function createListBox(parentId, label, items, handler, selectedItem) {
     var parent = document.getElementById(parentId);
     if (parent) {

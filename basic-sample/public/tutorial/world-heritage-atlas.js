@@ -88,37 +88,10 @@ const config = {
                 focus: false,
             },
         },
-        {
-            name: 'cultural',
-            type: 'pin',
-            data: [],
-            pointLabel: false,
-            radius: 6,
-            style: { fill: '#e8590c', stroke: '#ffffff', strokeWidth: 1.2 },
-            tooltipText: '<b>${name}</b><br>문화유산 · ${year}',
-        },
-        {
-            name: 'natural',
-            type: 'pin',
-            data: [],
-            pointLabel: false,
-            radius: 6,
-            style: { fill: '#7048e8', stroke: '#ffffff', strokeWidth: 1.2 },
-            tooltipText: '<b>${name}</b><br>자연유산 · ${year}',
-        },
-        {
-            name: 'mixed',
-            type: 'pin',
-            data: [],
-            pointLabel: false,
-            radius: 6,
-            style: { fill: '#1098ad', stroke: '#ffffff', strokeWidth: 1.2 },
-            tooltipText: '<b>${name}</b><br>복합유산 · ${year}',
-        },
     ],
 };
 
-async function onChartLoaded(mapChart) {
+function onChartLoaded(mapChart) {
     const Q = String.fromCharCode(34);
     const CONTINENTS = {
         Asia: '아시아',
@@ -128,11 +101,8 @@ async function onChartLoaded(mapChart) {
         'South America': '남아메리카',
         Oceania: '오세아니아',
     };
-    const CATEGORIES = { cultural: 'Cultural', natural: 'Natural', mixed: 'Mixed' };
     const picked = [];
     let rows = [];
-    let places = [];
-    let pinRequest = 0;
 
     const areaOf = function (id) {
         return mapChart.getMap(0).areaOf(id);
@@ -161,27 +131,6 @@ async function onChartLoaded(mapChart) {
         return rowsOf().filter(function (other) { return other.value > row.value; }).length + 1;
     };
 
-    const activeIds = function () {
-        const selection = mapChart.selection;
-        const ids = [];
-
-        for (let i = 0; i < selection.count; i++) {
-            ids.push(String(selection.get(i).id));
-        }
-        if (ids.length > 0 || picked.length === 0) {
-            return ids;
-        }
-        return rowsOf().filter(function (row) {
-            return picked.indexOf(areaOf(row.id).source.props.continent) >= 0;
-        }).map(function (row) { return String(row.id); });
-    };
-
-    const placesOf = function (ids) {
-        return places.filter(function (place) {
-            return place.countries.some(function (id) { return ids.indexOf(id) >= 0; });
-        });
-    };
-
     const headHtml = function () {
         const shown = picked.length > 0
             ? picked.map(function (name) { return CONTINENTS[name]; }).join(', ')
@@ -198,8 +147,8 @@ async function onChartLoaded(mapChart) {
 
         if (!row) {
             return '<div class=' + Q + 'wh-card wh-card-empty' + Q + '>'
-                + '<div class=' + Q + 'wh-hint' + Q + '>국가를 클릭하면 그 국가로 확대하고 세계유산을 핀으로 보여 줍니다.</div>'
-                + '<div class=' + Q + 'wh-hint' + Q + '>대륙 버튼으로 보이는 영역을 고를 수도 있습니다.</div></div>';
+                + '<div class=' + Q + 'wh-hint' + Q + '>국가를 클릭하면 그 국가로 확대합니다.</div>'
+                + '<div class=' + Q + 'wh-hint' + Q + '>대륙 체크박스로 보이는 영역을 고를 수도 있습니다.</div></div>';
         }
 
         const area = areaOf(row.id);
@@ -217,72 +166,43 @@ async function onChartLoaded(mapChart) {
         mapChart.getAnnotation('card').updateOption('html', cardHtml());
     };
 
-    const setPins = function (list) {
-        Object.keys(CATEGORIES).forEach(function (name) {
-            const data = list.filter(function (place) { return place.category === CATEGORIES[name]; });
-
-            mapChart.seriesByName(name).updateOptions({ data: data });
-        });
-    };
-
-    const afterMove = function (callback) {
-        const wait = function (count) {
-            if (mapChart.isDestroying()) {
-                return;
-            }
-            if (mapChart.isCameraMoving && count < 600) {
-                window.requestAnimationFrame(function () { wait(count + 1); });
-                return;
-            }
-            callback();
-        };
-
-        window.requestAnimationFrame(function () { wait(0); });
-    };
-
-    const renderPins = function () {
-        const request = ++pinRequest;
-
-        setPins([]);
-        afterMove(function () {
-            if (request === pinRequest) {
-                setPins(placesOf(activeIds()));
-            }
-        });
-    };
-
     const handleSelectionChanged = function () {
         render();
-        renderPins();
     };
 
-    const toggleContinent = function (name) {
-        const next = picked.indexOf(name) >= 0
-            ? picked.filter(function (n) { return n !== name; })
-            : picked.concat(name);
+    const syncChecks = function () {
+        const labels = Array.from(document.querySelectorAll('label'));
+
+        Object.keys(CONTINENTS).forEach(function (name) {
+            const label = labels.find(function (el) { return el.textContent === CONTINENTS[name]; });
+
+            if (label && label.control) {
+                label.control.checked = picked.indexOf(name) >= 0;
+            }
+        });
+    };
+
+    const setContinent = function (name, on) {
+        const rest = picked.filter(function (n) { return n !== name; });
+        const next = on ? rest.concat(name) : rest;
         const filter = next.length > 0 ? { continent: next } : null;
 
         if (mapChart.setAreaFilter(filter)) {
             picked.splice(0, picked.length, ...next);
             render();
-            renderPins();
         }
+        syncChecks();
     };
 
     const clearFilter = function () {
         if (mapChart.setAreaFilter(null)) {
             picked.splice(0, picked.length);
             render();
-            renderPins();
         }
+        syncChecks();
     };
 
-    places = await fetch('../data/world-heritage-places.json').then(function (res) { return res.json(); });
-
-    if (mapChart.isDestroying()) {
-        return;
-    }
-    window.worldHeritageAtlas = { render, handleSelectionChanged, toggleContinent, clearFilter };
+    window.worldHeritageAtlas = { render, handleSelectionChanged, setContinent, clearFilter };
     render();
 }
 
@@ -292,12 +212,12 @@ const tool = {
     width: 1056,
     height: 720,
     actions: [
-        { type: 'button', label: '아시아', action: () => window.worldHeritageAtlas?.toggleContinent('Asia') },
-        { type: 'button', label: '유럽', action: () => window.worldHeritageAtlas?.toggleContinent('Europe') },
-        { type: 'button', label: '아프리카', action: () => window.worldHeritageAtlas?.toggleContinent('Africa') },
-        { type: 'button', label: '북아메리카', action: () => window.worldHeritageAtlas?.toggleContinent('North America') },
-        { type: 'button', label: '남아메리카', action: () => window.worldHeritageAtlas?.toggleContinent('South America') },
-        { type: 'button', label: '오세아니아', action: () => window.worldHeritageAtlas?.toggleContinent('Oceania') },
+        { type: 'check', label: '아시아', value: false, action: ({ value }) => window.worldHeritageAtlas?.setContinent('Asia', value) },
+        { type: 'check', label: '유럽', value: false, action: ({ value }) => window.worldHeritageAtlas?.setContinent('Europe', value) },
+        { type: 'check', label: '아프리카', value: false, action: ({ value }) => window.worldHeritageAtlas?.setContinent('Africa', value) },
+        { type: 'check', label: '북아메리카', value: false, action: ({ value }) => window.worldHeritageAtlas?.setContinent('North America', value) },
+        { type: 'check', label: '남아메리카', value: false, action: ({ value }) => window.worldHeritageAtlas?.setContinent('South America', value) },
+        { type: 'check', label: '오세아니아', value: false, action: ({ value }) => window.worldHeritageAtlas?.setContinent('Oceania', value) },
         { type: 'button', label: '전체 보기', action: () => window.worldHeritageAtlas?.clearFilter() },
     ],
     events: {
@@ -415,7 +335,13 @@ function applyDemoCss() {
 }
 
 function setActions(container) {
-    tool.actions.forEach((action) => createButton(container, action.label, action.action));
+    tool.actions.forEach((action) => {
+        if (action.type === 'check') {
+            createCheckBox(container, action.label, (e) => action.action({ value: e.target.checked }), action.value);
+        } else {
+            createButton(container, action.label, action.action);
+        }
+    });
 }
 
 async function init() {
