@@ -122,9 +122,6 @@ const config = {
                 }
             },
             styleCallback: (args) => window.datacenter?.styleOf(args),
-            onPointClick: (args) => {
-                window.datacenter?.assign(args.id);
-            },
             data: COUNTRIES
         },
         {
@@ -165,11 +162,7 @@ function onChartLoaded(mapChart) {
     const TOP3 = ['USA', 'CHN', 'IND'];
     const DEFAULTS = { distance: 0.1, gap: 0.1, minLength: 0.4, radial: 1.2 };
     const TUNED = { minLength: 0.2 };
-    const state = Object.assign({ enabled: true, pick: 'always', always: ['KOR', 'JPN'], never: [] }, DEFAULTS, TUNED);
-
-    const without = function (list, id) {
-        return list.filter(function (v) { return v !== id; });
-    };
+    const state = Object.assign({ enabled: true, always: ['KOR', 'JPN'] }, DEFAULTS, TUNED);
 
     const literal = function (list) {
         return '[' + list.map(function (id) { return QUOTE + id + QUOTE; }).join(', ') + ']';
@@ -188,9 +181,6 @@ function onChartLoaded(mapChart) {
 
         if (state.always.length > 0) {
             lines.push(' '.repeat(8) + 'always: ' + literal(state.always) + ',');
-        }
-        if (state.never.length > 0) {
-            lines.push(' '.repeat(8) + 'never: ' + literal(state.never) + ',');
         }
         return ['callout: {', ' '.repeat(4) + 'auto: {'].concat(lines, [' '.repeat(4) + '},', '},']).join(NEW_LINE);
     };
@@ -213,7 +203,6 @@ function onChartLoaded(mapChart) {
                     minLength: state.minLength,
                     radial: state.radial,
                     always: state.always,
-                    never: state.never,
                 },
             }
         });
@@ -225,34 +214,11 @@ function onChartLoaded(mapChart) {
             state[name] = value;
             apply();
         },
-        pick: function (mode) {
-            state.pick = mode;
-        },
-        assign: function (id) {
-            const had = state[state.pick] ? state[state.pick].indexOf(id) >= 0 : false;
-
-            state.always = without(state.always, id);
-            state.never = without(state.never, id);
-            if (state.pick === 'always' && !had) {
-                state.always = state.always.concat([id]);
-            } else if (state.pick === 'never' && !had) {
-                state.never = state.never.concat([id]);
-            }
-            apply();
-        },
-        reset: function () {
-            state.always = [];
-            state.never = [];
-            apply();
-        },
         setEnabled: function (on) {
             state.enabled = on;
             apply();
         },
         styleOf: function (args) {
-            if (state.never.indexOf(args.id) >= 0) {
-                return { stroke: '#ffffff', strokeWidth: 3.5 };
-            }
             if (TOP3.indexOf(args.id) >= 0) {
                 return { stroke: '#fbbf24', strokeWidth: 3, strokeDasharray: '6 3' };
             }
@@ -274,27 +240,12 @@ const tool = {
     options: {
         css: '#realmap { background: radial-gradient(900px 560px at 28% 14%, #16264a 0%, #0b1226 62%, #070c1a 100%); border-radius: 10px; overflow: hidden; } ' +
             '#realmap .rm-control { background-color: transparent; } ' +
-            '#realmap g.rm-series.rm-bubble-series path.rm-point { filter: drop-shadow(0 0 8px rgba(34, 211, 238, 0.32)); cursor: pointer; }'
+            '#realmap g.rm-series.rm-bubble-series path.rm-point { filter: drop-shadow(0 0 8px rgba(34, 211, 238, 0.32)); }'
     },
     events: {
         onChartLoaded,
     },
     actions: [
-        {
-            type: 'radio',
-            label: '버블을 클릭하면',
-            value: 'always',
-            data: ['always', 'never', 'clear'],
-            labels: ['항상 밖으로 빼기 (always)', '제자리에 두기 (never)', '지정 해제'],
-            action: ({ value }) => window.datacenter?.pick(value)
-        },
-        {
-            type: 'button',
-            label: '지정 모두 해제',
-            value: '',
-            data: '',
-            action: () => window.datacenter?.reset()
-        },
         {
             type: 'check',
             label: '자동 배치',

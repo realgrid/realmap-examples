@@ -105,10 +105,6 @@ const config = {
                     return point.name;
                 }
             },
-            styleCallback: (args) => window.tourism?.styleOf(args),
-            onPointClick: (args) => {
-                window.tourism?.assign(args.id);
-            },
             data: SIDOS
         }
     ]
@@ -117,19 +113,10 @@ const config = {
 let mapChart;
 
 function onChartLoaded(mapChart) {
-    const QUOTE = String.fromCharCode(39);
     const NEW_LINE = String.fromCharCode(10);
     const DEFAULTS = { distance: 0.1, gap: 0.1, minLength: 0.4, radial: 1.2 };
     const TUNED = { gap: 0.05, minLength: 0.2 };
-    const state = Object.assign({ enabled: true, pick: 'always', always: [], never: [] }, DEFAULTS, TUNED);
-
-    const without = function (list, id) {
-        return list.filter(function (v) { return v !== id; });
-    };
-
-    const literal = function (list) {
-        return '[' + list.map(function (id) { return QUOTE + id + QUOTE; }).join(', ') + ']';
-    };
+    const state = Object.assign({ enabled: true }, DEFAULTS, TUNED);
 
     const configText = function () {
         if (!state.enabled) {
@@ -142,12 +129,6 @@ function onChartLoaded(mapChart) {
             return ' '.repeat(8) + name + ': ' + state[name] + ',';
         });
 
-        if (state.always.length > 0) {
-            lines.push(' '.repeat(8) + 'always: ' + literal(state.always) + ',');
-        }
-        if (state.never.length > 0) {
-            lines.push(' '.repeat(8) + 'never: ' + literal(state.never) + ',');
-        }
         return ['callout: {', ' '.repeat(4) + 'auto: {'].concat(lines, [' '.repeat(4) + '},', '},']).join(NEW_LINE);
     };
 
@@ -168,8 +149,6 @@ function onChartLoaded(mapChart) {
                     gap: state.gap,
                     minLength: state.minLength,
                     radial: state.radial,
-                    always: state.always,
-                    never: state.never,
                 },
             }
         });
@@ -181,37 +160,9 @@ function onChartLoaded(mapChart) {
             state[name] = value;
             apply();
         },
-        pick: function (mode) {
-            state.pick = mode;
-        },
-        assign: function (id) {
-            const had = state[state.pick] ? state[state.pick].indexOf(id) >= 0 : false;
-
-            state.always = without(state.always, id);
-            state.never = without(state.never, id);
-            if (state.pick === 'always' && !had) {
-                state.always = state.always.concat([id]);
-            } else if (state.pick === 'never' && !had) {
-                state.never = state.never.concat([id]);
-            }
-            apply();
-        },
-        reset: function () {
-            state.always = [];
-            state.never = [];
-            apply();
-        },
         setEnabled: function (on) {
             state.enabled = on;
             apply();
-        },
-        styleOf: function (args) {
-            if (state.always.indexOf(args.id) >= 0) {
-                return { stroke: '#d97706', strokeWidth: 3, strokeDasharray: '6 3' };
-            }
-            if (state.never.indexOf(args.id) >= 0) {
-                return { stroke: '#0f172a', strokeWidth: 3.5 };
-            }
         },
         resize: function (size) {
             const parts = size.split('x');
@@ -229,28 +180,13 @@ const tool = {
     height: 620,
     options: {
         css: '#realmap { background: #f8fafc; border: 1px solid #dbeafe; border-radius: 10px; overflow: hidden; } ' +
-            '#realmap g.rm-series.rm-bubble-series path.rm-point { filter: drop-shadow(0 2px 5px rgba(30, 58, 138, 0.22)); cursor: pointer; transition: filter 0.15s; } ' +
+            '#realmap g.rm-series.rm-bubble-series path.rm-point { filter: drop-shadow(0 2px 5px rgba(30, 58, 138, 0.22)); transition: filter 0.15s; } ' +
             '#realmap g.rm-series.rm-bubble-series path.rm-point:hover { filter: drop-shadow(0 3px 8px rgba(30, 58, 138, 0.45)) brightness(1.06); }'
     },
     events: {
         onChartLoaded,
     },
     actions: [
-        {
-            type: 'radio',
-            label: '버블을 클릭하면',
-            value: 'always',
-            data: ['always', 'never', 'clear'],
-            labels: ['항상 밖으로 빼기 (always)', '제자리에 두기 (never)', '지정 해제'],
-            action: ({ value }) => window.tourism?.pick(value)
-        },
-        {
-            type: 'button',
-            label: '지정 모두 해제',
-            value: '',
-            data: '',
-            action: () => window.tourism?.reset()
-        },
         {
             type: 'check',
             label: '자동 배치',
