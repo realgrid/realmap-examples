@@ -145,7 +145,7 @@ function onChartLoaded(mapChart) {
         const mode = MODES[name];
 
         if (mode) {
-            mapChart.seriesByType('bar').updateOptions({
+            mapChart.seriesByType('bar').mergeOptions({
                 pointLabel: { position: mode.pointPosition },
                 barLabel: mode.barLabel,
             });

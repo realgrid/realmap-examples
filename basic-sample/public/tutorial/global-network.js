@@ -139,7 +139,7 @@ const config = {
             onPointClick: async (e) => {
                 $selected = e.name;
                 if ($data[e.name]) {
-                    mapChart.series.updateOption('data', $data[e.name].map((country) => ({ id: country })));
+                    mapChart.series.setOption('data', $data[e.name].map((country) => ({ id: country })));
                 }
             },
             style: {

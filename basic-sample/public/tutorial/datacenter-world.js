@@ -194,7 +194,7 @@ function onChartLoaded(mapChart) {
     };
 
     const apply = function () {
-        mapChart.seriesByType('bubble').updateOptions({
+        mapChart.seriesByType('bubble').mergeOptions({
             callout: {
                 auto: {
                     visible: state.enabled,

@@ -174,7 +174,7 @@ async function onChartLoaded(mapChart) {
             + '<div class=' + Q + 'sc-cards' + Q + '>' + body + '</div>'
             + '</div>';
 
-        mapChart.getAnnotation(PANEL).updateOption('html', html);
+        mapChart.getAnnotation(PANEL).setOption('html', html);
     };
 
     const handleSelectionChanged = function () {
@@ -192,12 +192,12 @@ async function onChartLoaded(mapChart) {
 
         indicator = key;
         mapChart.selection.clear();
-        series().updateOptions({
+        series().mergeOptions({
             valueField: key,
             data: rows,
             tooltipText: '<b>${name}</b><br>${value;;' + numberFormat + '} ' + meta.unit,
         });
-        mapChart.colorScale.updateOptions({ title: { text: meta.label } });
+        mapChart.colorScale.mergeOptions({ title: { text: meta.label } });
         if (selectedIds.length > 0) {
             mapChart.selection.addPoints({ 시도: selectedIds });
         }
@@ -213,7 +213,7 @@ async function onChartLoaded(mapChart) {
     };
 
     const setFocusVisible = function (visible) {
-        series().selection.focus.updateOption('visible', visible);
+        series().selection.focus.setOption('visible', visible);
     };
 
     rows = await fetch('../data/kr-sido-indicators.json').then(function (res) { return res.json(); });

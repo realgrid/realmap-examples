@@ -49,7 +49,7 @@ const config = {
             else if (args.zoom > 200) step = 10;
             else step = 20;
 
-            mapChart.updateOptions({
+            mapChart.mergeOptions({
                 axis: {
                     grid: {
                         line: {

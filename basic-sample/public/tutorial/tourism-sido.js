@@ -69,6 +69,7 @@ const config = {
     series: [
         {
             useMapData: true,
+            tooltipText: false,
             style: { stroke: '#ffffff', strokeWidth: 0.8, fill: '#dbe4f0' }
         },
         {
@@ -141,7 +142,7 @@ function onChartLoaded(mapChart) {
     };
 
     const apply = function () {
-        mapChart.seriesByType('bubble').updateOptions({
+        mapChart.seriesByType('bubble').mergeOptions({
             callout: {
                 auto: {
                     visible: state.enabled,

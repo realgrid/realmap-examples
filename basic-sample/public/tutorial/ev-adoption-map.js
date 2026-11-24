@@ -145,7 +145,7 @@ const tool = {
             action: ({ value }) => {
                 const sizes = value === 'em' ? ['0.16em', '0.1em'] : ['13px', '10px'];
 
-                mapChart.seriesByType('bubble').updateOptions({
+                mapChart.seriesByType('bubble').mergeOptions({
                     pointLabel: { style: { fontSize: sizes[0] } },
                     subLabel: { style: { fontSize: sizes[1] } }
                 });

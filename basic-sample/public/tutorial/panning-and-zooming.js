@@ -65,27 +65,27 @@ const config = {
 
 function setActions(container) {
     createButton(container, 'LEFT', async function (e) {
-        mapChart.body.updateOption('panX', mapChart.body.panX - 5);
+        mapChart.body.setOption('panX', mapChart.body.panX - 5);
     });
 
     createButton(container, 'RIGHT', async function (e) {
-        mapChart.body.updateOption('panX', mapChart.body.panX + 5);
+        mapChart.body.setOption('panX', mapChart.body.panX + 5);
     });
 
     createButton(container, 'UP', async function (e) {
-        mapChart.body.updateOption('panY', mapChart.body.panY - 5);
+        mapChart.body.setOption('panY', mapChart.body.panY - 5);
     });
 
     createButton(container, 'DOWN', async function (e) {
-        mapChart.body.updateOption('panY', mapChart.body.panY + 5);
+        mapChart.body.setOption('panY', mapChart.body.panY + 5);
     });
 
     createButton(container, 'ZOOM_IN', async function (e) {
-        mapChart.body.updateOption('zoom', mapChart.body.zoom + 5);
+        mapChart.body.setOption('zoom', mapChart.body.zoom + 5);
     });
 
     createButton(container, 'ZOOM_OUT', async function (e) {
-        mapChart.body.updateOption('zoom', mapChart.body.zoom - 5);
+        mapChart.body.setOption('zoom', mapChart.body.zoom - 5);
     });
 }
 

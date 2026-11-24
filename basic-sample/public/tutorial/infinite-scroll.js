@@ -121,27 +121,27 @@ function setActions(container) {
     );
     createButton(container, 'Scroll---', function (e) {
         mapChart.body.scroll -= 60;
-        mapChart.title.updateOption('text', mapChart.body.scroll);
+        mapChart.title.setOption('text', mapChart.body.scroll);
     });
     createButton(container, 'Scroll--', function (e) {
         mapChart.body.scroll -= 10;
-        mapChart.title.updateOption('text', mapChart.body.scroll);
+        mapChart.title.setOption('text', mapChart.body.scroll);
     });
     createButton(container, 'Scroll-', function (e) {
         mapChart.body.scroll -= 1;
-        mapChart.title.updateOption('text', mapChart.body.scroll);
+        mapChart.title.setOption('text', mapChart.body.scroll);
     });
     createButton(container, 'Scroll+', function (e) {
         mapChart.body.scroll += 1;
-        mapChart.title.updateOption('text', mapChart.body.scroll);
+        mapChart.title.setOption('text', mapChart.body.scroll);
     });
     createButton(container, 'Scroll++', function (e) {
         mapChart.body.scroll += 10;
-        mapChart.title.updateOption('text', mapChart.body.scroll);
+        mapChart.title.setOption('text', mapChart.body.scroll);
     });
     createButton(container, 'Scroll+++', function (e) {
         mapChart.body.scroll += 60;
-        mapChart.title.updateOption('text', mapChart.body.scroll);
+        mapChart.title.setOption('text', mapChart.body.scroll);
     });
     createButton(container, 'Auto Scroll', function (e) {
         const started = e.target.value == 'Auto Scroll';

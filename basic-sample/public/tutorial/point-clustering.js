@@ -231,7 +231,7 @@ function addDebugActions() {
     };
 
     createButton('actions', '스크롤 토글', () => {
-        mapChart.updateOptions({ body: { scrollable: !mapChart.body.isScrollable() } });
+        mapChart.mergeOptions({ body: { scrollable: !mapChart.body.isScrollable() } });
         setTimeout(show, 50);
     });
     document.getElementById('actions').appendChild(status);

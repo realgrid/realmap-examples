@@ -162,8 +162,8 @@ function onChartLoaded(mapChart) {
     };
 
     const render = function () {
-        mapChart.getAnnotation('head').updateOption('html', headHtml());
-        mapChart.getAnnotation('card').updateOption('html', cardHtml());
+        mapChart.getAnnotation('head').setOption('html', headHtml());
+        mapChart.getAnnotation('card').setOption('html', cardHtml());
     };
 
     const handleSelectionChanged = function () {

@@ -141,7 +141,7 @@ function setActions(container) {
             config.general = {};
         }
         config.general.theme = theme;
-        mapChart.updateOptions({ general: { theme } });
+        mapChart.mergeOptions({ general: { theme } });
     }, '');
 }
 

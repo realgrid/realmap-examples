@@ -132,7 +132,7 @@ async function onChartLoaded(chart) {
 
         requestAnimationFrame(() => {
             const cat = $dsKeys[stepIndex];
-            mapChart.getSeries(cat).updateOptions({
+            mapChart.getSeries(cat).mergeOptions({
                 data: $ds[cat],
             });
             runSteps(stepIndex + 1);

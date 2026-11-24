@@ -56,23 +56,23 @@ const config = {
 
 function setActions(container) {
     createButton(container, '도법 미지정', async function (e) {
-        mapChart.body.updateOption('projection', '');
+        mapChart.body.setOption('projection', '');
     });
 
     createButton(container, '메르카토르', async function (e) {
-        mapChart.body.updateOption('projection', 'mercator');
+        mapChart.body.setOption('projection', 'mercator');
     });
 
     createButton(container, 'EqualEarth', async function (e) {
-        mapChart.body.updateOption('projection', 'equalearth');
+        mapChart.body.setOption('projection', 'equalearth');
     });
 
     createButton(container, '밀러', async function (e) {
-        mapChart.body.updateOption('projection', 'miller');
+        mapChart.body.setOption('projection', 'miller');
     });
 
     createButton(container, '직교투영', async function (e) {
-        mapChart.body.updateOption('projection', 'orthographic');
+        mapChart.body.setOption('projection', 'orthographic');
     });
 }
 

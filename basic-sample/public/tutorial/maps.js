@@ -233,7 +233,7 @@ function setActions(container) {
         Array.from({ length: 10 }, (_, i) => `area-color-${i + 1}`),
         async function (e) {
             const color = `var(--${_getValue(e)})`;
-            mapChart.series.updateOptions({
+            mapChart.series.mergeOptions({
                 style: {
                     fill: color,
                 },

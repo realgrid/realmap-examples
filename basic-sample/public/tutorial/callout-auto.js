@@ -130,7 +130,7 @@ function onChartLoaded(mapChart) {
     };
 
     const apply = function () {
-        mapChart.seriesByName('bubbles').updateOptions({
+        mapChart.seriesByName('bubbles').mergeOptions({
             callout: {
                 auto: {
                     visible: state.enabled,

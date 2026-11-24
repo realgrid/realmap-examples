@@ -162,7 +162,7 @@ function setActions(container) {
         mapChart.series.toggleOption('visible');
     }, false);
     createCheckBox(container, 'latExtent', function (e) {
-        mapChart.series.updateOption('latExtent', _getChecked(e) ? 80 : undefined);
+        mapChart.series.setOption('latExtent', _getChecked(e) ? 80 : undefined);
     }, false);
 }
 

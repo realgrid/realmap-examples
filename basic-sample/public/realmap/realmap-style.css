@@ -12,6 +12,9 @@
     --rm-subtitle-fill: #333;
 
     --rm-body-background-stroke: none;
+    --rm-map-background-fill: #f0f0f0;
+    --rm-map-globe-highlight: white;
+    --rm-map-globe-fill: lightblue;
 
     --rm-empty-view-stroke: #eee;
     --rm-empty-view-fill: #fcfcff;
@@ -107,6 +110,9 @@
     --rm-subtitle-fill: #fff;
 
     --rm-body-background-stroke: none;
+    --rm-map-background-fill: #3a3a3a;
+    --rm-map-globe-highlight: #5b6f80;
+    --rm-map-globe-fill: #2e3c4a;
 
     --rm-empty-view-stroke: #898989;
     --rm-empty-view-fill: #414141;
@@ -179,6 +185,9 @@
     --rm-subtitle-fill: #f0d9be;
 
     --rm-body-background-stroke: none;
+    --rm-map-background-fill: #2f5563;
+    --rm-map-globe-highlight: #4f7f8f;
+    --rm-map-globe-fill: #2f5563;
 
     --rm-empty-view-stroke: #4e7b82;
     --rm-empty-view-fill: #2a3f4a;
@@ -412,6 +421,9 @@
 .rm-body {
     /* transform-origin: center center;
     transition: transform 0.1s ease-out; */
+}
+.rm-map-background {
+    fill: var(--rm-map-background-fill);
 }
 
 .rm-empty-view {
