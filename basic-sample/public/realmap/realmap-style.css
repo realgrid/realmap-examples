@@ -12,7 +12,7 @@
     --rm-subtitle-fill: #333;
 
     --rm-body-background-stroke: none;
-    --rm-map-background-fill: #f0f0f0;
+    --rm-map-background-fill: transparent;
     --rm-map-globe-highlight: white;
     --rm-map-globe-fill: lightblue;
 
@@ -110,7 +110,7 @@
     --rm-subtitle-fill: #fff;
 
     --rm-body-background-stroke: none;
-    --rm-map-background-fill: #3a3a3a;
+    --rm-map-background-fill: transparent;
     --rm-map-globe-highlight: #5b6f80;
     --rm-map-globe-fill: #2e3c4a;
 
@@ -185,7 +185,7 @@
     --rm-subtitle-fill: #f0d9be;
 
     --rm-body-background-stroke: none;
-    --rm-map-background-fill: #2f5563;
+    --rm-map-background-fill: transparent;
     --rm-map-globe-highlight: #4f7f8f;
     --rm-map-globe-fill: #2f5563;
 
